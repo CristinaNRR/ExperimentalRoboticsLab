@@ -48,14 +48,33 @@
         args="-urdf -model human1 -param human_description1 -x -6 -y 8.5 -z 0.34 -R 0 -P 0 -Y -0.75"/>
 
 <!-- these are the arguments you can pass this launch file, for example paused:=true -->
-  <arg name="model" default="$(find exp_assignment3)/urdf/robot2_laser.xacro" />
+  <arg name="model" default="$(find gmapping)/urdf/robot2_laser.xacro" />
 
   <!-- Load the URDF into the ROS Parameter Server -->
   <param name="robot_description" 
 	 command="$(find xacro)/xacro --inorder $(arg model)" />
 
+ <!-- Start Rviz -->  
+  <param name="use_gui" value="False"/>
+   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" ></node>
+   <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" /> 
+   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find gmapping)/config/sim2.rviz" />
+
   <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
    <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
 	args="-urdf -model robot1 -param robot_description -x -5 -y 8 -z 0.05 -Y -1.57"/> 
+
+
+
+
+	<include file="$(find planning)/launch/gmapping.launch"></include>
+	
+    <arg name="des_x" default= "2.5"/>
+    <arg name="des_y" default= "-2.0"/>
+    <param name="des_pos_x" value="$(arg des_x)" />
+    <param name="des_pos_y" value="$(arg des_y)" />
+    
+    <include file="$(find planning)/launch/move_base.launch"></include>
+
 
 </launch>
