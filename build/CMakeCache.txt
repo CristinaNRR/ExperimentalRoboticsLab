@@ -714,10 +714,10 @@ pcl_msgs_DIR:PATH=/opt/ros/kinetic/share/pcl_msgs/cmake
 pcl_ros_DIR:PATH=/opt/ros/kinetic/share/pcl_ros/cmake
 
 //Value Computed by CMake
-planning_BINARY_DIR:STATIC=/home/cristina/new_ws/build/planning
+planning_BINARY_DIR:STATIC=/home/cristina/new_ws/build/planning-main
 
 //Value Computed by CMake
-planning_SOURCE_DIR:STATIC=/home/cristina/new_ws/src/planning
+planning_SOURCE_DIR:STATIC=/home/cristina/new_ws/src/planning-main
 
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/kinetic/share/pluginlib/cmake

@@ -7776,22 +7776,22 @@ clean: SLAM_packages/hector_slam/hector_mapping/CMakeFiles/hector_mapping_genera
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory planning
+# Directory level rules for directory planning-main
 
 # Convenience name for "all" pass in the directory.
-planning/all:
+planning-main/all:
 
-.PHONY : planning/all
+.PHONY : planning-main/all
 
 # Convenience name for "clean" pass in the directory.
-planning/clean:
+planning-main/clean:
 
-.PHONY : planning/clean
+.PHONY : planning-main/clean
 
 # Convenience name for "preinstall" pass in the directory.
-planning/preinstall:
+planning-main/preinstall:
 
-.PHONY : planning/preinstall
+.PHONY : planning-main/preinstall
 
 #=============================================================================
 # Directory level rules for directory SLAM_packages/navigation_2d/nav2d_operator
