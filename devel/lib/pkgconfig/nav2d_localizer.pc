@@ -3,6 +3,6 @@ prefix=/home/cristina/new_ws/devel
 Name: nav2d_localizer
 Description: Description of nav2d_localizer
 Version: 0.3.2
-Cflags: -I/home/cristina/new_ws/src/SLAM_packages/navigation_2d/nav2d_localizer/include
+Cflags: -I/home/cristina/new_ws/src/SLAM_packages-main/navigation_2d/nav2d_localizer/include
 Libs: -L${prefix}/lib -lSelfLocalizer
 Requires: roscpp tf nav_msgs sensor_msgs geometry_msgs
