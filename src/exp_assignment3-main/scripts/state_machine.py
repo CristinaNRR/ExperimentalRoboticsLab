@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# coding=utf-8
 
 import roslib
 import rospy
@@ -51,6 +52,7 @@ class Normal(smach.State):
     def __init__(self):
         self.var='FALSE'
 	self.count=0
+	self.stopFlag=1
         #wait some seconds when we launch the program
         time.sleep(6)
         smach.State.__init__(self, 
@@ -62,6 +64,7 @@ class Normal(smach.State):
         rospy.loginfo('Executing state NORMAL ')
 	#send to the actionlib client the target positions to reach
       	pub = rospy.Publisher('targetPosition', Num,queue_size=10)
+	rospy.Subscriber("/cmd_vel", Twist, self.callback2)
         # subscribed to the camera topic
  #       self.subscriber = rospy.Subscriber("camera1/image_raw/compressed",
  #                                          CompressedImage, self.callback,  queue_size=1)
@@ -72,11 +75,14 @@ class Normal(smach.State):
         	#send the robot random positions
 		randomlist = []
 		for i in range(0,2):
-			n = random.randint(-2,-1)
+			n = random.randint(-2,2)
 			randomlist.append(n)
 	        rospy.loginfo('sending the random position: %s', randomlist)		
 		pub.publish(randomlist)
- 		time.sleep(8)
+		time.sleep(3)
+		#se il robot si muove non mando i comandi
+ 		while(self.stopFlag==0):
+			pass
                 #to syncronize with the action client
 #		if(self.count>=1):
 			#stop until the just sent target has been reached
@@ -95,7 +101,18 @@ class Normal(smach.State):
 	#unsubscribe to the camera topic to avoid overlapping
 	self.subscriber.unregister()
 	return user_action('PLAY')
+ 
+    def callback2(self, msg):
+	#se il robot è fermo
+	rospy.loginfo("x,y,z")
+	print(msg.linear.x)
+	print(msg.angular.z)	
+	if(msg.linear.x<0.03 and msg.linear.x>-0.03 and msg.angular.z<0.03 and msg.angular.z>-0.03):
 
+		self.stopFlag=1
+	
+	else:
+		self.stopFlag=0
 		
 
 

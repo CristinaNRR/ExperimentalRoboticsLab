@@ -39,26 +39,26 @@ void Callback (const exp_assignment3::Num::ConstPtr& msg) {
   goal.target_pose.header.frame_id = "link_chassis";
   goal.target_pose.header.stamp = ros::Time::now();
 
-  goal.target_pose.pose.position.x = 1.0;
-  goal.target_pose.pose.position.y = 1.0;
+  goal.target_pose.pose.position.x = pos_x;
+  goal.target_pose.pose.position.y = pos_y;
   goal.target_pose.pose.orientation.w = 1.0;
   //goal.target_pose.pose.position.y = 0.1;
 
   ROS_INFO("Sending goal");
   ac.sendGoal(goal);
 
-  ac.waitForResult();
+//  ac.waitForResult();
 
-  if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED){
-    ROS_INFO("Hooray, the base moved 1 meter forward");
+//  if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED){
+ //   ROS_INFO("Hooray, the base moved 1 meter forward");
     //send a message to the state machine to alert that the target as been reached
-    std_msgs::Int8 msg;
-    msg.data = 1;
+  //  std_msgs::Int8 msg;
+   // msg.data = 1;
 
-    pub.publish(msg);
-   }
-  else
-    ROS_INFO("The base failed to move forward 1 meter for some reason");
+ //   pub.publish(msg);
+ //  }
+//  else
+ //   ROS_INFO("The base failed to move forward 1 meter for some reason");
 
 
 
