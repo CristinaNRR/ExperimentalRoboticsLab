@@ -66,8 +66,8 @@ class Normal(smach.State):
       	pub = rospy.Publisher('targetPosition', Num,queue_size=10)
 	rospy.Subscriber("/cmd_vel", Twist, self.callback2)
         # subscribed to the camera topic
- #       self.subscriber = rospy.Subscriber("camera1/image_raw/compressed",
- #                                          CompressedImage, self.callback,  queue_size=1)
+        self.subscriber = rospy.Subscriber("camera1/image_raw/compressed",
+                                           CompressedImage, self.callback,  queue_size=1)
 
 
 	self.var='FALSE'
@@ -89,7 +89,7 @@ class Normal(smach.State):
 #	           rospy.loginfo('waiting for the ack message')
  #                  rospy.wait_for_message('chatter', Int8)
 
-		self.count = self.count+1
+#		self.count = self.count+1
 		#after some actions have been executed go to the sleep state
 		if self.count==4 :
 			self.count=0
@@ -123,7 +123,7 @@ class Normal(smach.State):
         np_arr = np.fromstring(ros_data.data, np.uint8)
         image_np = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)  # OpenCV >= 3.0:
 
-        greenLower = (50, 50, 20)
+        greenLower = (50, 50, 50)#era 20 l uktimo
         greenUpper = (70, 255, 255)
 
         blurred = cv2.GaussianBlur(image_np, (11, 11), 0)
@@ -140,6 +140,7 @@ class Normal(smach.State):
 	#put a flag to true when the robot sees the ball
         if len(cnts) > 0:
     		self.var = 'TRUE' 
+	        rospy.loginfo('green ball detected')		
 	
         
    
