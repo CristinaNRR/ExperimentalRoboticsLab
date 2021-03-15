@@ -91,10 +91,10 @@ class Normal(smach.State):
 
 		self.count = self.count+1
 		#after some actions have been executed go to the sleep state
-#		if self.count==4 :
-#			self.count=1
+		if self.count==4 :
+			self.count=0
 #			self.var='FALSE'
-#			return user_action('SLEEP')	
+			return user_action('SLEEP')	
 
 	#when the robot sees the ball, move to the play state
 	self.var='FALSE'
@@ -104,9 +104,9 @@ class Normal(smach.State):
  
     def callback2(self, msg):
 	#se il robot è fermo
-	rospy.loginfo("x,y,z")
-	print(msg.linear.x)
-	print(msg.angular.z)	
+#	rospy.loginfo("x,y,z")
+#	print(msg.linear.x)
+#	print(msg.angular.z)	
 	if(msg.linear.x<0.03 and msg.linear.x>-0.03 and msg.angular.z<0.03 and msg.angular.z>-0.03):
 
 		self.stopFlag=1
@@ -155,18 +155,35 @@ class Sleep(smach.State):
                              outcomes=['normal'])
 
 
-        self.home = [3,3]
+        self.home = [1,1]
+	self.stopFlag=0
 
     def execute(self,userdata):
         rospy.loginfo('Executing state SLEEP')
 	#send the actionlib client the target position to reach
         pub = rospy.Publisher('targetPosition', Num,queue_size=10) 
+	rospy.Subscriber("/cmd_vel", Twist, self.callback)
+	rospy.loginfo('sending the home position: %s', self.home)		
 	pub.publish(self.home)	
-        rospy.wait_for_message('chatter', Int8)	
+        #rospy.wait_for_message('chatter', Int8)
+	while(self.stopFlag==0):
+		pass	
 	#add a sleep to make the robot remain in the sleep state for a certain time
 	time.sleep(20)
         
         return user_action('NORMAL')
+
+    def callback(self, msg):
+	#se il robot è fermo
+#	rospy.loginfo("x,y,z")
+#	print(msg.linear.x)
+#	print(msg.angular.z)	
+	if(msg.linear.x<0.03 and msg.linear.x>-0.03 and msg.angular.z<0.03 and msg.angular.z>-0.03):
+
+		self.stopFlag=1
+	
+	else:
+		self.stopFlag=0
                
             
 
