@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+	<node name="state_machine" pkg="exp_assignment3" type="state_machine.py" output="screen">
+		<param name="home" value="['1', 5.5, 'F']"/>
+		<param name="person" value="5,5"/>
+	</node>
+</launch>

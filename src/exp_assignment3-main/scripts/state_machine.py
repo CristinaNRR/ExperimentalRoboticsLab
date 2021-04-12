@@ -52,7 +52,18 @@ class Normal(smach.State):
     def __init__(self):
         self.var='FALSE'
 	self.count=0
+	self.counter=0
 	self.stopFlag=1
+	self.param=[]
+	self.ball_detected = 'NULL'
+#	self.param= rospy.get_param('/red_ball')
+#	print(self.param[2])
+#	self.param[2]='T'
+#	rospy.set_param('/red_ball', self.param)
+	#self.param[13]=T
+#	rospy.set_param('home', self.param)
+#	self.param= rospy.get_param('~home')
+#	print(self.param[13])
         #wait some seconds when we launch the program
         time.sleep(6)
         smach.State.__init__(self, 
@@ -65,12 +76,15 @@ class Normal(smach.State):
 	#send to the actionlib client the target positions to reach
       	pub = rospy.Publisher('targetPosition', Num,queue_size=10)
 	rospy.Subscriber("/cmd_vel", Twist, self.callback2)
+        self.vel_pub = rospy.Publisher("cmd_vel",
+                                       Twist, queue_size=1)
         # subscribed to the camera topic
         self.subscriber = rospy.Subscriber("camera1/image_raw/compressed",
                                            CompressedImage, self.callback,  queue_size=1)
 
 
 	self.var='FALSE'
+
 	while(self.var=='FALSE'):
         	#send the robot random positions
 		randomlist = []
@@ -107,7 +121,7 @@ class Normal(smach.State):
 #	rospy.loginfo("x,y,z")
 #	print(msg.linear.x)
 #	print(msg.angular.z)	
-	if(msg.linear.x<0.03 and msg.linear.x>-0.03 and msg.angular.z<0.03 and msg.angular.z>-0.03):
+	if(msg.linear.x==0.0 and msg.angular.z==0.0):
 
 		self.stopFlag=1
 	
@@ -118,16 +132,19 @@ class Normal(smach.State):
 
     def callback(self,ros_data):
    
-
+	#self.stopFlag=0
  #### direct conversion to CV2 ####
         np_arr = np.fromstring(ros_data.data, np.uint8)
         image_np = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)  # OpenCV >= 3.0:
 
-        greenLower = (50, 50, 50)#era 20 l uktimo
-        greenUpper = (70, 255, 255)
+ #       greenLower = (50, 50, 50)#era 20 l uktimo
+  #      greenUpper = (70, 255, 255)
 
         blurred = cv2.GaussianBlur(image_np, (11, 11), 0)
         hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
+#if i detect the green
+	greenLower = (50, 50, 50)#era 20 l uktimo
+        greenUpper = (70, 255, 255)
         mask = cv2.inRange(hsv, greenLower, greenUpper)
         mask = cv2.erode(mask, None, iterations=2)
         mask = cv2.dilate(mask, None, iterations=2)
@@ -139,9 +156,150 @@ class Normal(smach.State):
         # only proceed if at least one contour was found
 	#put a flag to true when the robot sees the ball
         if len(cnts) > 0:
-    		self.var = 'TRUE' 
-	        rospy.loginfo('green ball detected')		
-	
+ #   		self.var = 'TRUE' 
+	        rospy.loginfo('green ball detected')
+		self.ball_detected = 'G'
+		#call the sub_track function
+		sub_track(cnts)
+		return	
+#if i detect the black
+	blackLower = (0, 0, 0)#era 20 l uktimo
+        blackUpper = (5, 50, 50)
+        mask = cv2.inRange(hsv, blackLower, blackUpper)
+        mask = cv2.erode(mask, None, iterations=2)
+        mask = cv2.dilate(mask, None, iterations=2)
+        #cv2.imshow('mask', mask)
+        cnts = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL,
+                                cv2.CHAIN_APPROX_SIMPLE)
+        cnts = imutils.grab_contours(cnts)
+        center = None
+        # only proceed if at least one contour was found
+	#put a flag to true when the robot sees the ball
+        if len(cnts) > 0:
+ #   		self.var = 'TRUE' 
+	        rospy.loginfo('black ball detected')
+		self.ball_detected = 'B'
+		return	
+#if i detect the red
+	redLower = (0, 50, 50)#era 20 l uktimo
+        redUpper = (5, 255, 255)
+        mask = cv2.inRange(hsv, redLower, redUpper)
+        mask = cv2.erode(mask, None, iterations=2)
+        mask = cv2.dilate(mask, None, iterations=2)
+        #cv2.imshow('mask', mask)
+        cnts = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL,
+                                cv2.CHAIN_APPROX_SIMPLE)
+        cnts = imutils.grab_contours(cnts)
+        center = None
+        # only proceed if at least one contour was found
+	#put a flag to true when the robot sees the ball
+        if len(cnts) > 0:
+ #   		self.var = 'TRUE' 
+	        rospy.loginfo('red ball detected')
+		self.ball_detected = 'R'
+		return	
+#if i detect the yellow
+	yellowLower = (25, 50, 50)#era 20 l uktimo
+        yellowUpper = (35, 255, 255)
+        mask = cv2.inRange(hsv, yellowLower, yellowUpper)
+        mask = cv2.erode(mask, None, iterations=2)
+        mask = cv2.dilate(mask, None, iterations=2)
+        #cv2.imshow('mask', mask)
+        cnts = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL,
+                                cv2.CHAIN_APPROX_SIMPLE)
+        cnts = imutils.grab_contours(cnts)
+        center = None
+        # only proceed if at least one contour was found
+	#put a flag to true when the robot sees the ball
+        if len(cnts) > 0:
+ #   		self.var = 'TRUE' 
+	        rospy.loginfo('yellow ball detected')
+		self.ball_detected = 'Y'
+		return	
+#if i detect the blue
+	blueLower = (100, 50, 50)#era 20 l uktimo
+        blueUpper = (130, 255, 255)
+        mask = cv2.inRange(hsv, blueLower, blueUpper)
+        mask = cv2.erode(mask, None, iterations=2)
+        mask = cv2.dilate(mask, None, iterations=2)
+        #cv2.imshow('mask', mask)
+        cnts = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL,
+                                cv2.CHAIN_APPROX_SIMPLE)
+        cnts = imutils.grab_contours(cnts)
+        center = None
+        # only proceed if at least one contour was found
+	#put a flag to true when the robot sees the ball
+        if len(cnts) > 0:
+ #   		self.var = 'TRUE' 
+		self.param = rospy.get_param('/blue_ball')
+		if (self.param[2] == 'T'):
+			return
+	        rospy.loginfo('blue ball detected')
+		self.ball_detected = 'B'
+		self.sub_track(cnts, image_np, self.ball_detected)
+		return	
+#if i detect the magenta
+	magentaLower = (125, 50, 50)#era 20 l uktimo
+        magentaUpper = (150, 255, 255)
+        mask = cv2.inRange(hsv, magentaLower, magentaUpper)
+        mask = cv2.erode(mask, None, iterations=2)
+        mask = cv2.dilate(mask, None, iterations=2)
+        #cv2.imshow('mask', mask)
+        cnts = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL,
+                                cv2.CHAIN_APPROX_SIMPLE)
+        cnts = imutils.grab_contours(cnts)
+        center = None
+        # only proceed if at least one contour was found
+	#put a flag to true when the robot sees the ball
+        if len(cnts) > 0:
+ #   		self.var = 'TRUE' 
+	        rospy.loginfo('magenta ball detected')
+		self.ball_detected = 'M'
+		return	
+
+
+    def sub_track(self,cnts, image_np, ball_detected):
+
+	    rospy.loginfo('sub_track function!')
+	    self.counter=self.counter+1
+            c = max(cnts, key=cv2.contourArea)
+            ((x, y), radius) = cv2.minEnclosingCircle(c)
+            M = cv2.moments(c)
+            center = (int(M["m10"] / M["m00"]), int(M["m01"] / M["m00"]))
+
+            # only proceed if the radius meets a minimum size
+            if radius > 10:
+                # draw the circle and centroid on the frame,
+                # then update the list of tracked points
+                cv2.circle(image_np, (int(x), int(y)), int(radius),
+                           (0, 255, 255), 2)
+                cv2.circle(image_np, center, 5, (0, 0, 255), -1)
+                vel = Twist()
+                vel.angular.z = -0.002*(center[0]-400)
+                vel.linear.x = -0.01*(radius-100)
+                self.vel_pub.publish(vel)
+		#if the robot is almost not moving register on the parameter server that the corresponding ball has been reached
+		if (vel.angular.z<0.2 and vel.angular.z>-0.2 and vel.linear.x<0.2 and vel.linear.x>-0.2 or self.counter>70 ):
+			rospy.loginfo('sono dalla pallinaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
+			self.counter=0
+			vel.angular.z=0.0
+			vel.linear.x=0.0
+                	self.vel_pub.publish(vel)
+			if(ball_detected=='B'):
+				self.param= rospy.get_param('/blue_ball')
+				self.param[2] = 'T'
+				rospy.set_param('/blue_ball', self.param)
+				
+
+            else:
+                vel = Twist()
+                vel.linear.x = 0.3
+                self.vel_pub.publish(vel)
+
+	    time.sleep(2/1000000.0)
+
+
+				
         
    
 
@@ -210,7 +368,7 @@ class Play(smach.State):
         #                                 CompressedImage, queue_size=1)
         self.vel_pub = rospy.Publisher("cmd_vel",
                                        Twist, queue_size=1)
-        self.publisher = rospy.Publisher("/robot/joint1_position_controller/command", Float64, queue_size=10)
+
 
        
         self.subscriber = rospy.Subscriber("camera1/image_raw/compressed",

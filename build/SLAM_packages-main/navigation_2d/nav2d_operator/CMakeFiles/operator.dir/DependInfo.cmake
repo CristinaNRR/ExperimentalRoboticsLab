@@ -25,18 +25,18 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/eigen3"
   "/usr/include/ni"
   "/usr/include/vtk-6.2"
-  "/usr/include/jsoncpp"
-  "/usr/include/x86_64-linux-gnu"
   "/usr/include/freetype2"
   "/usr/include/x86_64-linux-gnu/freetype2"
+  "/usr/include/x86_64-linux-gnu"
   "/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent"
   "/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent/include"
   "/usr/lib/openmpi/include"
   "/usr/lib/openmpi/include/openmpi"
-  "/usr/include/libxml2"
+  "/usr/include/jsoncpp"
   "/usr/include/hdf5/serial"
   "/usr/include/python2.7"
   "/usr/include/tcl"
+  "/usr/include/libxml2"
   )
 
 # Targets to which this target links.

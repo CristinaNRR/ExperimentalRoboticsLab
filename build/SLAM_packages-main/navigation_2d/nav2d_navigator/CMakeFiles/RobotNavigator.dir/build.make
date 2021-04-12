@@ -94,12 +94,12 @@ RobotNavigator_EXTERNAL_OBJECTS =
 /home/cristina/new_ws/devel/lib/libRobotNavigator.so: /home/cristina/new_ws/devel/lib/libRobotOperator.so
 /home/cristina/new_ws/devel/lib/libRobotNavigator.so: /opt/ros/kinetic/lib/libcostmap_2d.so
 /home/cristina/new_ws/devel/lib/libRobotNavigator.so: /opt/ros/kinetic/lib/liblayers.so
-/home/cristina/new_ws/devel/lib/libRobotNavigator.so: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-6.2.so.6.2.0
-/home/cristina/new_ws/devel/lib/libRobotNavigator.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingQt-6.2.so.6.2.0
-/home/cristina/new_ws/devel/lib/libRobotNavigator.so: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtSQL-6.2.so.6.2.0
-/home/cristina/new_ws/devel/lib/libRobotNavigator.so: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtWebkit-6.2.so.6.2.0
 /home/cristina/new_ws/devel/lib/libRobotNavigator.so: /usr/lib/x86_64-linux-gnu/libvtkViewsQt-6.2.so.6.2.0
+/home/cristina/new_ws/devel/lib/libRobotNavigator.so: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-6.2.so.6.2.0
+/home/cristina/new_ws/devel/lib/libRobotNavigator.so: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtSQL-6.2.so.6.2.0
 /home/cristina/new_ws/devel/lib/libRobotNavigator.so: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtOpenGL-6.2.so.6.2.0
+/home/cristina/new_ws/devel/lib/libRobotNavigator.so: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtWebkit-6.2.so.6.2.0
+/home/cristina/new_ws/devel/lib/libRobotNavigator.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingQt-6.2.so.6.2.0
 /home/cristina/new_ws/devel/lib/libRobotNavigator.so: /opt/ros/kinetic/lib/liblaser_geometry.so
 /home/cristina/new_ws/devel/lib/libRobotNavigator.so: /opt/ros/kinetic/lib/libpcl_ros_filters.so
 /home/cristina/new_ws/devel/lib/libRobotNavigator.so: /opt/ros/kinetic/lib/libpcl_ros_io.so

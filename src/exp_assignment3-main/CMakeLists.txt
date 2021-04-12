@@ -20,6 +20,8 @@ find_package(catkin REQUIRED COMPONENTS
   move_base_msgs
   roscpp
   rospy
+  urdf
+  sensor_msgs
 )
 
 ## System dependencies are found with CMake's conventions
