@@ -13,7 +13,7 @@
     <material>Gazebo/Blue</material>
   </gazebo>
   <gazebo reference="hokuyo_link">
-    <material>Gazebo/Red</material>
+    <material>Gazebo/White</material>
   </gazebo>
   <gazebo reference="camera_link">
     <material>Gazebo/White</material>

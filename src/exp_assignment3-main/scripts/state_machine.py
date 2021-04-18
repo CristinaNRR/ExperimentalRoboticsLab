@@ -157,10 +157,13 @@ class Normal(smach.State):
 	#put a flag to true when the robot sees the ball
         if len(cnts) > 0:
  #   		self.var = 'TRUE' 
+		self.param = rospy.get_param('/green_ball')
+		if (self.param[2] == 'T'):
+			return
 	        rospy.loginfo('green ball detected')
 		self.ball_detected = 'G'
 		#call the sub_track function
-		sub_track(cnts)
+		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
 #if i detect the black
 	blackLower = (0, 0, 0)#era 20 l uktimo
@@ -177,8 +180,12 @@ class Normal(smach.State):
 	#put a flag to true when the robot sees the ball
         if len(cnts) > 0:
  #   		self.var = 'TRUE' 
+		self.param = rospy.get_param('/black_ball')
+		if (self.param[2] == 'T'):
+			return
 	        rospy.loginfo('black ball detected')
-		self.ball_detected = 'B'
+		self.ball_detected = 'BL'
+		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
 #if i detect the red
 	redLower = (0, 50, 50)#era 20 l uktimo
@@ -195,8 +202,12 @@ class Normal(smach.State):
 	#put a flag to true when the robot sees the ball
         if len(cnts) > 0:
  #   		self.var = 'TRUE' 
+		self.param = rospy.get_param('/red_ball')
+		if (self.param[2] == 'T'):
+			return
 	        rospy.loginfo('red ball detected')
 		self.ball_detected = 'R'
+		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
 #if i detect the yellow
 	yellowLower = (25, 50, 50)#era 20 l uktimo
@@ -213,8 +224,12 @@ class Normal(smach.State):
 	#put a flag to true when the robot sees the ball
         if len(cnts) > 0:
  #   		self.var = 'TRUE' 
+		self.param = rospy.get_param('/yellow_ball')
+		if (self.param[2] == 'T'):
+			return
 	        rospy.loginfo('yellow ball detected')
 		self.ball_detected = 'Y'
+		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
 #if i detect the blue
 	blueLower = (100, 50, 50)#era 20 l uktimo
@@ -253,8 +268,12 @@ class Normal(smach.State):
 	#put a flag to true when the robot sees the ball
         if len(cnts) > 0:
  #   		self.var = 'TRUE' 
+		self.param = rospy.get_param('/magenta_ball')
+		if (self.param[2] == 'T'):
+			return
 	        rospy.loginfo('magenta ball detected')
 		self.ball_detected = 'M'
+		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
 
 
@@ -279,7 +298,7 @@ class Normal(smach.State):
                 vel.linear.x = -0.01*(radius-100)
                 self.vel_pub.publish(vel)
 		#if the robot is almost not moving register on the parameter server that the corresponding ball has been reached
-		if (vel.angular.z<0.2 and vel.angular.z>-0.2 and vel.linear.x<0.2 and vel.linear.x>-0.2 or self.counter>70 ):
+		if (vel.angular.z<0.1 and vel.angular.z>-0.1 and vel.linear.x<0.1 and vel.linear.x>-0.1 or self.counter>200 ):
 			rospy.loginfo('sono dalla pallinaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
 			self.counter=0
 			vel.angular.z=0.0
@@ -289,6 +308,32 @@ class Normal(smach.State):
 				self.param= rospy.get_param('/blue_ball')
 				self.param[2] = 'T'
 				rospy.set_param('/blue_ball', self.param)
+				return
+			if(ball_detected=='Y'):
+				self.param= rospy.get_param('/yellow_ball')
+				self.param[2] = 'T'
+				rospy.set_param('/yellow_ball', self.param)
+				return
+			if(ball_detected=='M'):
+				self.param= rospy.get_param('/magenta_ball')
+				self.param[2] = 'T'
+				rospy.set_param('/magenta_ball', self.param)
+				return
+			if(ball_detected=='BL'):
+				self.param= rospy.get_param('/black_ball')
+				self.param[2] = 'T'
+				rospy.set_param('/black_ball', self.param)
+				return
+			if(ball_detected=='G'):
+				self.param= rospy.get_param('/green_ball')
+				self.param[2] = 'T'
+				rospy.set_param('/green_ball', self.param)
+				return
+			if(ball_detected=='R'):
+				self.param= rospy.get_param('/red_ball')
+				self.param[2] = 'T'
+				rospy.set_param('/red_ball', self.param)
+				return
 				
 
             else:
