@@ -1,8 +1,0 @@
-prefix=/home/cristina/new_ws/install
-
-Name: exp_assignment3
-Description: Description of exp_assignment3
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

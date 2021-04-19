@@ -257,7 +257,7 @@ gtest/preinstall: gtest/gtest/preinstall
 gtest/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gmock_main.dir/build.make gtest/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gmock_main.dir/build.make gtest/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=22 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=29 "Built target gmock_main"
 .PHONY : gtest/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -289,7 +289,7 @@ clean: gtest/CMakeFiles/gmock_main.dir/clean
 gtest/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gmock.dir/build.make gtest/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gmock.dir/build.make gtest/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=21 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=28 "Built target gmock"
 .PHONY : gtest/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -340,7 +340,7 @@ gtest/gtest/preinstall:
 gtest/gtest/CMakeFiles/gtest_main.dir/all: gtest/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=23 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=30 "Built target gtest_main"
 .PHONY : gtest/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1323,7 +1323,7 @@ SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_genpy.
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_genpy.dir/rule
@@ -1420,7 +1420,7 @@ SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_genera
 SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_nodejs.dir/all: SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/_hector_nav_msgs_generate_messages_check_deps_GetRobotTrajectory.dir/all
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_nodejs.dir/build.make SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_nodejs.dir/build.make SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=33,34 "Built target hector_nav_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=39,40 "Built target hector_nav_msgs_generate_messages_nodejs"
 .PHONY : SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1466,7 +1466,7 @@ all: SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_g
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages.dir/rule
@@ -1563,12 +1563,12 @@ SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_genera
 SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_cpp.dir/all: SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/_hector_nav_msgs_generate_messages_check_deps_GetRobotTrajectory.dir/all
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_cpp.dir/build.make SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_cpp.dir/build.make SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=29 "Built target hector_nav_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=35,36 "Built target hector_nav_msgs_generate_messages_cpp"
 .PHONY : SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_cpp.dir/rule
@@ -1601,12 +1601,12 @@ SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_genera
 SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_py.dir/all: SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/_hector_nav_msgs_generate_messages_check_deps_GetRobotTrajectory.dir/all
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_py.dir/build.make SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_py.dir/build.make SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=35,36 "Built target hector_nav_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=41 "Built target hector_nav_msgs_generate_messages_py"
 .PHONY : SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_py.dir/rule
@@ -1670,7 +1670,7 @@ SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_gencpp
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_gencpp.dir/rule
@@ -1703,12 +1703,12 @@ SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_genera
 SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_eus.dir/all: SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/_hector_nav_msgs_generate_messages_check_deps_GetRobotTrajectory.dir/all
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_eus.dir/build.make SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_eus.dir/build.make SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=30,31 "Built target hector_nav_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=37 "Built target hector_nav_msgs_generate_messages_eus"
 .PHONY : SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_eus.dir/rule
@@ -1741,7 +1741,7 @@ SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_genera
 SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_lisp.dir/all: SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/_hector_nav_msgs_generate_messages_check_deps_GetRobotTrajectory.dir/all
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_lisp.dir/build.make SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_lisp.dir/build.make SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=32 "Built target hector_nav_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=38 "Built target hector_nav_msgs_generate_messages_lisp"
 .PHONY : SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1778,7 +1778,7 @@ SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_geneus
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_geneus.dir/rule
@@ -2500,7 +2500,7 @@ clean: SLAM_packages-main/hector_slam/hector_compressed_map_transport/CMakeFiles
 SLAM_packages-main/hector_slam/hector_compressed_map_transport/CMakeFiles/map_to_image_node.dir/all:
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_compressed_map_transport/CMakeFiles/map_to_image_node.dir/build.make SLAM_packages-main/hector_slam/hector_compressed_map_transport/CMakeFiles/map_to_image_node.dir/depend
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_compressed_map_transport/CMakeFiles/map_to_image_node.dir/build.make SLAM_packages-main/hector_slam/hector_compressed_map_transport/CMakeFiles/map_to_image_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target map_to_image_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=44 "Built target map_to_image_node"
 .PHONY : SLAM_packages-main/hector_slam/hector_compressed_map_transport/CMakeFiles/map_to_image_node.dir/all
 
 # Include target in all.
@@ -2510,7 +2510,7 @@ all: SLAM_packages-main/hector_slam/hector_compressed_map_transport/CMakeFiles/m
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/hector_slam/hector_compressed_map_transport/CMakeFiles/map_to_image_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/hector_slam/hector_compressed_map_transport/CMakeFiles/map_to_image_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/hector_slam/hector_compressed_map_transport/CMakeFiles/map_to_image_node.dir/rule
@@ -2571,12 +2571,12 @@ SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messa
 SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_cpp.dir/all: SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/_nav2d_msgs_generate_messages_check_deps_LocalizedScan.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_cpp.dir/build.make SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_cpp.dir/build.make SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target nav2d_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=46 "Built target nav2d_msgs_generate_messages_cpp"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_cpp.dir/rule
@@ -2749,7 +2749,7 @@ SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_gencpp.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_gencpp.dir/rule
@@ -2812,12 +2812,12 @@ SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messa
 SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_eus.dir/all: SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/_nav2d_msgs_generate_messages_check_deps_LocalizedScan.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_eus.dir/build.make SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_eus.dir/build.make SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=41 "Built target nav2d_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target nav2d_msgs_generate_messages_eus"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_eus.dir/rule
@@ -2880,7 +2880,7 @@ SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messa
 SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_py.dir/all: SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/_nav2d_msgs_generate_messages_check_deps_LocalizedScan.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_py.dir/build.make SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_py.dir/build.make SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=43 "Built target nav2d_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=48 "Built target nav2d_msgs_generate_messages_py"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2916,7 +2916,7 @@ SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messa
 SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_lisp.dir/all: SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/_nav2d_msgs_generate_messages_check_deps_LocalizedScan.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_lisp.dir/build.make SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_lisp.dir/build.make SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=42 "Built target nav2d_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=47 "Built target nav2d_msgs_generate_messages_lisp"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2985,7 +2985,7 @@ SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_geneus.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_geneus.dir/rule
@@ -4472,7 +4472,7 @@ clean: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay
 SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/gmapping-rtest.dir/all: gtest/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/gmapping-rtest.dir/build.make SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/gmapping-rtest.dir/depend
 	$(MAKE) -f SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/gmapping-rtest.dir/build.make SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/gmapping-rtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=20 "Built target gmapping-rtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=27 "Built target gmapping-rtest"
 .PHONY : SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/gmapping-rtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5018,7 +5018,7 @@ SLAM_packages-main/hector_slam/hector_imu_attitude_to_tf/preinstall:
 SLAM_packages-main/hector_slam/hector_imu_attitude_to_tf/CMakeFiles/imu_attitude_to_tf_node.dir/all:
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_imu_attitude_to_tf/CMakeFiles/imu_attitude_to_tf_node.dir/build.make SLAM_packages-main/hector_slam/hector_imu_attitude_to_tf/CMakeFiles/imu_attitude_to_tf_node.dir/depend
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_imu_attitude_to_tf/CMakeFiles/imu_attitude_to_tf_node.dir/build.make SLAM_packages-main/hector_slam/hector_imu_attitude_to_tf/CMakeFiles/imu_attitude_to_tf_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=37 "Built target imu_attitude_to_tf_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target imu_attitude_to_tf_node"
 .PHONY : SLAM_packages-main/hector_slam/hector_imu_attitude_to_tf/CMakeFiles/imu_attitude_to_tf_node.dir/all
 
 # Include target in all.
@@ -5028,7 +5028,7 @@ all: SLAM_packages-main/hector_slam/hector_imu_attitude_to_tf/CMakeFiles/imu_att
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/hector_slam/hector_imu_attitude_to_tf/CMakeFiles/imu_attitude_to_tf_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/hector_slam/hector_imu_attitude_to_tf/CMakeFiles/imu_attitude_to_tf_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/hector_slam/hector_imu_attitude_to_tf/CMakeFiles/imu_attitude_to_tf_node.dir/rule
@@ -5073,7 +5073,7 @@ SLAM_packages-main/hector_slam/hector_imu_tools/preinstall:
 SLAM_packages-main/hector_slam/hector_imu_tools/CMakeFiles/pose_and_orientation_to_imu_node.dir/all:
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_imu_tools/CMakeFiles/pose_and_orientation_to_imu_node.dir/build.make SLAM_packages-main/hector_slam/hector_imu_tools/CMakeFiles/pose_and_orientation_to_imu_node.dir/depend
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_imu_tools/CMakeFiles/pose_and_orientation_to_imu_node.dir/build.make SLAM_packages-main/hector_slam/hector_imu_tools/CMakeFiles/pose_and_orientation_to_imu_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=95 "Built target pose_and_orientation_to_imu_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target pose_and_orientation_to_imu_node"
 .PHONY : SLAM_packages-main/hector_slam/hector_imu_tools/CMakeFiles/pose_and_orientation_to_imu_node.dir/all
 
 # Include target in all.
@@ -5083,7 +5083,7 @@ all: SLAM_packages-main/hector_slam/hector_imu_tools/CMakeFiles/pose_and_orienta
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/hector_slam/hector_imu_tools/CMakeFiles/pose_and_orientation_to_imu_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/hector_slam/hector_imu_tools/CMakeFiles/pose_and_orientation_to_imu_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/hector_slam/hector_imu_tools/CMakeFiles/pose_and_orientation_to_imu_node.dir/rule
@@ -5197,7 +5197,7 @@ all: SLAM_packages-main/hector_slam/hector_map_server/CMakeFiles/hector_map_serv
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/hector_slam/hector_map_server/CMakeFiles/hector_map_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/hector_slam/hector_map_server/CMakeFiles/hector_map_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/hector_slam/hector_map_server/CMakeFiles/hector_map_server.dir/rule
@@ -5296,7 +5296,7 @@ SLAM_packages-main/hector_slam/hector_trajectory_server/CMakeFiles/hector_trajec
 SLAM_packages-main/hector_slam/hector_trajectory_server/CMakeFiles/hector_trajectory_server.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_generate_messages_py.dir/all
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_trajectory_server/CMakeFiles/hector_trajectory_server.dir/build.make SLAM_packages-main/hector_slam/hector_trajectory_server/CMakeFiles/hector_trajectory_server.dir/depend
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_trajectory_server/CMakeFiles/hector_trajectory_server.dir/build.make SLAM_packages-main/hector_slam/hector_trajectory_server/CMakeFiles/hector_trajectory_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target hector_trajectory_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=42 "Built target hector_trajectory_server"
 .PHONY : SLAM_packages-main/hector_slam/hector_trajectory_server/CMakeFiles/hector_trajectory_server.dir/all
 
 # Include target in all.
@@ -5353,7 +5353,7 @@ SLAM_packages-main/navigation_2d/nav2d_localizer/preinstall:
 SLAM_packages-main/navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir/all: SLAM_packages-main/navigation_2d/nav2d_localizer/CMakeFiles/SelfLocalizer.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir/build.make SLAM_packages-main/navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir/build.make SLAM_packages-main/navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=38 "Built target localizer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target localizer"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir/all
 
 # Include target in all.
@@ -5363,7 +5363,7 @@ all: SLAM_packages-main/navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir/a
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir/rule
@@ -5390,7 +5390,7 @@ clean: SLAM_packages-main/navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir
 SLAM_packages-main/navigation_2d/nav2d_localizer/CMakeFiles/SelfLocalizer.dir/all:
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_localizer/CMakeFiles/SelfLocalizer.dir/build.make SLAM_packages-main/navigation_2d/nav2d_localizer/CMakeFiles/SelfLocalizer.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_localizer/CMakeFiles/SelfLocalizer.dir/build.make SLAM_packages-main/navigation_2d/nav2d_localizer/CMakeFiles/SelfLocalizer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=13,14,15,16 "Built target SelfLocalizer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=12,13,14,15 "Built target SelfLocalizer"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_localizer/CMakeFiles/SelfLocalizer.dir/all
 
 # Include target in all.
@@ -5460,7 +5460,7 @@ all: SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/MultiMapper.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/MultiMapper.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/MultiMapper.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/MultiMapper.dir/rule
@@ -5487,7 +5487,7 @@ clean: SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/MultiMapper.dir/c
 SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/OpenKarto.dir/all:
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/OpenKarto.dir/build.make SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/OpenKarto.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/OpenKarto.dir/build.make SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/OpenKarto.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Built target OpenKarto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10 "Built target OpenKarto"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/OpenKarto.dir/all
 
 # Include target in all.
@@ -5497,7 +5497,7 @@ all: SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/OpenKarto.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/OpenKarto.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/OpenKarto.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/OpenKarto.dir/rule
@@ -5526,7 +5526,7 @@ SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/mapper.dir/all: SLAM_pac
 SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/mapper.dir/all: SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/OpenKarto.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/mapper.dir/build.make SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/mapper.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/mapper.dir/build.make SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/mapper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=39,40 "Built target mapper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=45 "Built target mapper"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/mapper.dir/all
 
 # Include target in all.
@@ -5536,7 +5536,7 @@ all: SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/mapper.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/mapper.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/mapper.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_karto/CMakeFiles/mapper.dir/rule
@@ -5635,7 +5635,7 @@ SLAM_packages-main/octomap_ros/CMakeFiles/octomap_ros.dir/all: SLAM_packages-mai
 SLAM_packages-main/octomap_ros/CMakeFiles/octomap_ros.dir/all: SLAM_packages-main/octomap_ros/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f SLAM_packages-main/octomap_ros/CMakeFiles/octomap_ros.dir/build.make SLAM_packages-main/octomap_ros/CMakeFiles/octomap_ros.dir/depend
 	$(MAKE) -f SLAM_packages-main/octomap_ros/CMakeFiles/octomap_ros.dir/build.make SLAM_packages-main/octomap_ros/CMakeFiles/octomap_ros.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=88 "Built target octomap_ros"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=89 "Built target octomap_ros"
 .PHONY : SLAM_packages-main/octomap_ros/CMakeFiles/octomap_ros.dir/all
 
 # Include target in all.
@@ -6046,7 +6046,7 @@ SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_stat
 SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_static.dir/all: SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server.dir/all
 	$(MAKE) -f SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_static.dir/build.make SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_static.dir/depend
 	$(MAKE) -f SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_static.dir/build.make SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=93 "Built target octomap_server_static"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=94 "Built target octomap_server_static"
 .PHONY : SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_static.dir/all
 
 # Include target in all.
@@ -6084,7 +6084,7 @@ SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_color_serve
 SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_color_server_node.dir/all: SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_color.dir/all
 	$(MAKE) -f SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_color_server_node.dir/build.make SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_color_server_node.dir/depend
 	$(MAKE) -f SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_color_server_node.dir/build.make SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_color_server_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=87 "Built target octomap_color_server_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=88 "Built target octomap_color_server_node"
 .PHONY : SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_color_server_node.dir/all
 
 # Include target in all.
@@ -6122,7 +6122,7 @@ SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_node
 SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_node.dir/all: SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server.dir/all
 	$(MAKE) -f SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_node.dir/build.make SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_node.dir/depend
 	$(MAKE) -f SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_node.dir/build.make SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=92 "Built target octomap_server_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=93 "Built target octomap_server_node"
 .PHONY : SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_node.dir/all
 
 # Include target in all.
@@ -6160,7 +6160,7 @@ SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_colo
 SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_color.dir/all: SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_gencfg.dir/all
 	$(MAKE) -f SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_color.dir/build.make SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_color.dir/depend
 	$(MAKE) -f SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_color.dir/build.make SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_color.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=90 "Built target octomap_server_color"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=91 "Built target octomap_server_color"
 .PHONY : SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_color.dir/all
 
 # Include target in all.
@@ -6197,7 +6197,7 @@ clean: SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_serv
 SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_gencfg.dir/all:
 	$(MAKE) -f SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_gencfg.dir/build.make SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_gencfg.dir/depend
 	$(MAKE) -f SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_gencfg.dir/build.make SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=91 "Built target octomap_server_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=92 "Built target octomap_server_gencfg"
 .PHONY : SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_gencfg.dir/all
 
 # Include target in all.
@@ -6331,7 +6331,7 @@ SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server.dir/
 SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server.dir/all: SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server_gencfg.dir/all
 	$(MAKE) -f SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server.dir/build.make SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server.dir/depend
 	$(MAKE) -f SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server.dir/build.make SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=89 "Built target octomap_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=90 "Built target octomap_server"
 .PHONY : SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server.dir/all
 
 # Include target in all.
@@ -6625,7 +6625,7 @@ SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_tracking_se
 SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_tracking_server_node.dir/all: SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_server.dir/all
 	$(MAKE) -f SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_tracking_server_node.dir/build.make SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_tracking_server_node.dir/depend
 	$(MAKE) -f SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_tracking_server_node.dir/build.make SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_tracking_server_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=94 "Built target octomap_tracking_server_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target octomap_tracking_server_node"
 .PHONY : SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_tracking_server_node.dir/all
 
 # Include target in all.
@@ -6635,7 +6635,7 @@ all: SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_tracki
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_tracking_server_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_tracking_server_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/octomap_mapping/octomap_server/CMakeFiles/octomap_tracking_server_node.dir/rule
@@ -7079,12 +7079,12 @@ SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate
 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_py.dir/all: SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/_hector_mapping_generate_messages_check_deps_HectorIterData.dir/all
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_py.dir/build.make SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_py.dir/depend
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_py.dir/build.make SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=28 "Built target hector_mapping_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target hector_mapping_generate_messages_py"
 .PHONY : SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_py.dir/rule
@@ -7116,7 +7116,7 @@ SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_gencpp.d
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_gencpp.dir/rule
@@ -7176,12 +7176,12 @@ SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate
 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_cpp.dir/all: SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/_hector_mapping_generate_messages_check_deps_HectorIterData.dir/all
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_cpp.dir/build.make SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_cpp.dir/depend
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_cpp.dir/build.make SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target hector_mapping_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=32 "Built target hector_mapping_generate_messages_cpp"
 .PHONY : SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_cpp.dir/rule
@@ -7282,12 +7282,12 @@ SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate
 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_lisp.dir/all: SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/_hector_mapping_generate_messages_check_deps_HectorIterData.dir/all
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_lisp.dir/build.make SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_lisp.dir/depend
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_lisp.dir/build.make SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=27 "Built target hector_mapping_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target hector_mapping_generate_messages_lisp"
 .PHONY : SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_lisp.dir/rule
@@ -7314,7 +7314,7 @@ clean: SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_g
 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping.dir/all: SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_cpp.dir/all
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping.dir/build.make SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping.dir/depend
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping.dir/build.make SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=24,25 "Built target hector_mapping"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=31 "Built target hector_mapping"
 .PHONY : SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping.dir/all
 
 # Include target in all.
@@ -7356,7 +7356,7 @@ SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_gennodej
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_gennodejs.dir/rule
@@ -7384,7 +7384,7 @@ SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate
 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_eus.dir/all: SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/_hector_mapping_generate_messages_check_deps_HectorIterData.dir/all
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_eus.dir/build.make SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_eus.dir/depend
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_eus.dir/build.make SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=26 "Built target hector_mapping_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=33 "Built target hector_mapping_generate_messages_eus"
 .PHONY : SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -7453,7 +7453,7 @@ SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_genpy.di
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_genpy.dir/rule
@@ -7485,7 +7485,7 @@ SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_genlisp.
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_genlisp.dir/rule
@@ -7513,12 +7513,12 @@ SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate
 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_nodejs.dir/all: SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/_hector_mapping_generate_messages_check_deps_HectorIterData.dir/all
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_nodejs.dir/build.make SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_nodejs.dir/depend
 	$(MAKE) -f SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_nodejs.dir/build.make SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target hector_mapping_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=34 "Built target hector_mapping_generate_messages_nodejs"
 .PHONY : SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_nodejs.dir/rule
@@ -7542,30 +7542,37 @@ clean: SLAM_packages-main/hector_slam/hector_mapping/CMakeFiles/hector_mapping_g
 # Directory level rules for directory exp_assignment3-main
 
 # Convenience name for "all" pass in the directory.
-exp_assignment3-main/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/all
 exp_assignment3-main/all: exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all
+exp_assignment3-main/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/all
 
 .PHONY : exp_assignment3-main/all
 
 # Convenience name for "clean" pass in the directory.
-exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/clean
-exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/clean
+exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/clean
+exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/clean
+exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/clean
+exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/clean
 exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_eus.dir/clean
 exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/exp_assignment3_genlisp.dir/clean
+exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/clean
 exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/clean
-exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/clean
-exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/clean
+exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/clean
+exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/clean
+exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/clean
+exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/clean
+exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/clean
 exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/clean
 exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/clean
-exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/clean
-exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/clean
-exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/clean
+exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/clean
 exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_py.dir/clean
 exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/exp_assignment3_gennodejs.dir/clean
+exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_Num.dir/clean
+exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/clean
+exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/clean
+exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/clean
+exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/clean
 exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/clean
 exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/clean
-exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/clean
-exp_assignment3-main/clean: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_Num.dir/clean
 
 .PHONY : exp_assignment3-main/clean
 
@@ -7575,75 +7582,194 @@ exp_assignment3-main/preinstall:
 .PHONY : exp_assignment3-main/preinstall
 
 #=============================================================================
-# Target rules for target exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir
+# Target rules for target exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir
 
 # All Build rule for target.
-exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build.make exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build.make exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target move_base_msgs_generate_messages_cpp"
-.PHONY : exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-move_base_msgs_generate_messages_cpp: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : move_base_msgs_generate_messages_cpp
-
-# clean rule for target.
-exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build.make exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/clean
-.PHONY : exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir
-
-# All Build rule for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/all
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/depend
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target exp_assignment3_generate_messages"
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/std_msgs_generate_messages_py.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/nav_msgs_generate_messages_py.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_marker_drawing/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_marker_drawing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_marker_drawing/CMakeFiles/roscpp_generate_messages_py.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_marker_drawing/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_marker_drawing/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_marker_drawing/CMakeFiles/roscpp_generate_messages_eus.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_marker_drawing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_marker_drawing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_marker_drawing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_marker_drawing/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_compressed_map_transport/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_compressed_map_transport/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_compressed_map_transport/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_compressed_map_transport/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/hector_slam/hector_compressed_map_transport/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_generate_messages_lisp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_generate_messages_eus.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf_generate_messages_cpp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf_generate_messages_py.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf_generate_messages_eus.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf2_msgs_generate_messages_eus.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf_generate_messages_nodejs.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf_generate_messages_lisp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_generate_messages_cpp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_generate_messages_py.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_eus.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_py.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/build.make exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/depend
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/build.make exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target simple_navigation_goals"
+.PHONY : exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all
 
 # Include target in all.
-all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/all
+all: exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/all
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/rule
+.PHONY : exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/rule
 
 # Convenience name for target.
-exp_assignment3_generate_messages: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/rule
+simple_navigation_goals: exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/rule
 
-.PHONY : exp_assignment3_generate_messages
-
-# clean rule for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/clean:
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/clean
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/clean
+.PHONY : simple_navigation_goals
 
 # clean rule for target.
-clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/clean
+exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/clean:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/build.make exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/clean
+.PHONY : exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/clean
+
+# clean rule for target.
+clean: exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir
+
+# All Build rule for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/depend
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target exp_assignment3_genpy"
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/rule
+
+# Convenience name for target.
+exp_assignment3_genpy: exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/rule
+
+.PHONY : exp_assignment3_genpy
+
+# clean rule for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/clean:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/clean
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/clean
+
+# clean rule for target.
+clean: exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir
+
+# All Build rule for target.
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/all:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/depend
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target _exp_assignment3_generate_messages_check_deps_PlanningActionResult"
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/all
+
+# Build rule for subdir invocation for target.
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/rule
+
+# Convenience name for target.
+_exp_assignment3_generate_messages_check_deps_PlanningActionResult: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/rule
+
+.PHONY : _exp_assignment3_generate_messages_check_deps_PlanningActionResult
+
+# clean rule for target.
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/clean:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/clean
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/clean
+
+# clean rule for target.
+clean: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir
+
+# All Build rule for target.
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/all:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/depend
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target _exp_assignment3_generate_messages_check_deps_PlanningActionFeedback"
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/all
+
+# Build rule for subdir invocation for target.
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/rule
+
+# Convenience name for target.
+_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/rule
+
+.PHONY : _exp_assignment3_generate_messages_check_deps_PlanningActionFeedback
+
+# clean rule for target.
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/clean:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/clean
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/clean
+
+# clean rule for target.
+clean: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/clean
 
 .PHONY : clean
 
@@ -7691,7 +7817,7 @@ exp_assignment3-main/CMakeFiles/exp_assignment3_genlisp.dir/all: exp_assignment3
 
 # Build rule for subdir invocation for target.
 exp_assignment3-main/CMakeFiles/exp_assignment3_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/exp_assignment3_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_genlisp.dir/rule
@@ -7708,6 +7834,38 @@ exp_assignment3-main/CMakeFiles/exp_assignment3_genlisp.dir/clean:
 
 # clean rule for target.
 clean: exp_assignment3-main/CMakeFiles/exp_assignment3_genlisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build.make exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build.make exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target move_base_msgs_generate_messages_cpp"
+.PHONY : exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+.PHONY : exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+move_base_msgs_generate_messages_cpp: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : move_base_msgs_generate_messages_cpp
+
+# clean rule for target.
+exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build.make exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/clean
+.PHONY : exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/clean
 
 .PHONY : clean
 
@@ -7744,72 +7902,171 @@ clean: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_lisp.dir
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir
+# Target rules for target exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir
 
 # All Build rule for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_Num.dir/all
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/depend
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target exp_assignment3_generate_messages_cpp"
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/all:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/depend
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target _exp_assignment3_generate_messages_check_deps_PlanningResult"
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/all
 
 # Build rule for subdir invocation for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/rule: cmake_check_build_system
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/rule
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/rule
 
 # Convenience name for target.
-exp_assignment3_generate_messages_cpp: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/rule
+_exp_assignment3_generate_messages_check_deps_PlanningResult: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/rule
 
-.PHONY : exp_assignment3_generate_messages_cpp
-
-# clean rule for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/clean:
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/clean
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/clean
+.PHONY : _exp_assignment3_generate_messages_check_deps_PlanningResult
 
 # clean rule for target.
-clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/clean
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/clean:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/clean
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/clean
+
+# clean rule for target.
+clean: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir
+# Target rules for target exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir
 
 # All Build rule for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_Num.dir/all
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/depend
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=17 "Built target exp_assignment3_generate_messages_eus"
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/all:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/depend
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target _exp_assignment3_generate_messages_check_deps_PlanningFeedback"
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/all
 
 # Build rule for subdir invocation for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/rule
+	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/rule
 
 # Convenience name for target.
-exp_assignment3_generate_messages_eus: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/rule
+_exp_assignment3_generate_messages_check_deps_PlanningFeedback: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/rule
 
-.PHONY : exp_assignment3_generate_messages_eus
-
-# clean rule for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/clean:
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/clean
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/clean
+.PHONY : _exp_assignment3_generate_messages_check_deps_PlanningFeedback
 
 # clean rule for target.
-clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/clean
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/clean:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/clean
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/clean
+
+# clean rule for target.
+clean: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir
+
+# All Build rule for target.
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/all:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/depend
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target _exp_assignment3_generate_messages_check_deps_PlanningGoal"
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/all
+
+# Build rule for subdir invocation for target.
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/rule
+
+# Convenience name for target.
+_exp_assignment3_generate_messages_check_deps_PlanningGoal: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/rule
+
+.PHONY : _exp_assignment3_generate_messages_check_deps_PlanningGoal
+
+# clean rule for target.
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/clean:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/clean
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/clean
+
+# clean rule for target.
+clean: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir
+
+# All Build rule for target.
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/all:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/depend
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target _exp_assignment3_generate_messages_check_deps_PlanningActionGoal"
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/all
+
+# Build rule for subdir invocation for target.
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/rule
+
+# Convenience name for target.
+_exp_assignment3_generate_messages_check_deps_PlanningActionGoal: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/rule
+
+.PHONY : _exp_assignment3_generate_messages_check_deps_PlanningActionGoal
+
+# clean rule for target.
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/clean:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/clean
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/clean
+
+# clean rule for target.
+clean: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir
+
+# All Build rule for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/depend
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target exp_assignment3_generate_messages"
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/all
+
+# Include target in all.
+all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/rule
+
+# Convenience name for target.
+exp_assignment3_generate_messages: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/rule
+
+.PHONY : exp_assignment3_generate_messages
+
+# clean rule for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/clean:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/clean
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/clean
+
+# clean rule for target.
+clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages.dir/clean
 
 .PHONY : clean
 
@@ -7852,15 +8109,22 @@ clean: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_nodejs.d
 exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
 exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/all
 exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_Num.dir/all
 	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/depend
 	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=18 "Built target exp_assignment3_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=22,23 "Built target exp_assignment3_generate_messages_nodejs"
 .PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/rule
@@ -7881,101 +8145,34 @@ clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir
+# Target rules for target exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir
 
 # All Build rule for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/depend
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target exp_assignment3_gencpp"
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/all
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/all:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/depend
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target _exp_assignment3_generate_messages_check_deps_PlanningAction"
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/all
 
 # Build rule for subdir invocation for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/rule: cmake_check_build_system
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/rule
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/rule
 
 # Convenience name for target.
-exp_assignment3_gencpp: exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/rule
+_exp_assignment3_generate_messages_check_deps_PlanningAction: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/rule
 
-.PHONY : exp_assignment3_gencpp
-
-# clean rule for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/clean:
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/clean
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/clean
+.PHONY : _exp_assignment3_generate_messages_check_deps_PlanningAction
 
 # clean rule for target.
-clean: exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir
-
-# All Build rule for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_Num.dir/all
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/depend
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target exp_assignment3_generate_messages_lisp"
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-exp_assignment3_generate_messages_lisp: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/rule
-
-.PHONY : exp_assignment3_generate_messages_lisp
+exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/clean:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/build.make exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/clean
+.PHONY : exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/clean
 
 # clean rule for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/clean:
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/clean
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/clean
-
-# clean rule for target.
-clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir
-
-# All Build rule for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/depend
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target exp_assignment3_genpy"
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/all
-
-# Build rule for subdir invocation for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/rule
-
-# Convenience name for target.
-exp_assignment3_genpy: exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/rule
-
-.PHONY : exp_assignment3_genpy
-
-# clean rule for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/clean:
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/clean
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/clean
-
-# clean rule for target.
-clean: exp_assignment3-main/CMakeFiles/exp_assignment3_genpy.dir/clean
+clean: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/clean
 
 .PHONY : clean
 
@@ -8023,7 +8220,7 @@ exp_assignment3-main/CMakeFiles/exp_assignment3_gennodejs.dir/all: exp_assignmen
 
 # Build rule for subdir invocation for target.
 exp_assignment3-main/CMakeFiles/exp_assignment3_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/exp_assignment3_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_gennodejs.dir/rule
@@ -8040,110 +8237,6 @@ exp_assignment3-main/CMakeFiles/exp_assignment3_gennodejs.dir/clean:
 
 # clean rule for target.
 clean: exp_assignment3-main/CMakeFiles/exp_assignment3_gennodejs.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir
-
-# All Build rule for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/depend
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target exp_assignment3_geneus"
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/all
-
-# Build rule for subdir invocation for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/rule
-
-# Convenience name for target.
-exp_assignment3_geneus: exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/rule
-
-.PHONY : exp_assignment3_geneus
-
-# clean rule for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/clean:
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/clean
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/clean
-
-# clean rule for target.
-clean: exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir
-
-# All Build rule for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/std_msgs_generate_messages_py.dir/all
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_Num.dir/all
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/depend
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target exp_assignment3_generate_messages_py"
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/rule
-
-# Convenience name for target.
-exp_assignment3_generate_messages_py: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/rule
-
-.PHONY : exp_assignment3_generate_messages_py
-
-# clean rule for target.
-exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/clean:
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/clean
-.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/clean
-
-# clean rule for target.
-clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir
-
-# All Build rule for target.
-exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all:
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/build.make exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/depend
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/build.make exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=97 "Built target simple_navigation_goals"
-.PHONY : exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all
-
-# Include target in all.
-all: exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/rule
-
-# Convenience name for target.
-simple_navigation_goals: exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/rule
-
-.PHONY : simple_navigation_goals
-
-# clean rule for target.
-exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/clean:
-	$(MAKE) -f exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/build.make exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/clean
-.PHONY : exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/clean
-
-# clean rule for target.
-clean: exp_assignment3-main/CMakeFiles/simple_navigation_goals.dir/clean
 
 .PHONY : clean
 
@@ -8176,6 +8269,238 @@ exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_Nu
 
 # clean rule for target.
 clean: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_Num.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir
+
+# All Build rule for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_Num.dir/all
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/depend
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=16,17 "Built target exp_assignment3_generate_messages_cpp"
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+exp_assignment3_generate_messages_cpp: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/rule
+
+.PHONY : exp_assignment3_generate_messages_cpp
+
+# clean rule for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/clean:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/clean
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir
+
+# All Build rule for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_Num.dir/all
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/depend
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=18,19 "Built target exp_assignment3_generate_messages_eus"
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+exp_assignment3_generate_messages_eus: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/rule
+
+.PHONY : exp_assignment3_generate_messages_eus
+
+# clean rule for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/clean:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/clean
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir
+
+# All Build rule for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_cpp.dir/all
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/depend
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target exp_assignment3_gencpp"
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/rule
+
+# Convenience name for target.
+exp_assignment3_gencpp: exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/rule
+
+.PHONY : exp_assignment3_gencpp
+
+# clean rule for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/clean:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/clean
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/clean
+
+# clean rule for target.
+clean: exp_assignment3-main/CMakeFiles/exp_assignment3_gencpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir
+
+# All Build rule for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_Num.dir/all
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/depend
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=20,21 "Built target exp_assignment3_generate_messages_lisp"
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+exp_assignment3_generate_messages_lisp: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/rule
+
+.PHONY : exp_assignment3_generate_messages_lisp
+
+# clean rule for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/clean:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/clean
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir
+
+# All Build rule for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/all: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_eus.dir/all
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/depend
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target exp_assignment3_geneus"
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/all
+
+# Build rule for subdir invocation for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/rule
+
+# Convenience name for target.
+exp_assignment3_geneus: exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/rule
+
+.PHONY : exp_assignment3_geneus
+
+# clean rule for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/clean:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/clean
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/clean
+
+# clean rule for target.
+clean: exp_assignment3-main/CMakeFiles/exp_assignment3_geneus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir
+
+# All Build rule for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/std_msgs_generate_messages_py.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all: SLAM_packages-main/hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionResult.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionFeedback.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningResult.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningFeedback.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningGoal.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningActionGoal.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_PlanningAction.dir/all
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all: exp_assignment3-main/CMakeFiles/_exp_assignment3_generate_messages_check_deps_Num.dir/all
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/depend
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=24,25 "Built target exp_assignment3_generate_messages_py"
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/rule
+
+# Convenience name for target.
+exp_assignment3_generate_messages_py: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/rule
+
+.PHONY : exp_assignment3_generate_messages_py
+
+# clean rule for target.
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/clean:
+	$(MAKE) -f exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/build.make exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/clean
+.PHONY : exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_py.dir/clean
 
 .PHONY : clean
 
@@ -8248,7 +8573,7 @@ SLAM_packages-main/navigation_2d/nav2d_operator/preinstall:
 SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/operator.dir/all: SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/RobotOperator.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/operator.dir/build.make SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/operator.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/operator.dir/build.make SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/operator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target operator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=95 "Built target operator"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/operator.dir/all
 
 # Include target in all.
@@ -8258,7 +8583,7 @@ all: SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/operator.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/operator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/operator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/operator.dir/rule
@@ -8317,12 +8642,12 @@ clean: SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/map_msgs_gener
 SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_lisp.dir/all: SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/_nav2d_operator_generate_messages_check_deps_cmd.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_lisp.dir/build.make SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_lisp.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_lisp.dir/build.make SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target nav2d_operator_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=86 "Built target nav2d_operator_generate_messages_lisp"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_lisp.dir/rule
@@ -8427,7 +8752,7 @@ all: SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_g
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages.dir/rule
@@ -8846,12 +9171,12 @@ clean: SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/costmap_2d_gen
 SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_eus.dir/all: SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/_nav2d_operator_generate_messages_check_deps_cmd.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_eus.dir/build.make SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_eus.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_eus.dir/build.make SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=84 "Built target nav2d_operator_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target nav2d_operator_generate_messages_eus"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_eus.dir/rule
@@ -8915,7 +9240,7 @@ SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_genlis
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_genlisp.dir/rule
@@ -9011,7 +9336,7 @@ SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_gennod
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_gennodejs.dir/rule
@@ -9043,7 +9368,7 @@ SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_geneus
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_geneus.dir/rule
@@ -9102,12 +9427,12 @@ clean: SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/map_msgs_gener
 SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_nodejs.dir/all: SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/_nav2d_operator_generate_messages_check_deps_cmd.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_nodejs.dir/build.make SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_nodejs.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_nodejs.dir/build.make SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=85 "Built target nav2d_operator_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target nav2d_operator_generate_messages_nodejs"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_nodejs.dir/rule
@@ -9273,7 +9598,7 @@ SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_genl
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_genlisp.dir/rule
@@ -9516,7 +9841,7 @@ all: SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/get_map_client.
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/get_map_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/get_map_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/get_map_client.dir/rule
@@ -9572,7 +9897,7 @@ SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_gene
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_py.dir/all: SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/_nav2d_navigator_generate_messages_check_deps_MoveToPosition2DFeedback.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_py.dir/build.make SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_py.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_py.dir/build.make SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=76,77,78,79,80,81,82,83 "Built target nav2d_navigator_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=78,79,80,81,82,83,84,85 "Built target nav2d_navigator_generate_messages_py"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -10017,7 +10342,7 @@ SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_gene
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_eus.dir/all: SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/_nav2d_navigator_generate_messages_check_deps_MoveToPosition2DFeedback.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_eus.dir/build.make SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_eus.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_eus.dir/build.make SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=52,53,54,55,56,57,58,59 "Built target nav2d_navigator_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=56,57,58,59,60,61,62,63 "Built target nav2d_navigator_generate_messages_eus"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -10225,7 +10550,7 @@ SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/navigator.dir/all: S
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/navigator.dir/all: SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/RobotNavigator.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/navigator.dir/build.make SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/navigator.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/navigator.dir/build.make SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/navigator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=86 "Built target navigator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=87 "Built target navigator"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/navigator.dir/all
 
 # Include target in all.
@@ -10235,7 +10560,7 @@ all: SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/navigator.dir/a
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/navigator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/navigator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/navigator.dir/rule
@@ -10436,7 +10761,7 @@ all: SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 37
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages.dir/rule
@@ -10733,7 +11058,7 @@ SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/all: SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_cpp.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/build.make SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/build.make SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target localize_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=43 "Built target localize_client"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/all
 
 # Include target in all.
@@ -10743,7 +11068,7 @@ all: SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/localize_client
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/rule
@@ -10912,7 +11237,7 @@ SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/explore_client.dir/a
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/explore_client.dir/all: SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_cpp.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/explore_client.dir/build.make SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/explore_client.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/explore_client.dir/build.make SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/explore_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=19 "Built target explore_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=26 "Built target explore_client"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/explore_client.dir/all
 
 # Include target in all.
@@ -10922,7 +11247,7 @@ all: SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/explore_client.
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/explore_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/explore_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/explore_client.dir/rule
@@ -10978,12 +11303,12 @@ SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_gene
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_cpp.dir/all: SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/_nav2d_navigator_generate_messages_check_deps_MoveToPosition2DFeedback.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_cpp.dir/build.make SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_cpp.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_cpp.dir/build.make SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=44,45,46,47,48,49,50,51 "Built target nav2d_navigator_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=49,50,51,52,53,54,55 "Built target nav2d_navigator_generate_messages_cpp"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_cpp.dir/rule
@@ -11047,7 +11372,7 @@ SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_genn
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_gennodejs.dir/rule
@@ -11103,12 +11428,12 @@ SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_gene
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_lisp.dir/all: SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/_nav2d_navigator_generate_messages_check_deps_MoveToPosition2DFeedback.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_lisp.dir/build.make SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_lisp.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_lisp.dir/build.make SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=60,61,62,63,64,65,66,67 "Built target nav2d_navigator_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=64,65,66,67,68,69,70 "Built target nav2d_navigator_generate_messages_lisp"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_lisp.dir/rule
@@ -11140,7 +11465,7 @@ SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_genc
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_gencpp.dir/rule
@@ -11196,12 +11521,12 @@ SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_gene
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_nodejs.dir/all: SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/_nav2d_navigator_generate_messages_check_deps_MoveToPosition2DFeedback.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_nodejs.dir/build.make SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_nodejs.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_nodejs.dir/build.make SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=68,69,70,71,72,73,74,75 "Built target nav2d_navigator_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=71,72,73,74,75,76,77 "Built target nav2d_navigator_generate_messages_nodejs"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_nodejs.dir/rule
@@ -11376,7 +11701,7 @@ SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/RobotNavigator.dir/a
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/RobotNavigator.dir/all: SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/MapInflationTool.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/RobotNavigator.dir/build.make SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/RobotNavigator.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/RobotNavigator.dir/build.make SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/RobotNavigator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=12 "Built target RobotNavigator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=11 "Built target RobotNavigator"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/RobotNavigator.dir/all
 
 # Include target in all.
@@ -11386,7 +11711,7 @@ all: SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/RobotNavigator.
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/RobotNavigator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/RobotNavigator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/RobotNavigator.dir/rule
@@ -11523,7 +11848,7 @@ SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/set_goal_client.dir/
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/set_goal_client.dir/all: SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_cpp.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/set_goal_client.dir/build.make SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/set_goal_client.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/set_goal_client.dir/build.make SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/set_goal_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=96 "Built target set_goal_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target set_goal_client"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/set_goal_client.dir/all
 
 # Include target in all.
@@ -11533,7 +11858,7 @@ all: SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/set_goal_client
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/set_goal_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/set_goal_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/set_goal_client.dir/rule
@@ -11704,7 +12029,7 @@ all: SLAM_packages-main/navigation_2d/nav2d_exploration/CMakeFiles/ExplorationPl
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_exploration/CMakeFiles/ExplorationPlugins.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 43
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_exploration/CMakeFiles/ExplorationPlugins.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_exploration/CMakeFiles/ExplorationPlugins.dir/rule
@@ -11868,7 +12193,7 @@ SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/sim_joy.dir/all: SLAM_p
 SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/sim_joy.dir/all: SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/RobotNavigator.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/sim_joy.dir/build.make SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/sim_joy.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/sim_joy.dir/build.make SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/sim_joy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target sim_joy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=97 "Built target sim_joy"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/sim_joy.dir/all
 
 # Include target in all.
@@ -11878,7 +12203,7 @@ all: SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/sim_joy.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/sim_joy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 43
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/sim_joy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/sim_joy.dir/rule
@@ -12022,7 +12347,7 @@ SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/remote_joy.dir/all: SLA
 SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/remote_joy.dir/all: SLAM_packages-main/navigation_2d/nav2d_navigator/CMakeFiles/RobotNavigator.dir/all
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/remote_joy.dir/build.make SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/remote_joy.dir/depend
 	$(MAKE) -f SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/remote_joy.dir/build.make SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/remote_joy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target remote_joy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=96 "Built target remote_joy"
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/remote_joy.dir/all
 
 # Include target in all.
@@ -12032,7 +12357,7 @@ all: SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/remote_joy.dir/all
 
 # Build rule for subdir invocation for target.
 SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/remote_joy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 43
 	$(MAKE) -f CMakeFiles/Makefile2 SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/remote_joy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
 .PHONY : SLAM_packages-main/navigation_2d/nav2d_remote/CMakeFiles/remote_joy.dir/rule

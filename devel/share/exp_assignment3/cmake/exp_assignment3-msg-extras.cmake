@@ -1,2 +1,2 @@
-set(exp_assignment3_MESSAGE_FILES "/home/cristina/new_ws/src/exp_assignment3-main/msg/Num.msg")
+set(exp_assignment3_MESSAGE_FILES "/home/cristina/new_ws/src/exp_assignment3-main/msg/Num.msg;/home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningAction.msg;/home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningActionGoal.msg;/home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningActionResult.msg;/home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningActionFeedback.msg;/home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningGoal.msg;/home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningResult.msg;/home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningFeedback.msg")
 set(exp_assignment3_SERVICE_FILES "")

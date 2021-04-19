@@ -36,7 +36,7 @@ void Callback (const exp_assignment3::Num::ConstPtr& msg) {
   move_base_msgs::MoveBaseGoal goal;
 
   //we'll send a goal to the robot to move 1 meter forward
-  goal.target_pose.header.frame_id = "link_chassis";
+  goal.target_pose.header.frame_id = "/map";
   goal.target_pose.header.stamp = ros::Time::now();
 
   goal.target_pose.pose.position.x = pos_x;

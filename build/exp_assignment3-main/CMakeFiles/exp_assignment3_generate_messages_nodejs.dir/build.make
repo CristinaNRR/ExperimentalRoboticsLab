@@ -53,15 +53,103 @@ CMAKE_BINARY_DIR = /home/cristina/new_ws/build
 # Include the progress variables for this target.
 include exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/progress.make
 
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs: /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionFeedback.js
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs: /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionResult.js
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs: /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningGoal.js
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs: /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionGoal.js
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs: /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningResult.js
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs: /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningFeedback.js
+exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs: /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningAction.js
 exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs: /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/Num.js
 
 
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionFeedback.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionFeedback.js: /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningActionFeedback.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionFeedback.js: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionFeedback.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionFeedback.js: /opt/ros/kinetic/share/geometry_msgs/msg/Quaternion.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionFeedback.js: /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningFeedback.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionFeedback.js: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionFeedback.js: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionFeedback.js: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from exp_assignment3/PlanningActionFeedback.msg"
+	cd /home/cristina/new_ws/build/exp_assignment3-main && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningActionFeedback.msg -Iexp_assignment3:/home/cristina/new_ws/src/exp_assignment3-main/msg -Iexp_assignment3:/home/cristina/new_ws/devel/share/exp_assignment3/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p exp_assignment3 -o /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg
+
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionResult.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionResult.js: /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningActionResult.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionResult.js: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionResult.js: /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningResult.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionResult.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionResult.js: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from exp_assignment3/PlanningActionResult.msg"
+	cd /home/cristina/new_ws/build/exp_assignment3-main && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningActionResult.msg -Iexp_assignment3:/home/cristina/new_ws/src/exp_assignment3-main/msg -Iexp_assignment3:/home/cristina/new_ws/devel/share/exp_assignment3/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p exp_assignment3 -o /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg
+
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningGoal.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningGoal.js: /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningGoal.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningGoal.js: /opt/ros/kinetic/share/geometry_msgs/msg/Quaternion.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningGoal.js: /opt/ros/kinetic/share/geometry_msgs/msg/PoseStamped.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningGoal.js: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningGoal.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningGoal.js: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from exp_assignment3/PlanningGoal.msg"
+	cd /home/cristina/new_ws/build/exp_assignment3-main && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningGoal.msg -Iexp_assignment3:/home/cristina/new_ws/src/exp_assignment3-main/msg -Iexp_assignment3:/home/cristina/new_ws/devel/share/exp_assignment3/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p exp_assignment3 -o /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg
+
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionGoal.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionGoal.js: /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningActionGoal.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionGoal.js: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionGoal.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionGoal.js: /opt/ros/kinetic/share/geometry_msgs/msg/Quaternion.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionGoal.js: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionGoal.js: /opt/ros/kinetic/share/geometry_msgs/msg/PoseStamped.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionGoal.js: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionGoal.js: /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningGoal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from exp_assignment3/PlanningActionGoal.msg"
+	cd /home/cristina/new_ws/build/exp_assignment3-main && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningActionGoal.msg -Iexp_assignment3:/home/cristina/new_ws/src/exp_assignment3-main/msg -Iexp_assignment3:/home/cristina/new_ws/devel/share/exp_assignment3/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p exp_assignment3 -o /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg
+
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningResult.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningResult.js: /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningResult.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from exp_assignment3/PlanningResult.msg"
+	cd /home/cristina/new_ws/build/exp_assignment3-main && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningResult.msg -Iexp_assignment3:/home/cristina/new_ws/src/exp_assignment3-main/msg -Iexp_assignment3:/home/cristina/new_ws/devel/share/exp_assignment3/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p exp_assignment3 -o /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg
+
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningFeedback.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningFeedback.js: /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningFeedback.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningFeedback.js: /opt/ros/kinetic/share/geometry_msgs/msg/Quaternion.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningFeedback.js: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningFeedback.js: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from exp_assignment3/PlanningFeedback.msg"
+	cd /home/cristina/new_ws/build/exp_assignment3-main && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningFeedback.msg -Iexp_assignment3:/home/cristina/new_ws/src/exp_assignment3-main/msg -Iexp_assignment3:/home/cristina/new_ws/devel/share/exp_assignment3/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p exp_assignment3 -o /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg
+
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningAction.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningAction.js: /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningAction.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningAction.js: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningAction.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningAction.js: /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningFeedback.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningAction.js: /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningActionGoal.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningAction.js: /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningActionFeedback.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningAction.js: /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningResult.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningAction.js: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningAction.js: /opt/ros/kinetic/share/geometry_msgs/msg/PoseStamped.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningAction.js: /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningActionResult.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningAction.js: /opt/ros/kinetic/share/geometry_msgs/msg/Quaternion.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningAction.js: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningAction.js: /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningGoal.msg
+/home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningAction.js: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Javascript code from exp_assignment3/PlanningAction.msg"
+	cd /home/cristina/new_ws/build/exp_assignment3-main && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningAction.msg -Iexp_assignment3:/home/cristina/new_ws/src/exp_assignment3-main/msg -Iexp_assignment3:/home/cristina/new_ws/devel/share/exp_assignment3/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p exp_assignment3 -o /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg
+
 /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/Num.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
 /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/Num.js: /home/cristina/new_ws/src/exp_assignment3-main/msg/Num.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from exp_assignment3/Num.msg"
-	cd /home/cristina/new_ws/build/exp_assignment3-main && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/cristina/new_ws/src/exp_assignment3-main/msg/Num.msg -Iexp_assignment3:/home/cristina/new_ws/src/exp_assignment3-main/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p exp_assignment3 -o /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Javascript code from exp_assignment3/Num.msg"
+	cd /home/cristina/new_ws/build/exp_assignment3-main && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/cristina/new_ws/src/exp_assignment3-main/msg/Num.msg -Iexp_assignment3:/home/cristina/new_ws/src/exp_assignment3-main/msg -Iexp_assignment3:/home/cristina/new_ws/devel/share/exp_assignment3/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p exp_assignment3 -o /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg
 
 exp_assignment3_generate_messages_nodejs: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs
+exp_assignment3_generate_messages_nodejs: /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionFeedback.js
+exp_assignment3_generate_messages_nodejs: /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionResult.js
+exp_assignment3_generate_messages_nodejs: /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningGoal.js
+exp_assignment3_generate_messages_nodejs: /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningActionGoal.js
+exp_assignment3_generate_messages_nodejs: /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningResult.js
+exp_assignment3_generate_messages_nodejs: /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningFeedback.js
+exp_assignment3_generate_messages_nodejs: /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/PlanningAction.js
 exp_assignment3_generate_messages_nodejs: /home/cristina/new_ws/devel/share/gennodejs/ros/exp_assignment3/msg/Num.js
 exp_assignment3_generate_messages_nodejs: exp_assignment3-main/CMakeFiles/exp_assignment3_generate_messages_nodejs.dir/build.make
 

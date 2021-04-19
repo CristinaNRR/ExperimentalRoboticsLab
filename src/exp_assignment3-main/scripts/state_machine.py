@@ -51,11 +51,13 @@ class Normal(smach.State):
 
     def __init__(self):
         self.var='FALSE'
-	self.count=0
+	self.sleep_count=0
+	self.play_count=0
 	self.counter=0
 	self.stopFlag=1
 	self.param=[]
 	self.ball_detected = 'NULL'
+
 #	self.param= rospy.get_param('/red_ball')
 #	print(self.param[2])
 #	self.param[2]='T'
@@ -89,32 +91,29 @@ class Normal(smach.State):
         	#send the robot random positions
 		randomlist = []
 		for i in range(0,2):
-			n = random.randint(-2,2)
+			n = random.randint(-6,8)
 			randomlist.append(n)
 	        rospy.loginfo('sending the random position: %s', randomlist)		
 		pub.publish(randomlist)
-		time.sleep(3)
+		time.sleep(4)
 		#se il robot si muove non mando i comandi
  		while(self.stopFlag==0):
 			pass
-                #to syncronize with the action client
-#		if(self.count>=1):
-			#stop until the just sent target has been reached
-#	           rospy.loginfo('waiting for the ack message')
- #                  rospy.wait_for_message('chatter', Int8)
 
-#		self.count = self.count+1
+
+		self.play_count = self.play_count+1
 		#after some actions have been executed go to the sleep state
-		if self.count==4 :
-			self.count=0
+		if self.sleep_count==10 :
+			self.sleep_count=0
 #			self.var='FALSE'
-			return user_action('SLEEP')	
+			return user_action('SLEEP')
+	
+		if self.play_count==2 :
+			self.play_count=0
+#			self.var='FALSE'
+			return user_action('PLAY')	
 
-	#when the robot sees the ball, move to the play state
-	self.var='FALSE'
-	#unsubscribe to the camera topic to avoid overlapping
-	self.subscriber.unregister()
-	return user_action('PLAY')
+
  
     def callback2(self, msg):
 	#se il robot è fermo
@@ -359,7 +358,7 @@ class Sleep(smach.State):
                              outcomes=['normal'])
 
 
-        self.home = [1,1]
+        self.home = [-1,1]
 	self.stopFlag=0
 
     def execute(self,userdata):
@@ -392,8 +391,7 @@ class Sleep(smach.State):
             
 
 
-#In the play state the robot keeps tracking the ball. When the ball stops it moves the head.
-#It goes back to the normale behaviour when it canno't find the ball for a certain amount of time
+
 
 class Play(smach.State):
 
@@ -403,108 +401,106 @@ class Play(smach.State):
                              outcomes=['normal'])
         self.var2=0
 	self.count=0
+	self.play_pose=[-5, 8]
+	self.rooms=[]
+	self.param=[]
+	self.stopFlag=0
                           
 
     def execute(self,userdata):
 
 	rospy.loginfo('Executing state PLAY')
+        pub = rospy.Publisher('targetPosition', Num,queue_size=10) 
+	rospy.Subscriber("/cmd_vel", Twist, self.callback)
+	pub.publish(self.play_pose)
+	rospy.loginfo('going to the play pose')		
+	time.sleep(3)
+	#waint until the robot moves 
+	while(self.stopFlag==0):
+		pass
+	self.rooms= rospy.get_param('/rooms')
+	n = random.randint(0,5)
+	self.goTo= self.rooms[n]
 
-       # self.image_pub = rospy.Publisher("/output/image_raw/compressed",
-        #                                 CompressedImage, queue_size=1)
-        self.vel_pub = rospy.Publisher("cmd_vel",
-                                       Twist, queue_size=1)
+	if(self.goTo=='red_ball'):
+		self.param= rospy.get_param('/red_ball')
+		if(self.param[2]=='T'):
+			lista=[]
+			lista.append(self.param[0])
+			lista.append(self.param[1])
+	        	rospy.loginfo('sending the room position: %s', lista)		
+			pub.publish(lista)
+
+	elif(self.goTo=='yellow_ball'):
+		self.param= rospy.get_param('/yellow_ball')
+		if(self.param[2]=='T'):
+			lista=[]
+			lista.append(self.param[0])
+			lista.append(self.param[1])
+	        	rospy.loginfo('sending the room position: %s', lista)		
+			pub.publish(lista)
+
+	elif(self.goTo=='black_ball'):
+		self.param= rospy.get_param('/black_ball')
+		if(self.param[2]=='T'):
+			lista=[]
+			lista.append(self.param[0])
+			lista.append(self.param[1])
+	        	rospy.loginfo('sending the room position: %s', lista)		
+			pub.publish(lista)
+
+	elif(self.goTo=='green_ball'):
+		self.param= rospy.get_param('/green_ball')
+		if(self.param[2]=='T'):
+			lista=[]
+			lista.append(self.param[0])
+			lista.append(self.param[1])
+	        	rospy.loginfo('sending the room position: %s', lista)		
+			pub.publish(lista)
+
+	elif(self.goTo=='magenta_ball'):
+		self.param= rospy.get_param('/black_ball')
+		if(self.param[2]=='T'):
+			lista=[]
+			lista.append(self.param[0])
+			lista.append(self.param[1])
+	        	rospy.loginfo('sending the room position: %s', lista)		
+			pub.publish(lista)
+
+	elif(self.goTo=='blue_ball'):
+		self.param= rospy.get_param('/blue_ball')
+		if(self.param[2]=='T'):
+			lista=[]
+			lista.append(self.param[0])
+			lista.append(self.param[1])
+	        	rospy.loginfo('sending the room position: %s', lista)		
+			pub.publish(lista)
+
+	time.sleep(2)
+	#waint until the robot moves 
+	while(self.stopFlag==0):
+		pass
+	time.sleep(5)
+
+	return user_action('NORMAL')	
 
 
-       
-        self.subscriber = rospy.Subscriber("camera1/image_raw/compressed",
-                                           CompressedImage, self.callback2,  queue_size=1)
+    def callback(self, msg):
+	#se il robot è fermo
+#	rospy.loginfo("x,y,z")
+#	print(msg.linear.x)
+#	print(msg.angular.z)	
+	if(msg.linear.x==0 and msg.angular.z==0):
 
-	self.lastTime = datetime.datetime.now().time()
+		self.stopFlag=1
+	
+	else:
+		self.stopFlag=0
+	
+	
 
-	while(self.var2<600):
-		self.count = self.count+1
-
-	#go back to normal behaviour
-	rospy.loginfo('stop tracking the ball')
-	self.var2=0
-	self.subscriber.unregister()
-	return user_action('NORMAL')
-           
-    def callback2(self, ros_data):
   
 
- #### direct conversion to CV2 ####
-        np_arr = np.fromstring(ros_data.data, np.uint8)
-        image_np = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)  # OpenCV >= 3.0:
-
-        greenLower = (50, 50, 20)
-        greenUpper = (70, 255, 255)
-
-        blurred = cv2.GaussianBlur(image_np, (11, 11), 0)
-        hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
-        mask = cv2.inRange(hsv, greenLower, greenUpper)
-        mask = cv2.erode(mask, None, iterations=2)
-        mask = cv2.dilate(mask, None, iterations=2)
-        cnts = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL,
-                                cv2.CHAIN_APPROX_SIMPLE)
-        cnts = imutils.grab_contours(cnts)
-        center = None
-        # only proceed if at least one contour was found
-        if len(cnts) > 0:
-            # find the largest contour in the mask, then use
-            # it to compute the minimum enclosing circle and
-            # centroid
-
-	    #put the variable to 0 when the robot sees the ball
-	    self.var2=0
-            c = max(cnts, key=cv2.contourArea)
-            ((x, y), radius) = cv2.minEnclosingCircle(c)
-            M = cv2.moments(c)
-            center = (int(M["m10"] / M["m00"]), int(M["m01"] / M["m00"]))
-
-            # only proceed if the radius meets a minimum size
-            if radius > 10:
-                # draw the circle and centroid on the frame,
-                # then update the list of tracked points
-                cv2.circle(image_np, (int(x), int(y)), int(radius),
-                           (0, 255, 255), 2)
-                cv2.circle(image_np, center, 5, (0, 0, 255), -1)
-                vel = Twist()
-                vel.angular.z = -0.002*(center[0]-400)
-                vel.linear.x = -0.01*(radius-100)
-                self.vel_pub.publish(vel)
-	        currentTime = datetime.datetime.now().time()
-                delta = datetime.timedelta(seconds = 7)
-
-		#rotate the camera if the robot is not moving	  
-		if (vel.angular.z<0.03 and vel.angular.z>-0.03 and vel.linear.x<0.03 and vel.linear.x>-0.03 and currentTime>(datetime.datetime.combine(datetime.date(1,1,1),self.lastTime)+ 			delta).time()):
-
-			  angle = Float64()
-  			  angle.data = 0.0
-  			  rospy.loginfo("Rotating camera")
-  			  while(angle.data<1):
-				angle.data=angle.data +0.1
-       		                self.publisher.publish(angle)
-                                time.sleep(0.5);
-  
-                          time.sleep(5);
-                          while(angle.data>=0):
-	                  	angle.data=angle.data - 0.1
-                      	        self.publisher.publish(angle)
-        			time.sleep(0.5)
-			  self.lastTime = datetime.datetime.now().time()		
-
-            else:
-                vel = Twist()
-                vel.linear.x = 0.5
-                self.vel_pub.publish(vel)
-
-        else:
-	    #increment a variable everytime the robot doesn't see the ball
-	    self.var2 = self.var2+1
-            vel = Twist()
-            vel.angular.z = 0.5
-            self.vel_pub.publish(vel)
 
 
 

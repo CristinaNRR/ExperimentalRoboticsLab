@@ -771,12 +771,6 @@ rostime_DIR:PATH=/opt/ros/kinetic/share/rostime/cmake
 sensor_msgs_DIR:PATH=/opt/ros/kinetic/share/sensor_msgs/cmake
 
 //Value Computed by CMake
-simple_navigation_goals_BINARY_DIR:STATIC=/home/cristina/new_ws/build/simple_navigation_goals
-
-//Value Computed by CMake
-simple_navigation_goals_SOURCE_DIR:STATIC=/home/cristina/new_ws/src/simple_navigation_goals
-
-//Value Computed by CMake
 slam_gmapping_BINARY_DIR:STATIC=/home/cristina/new_ws/build/SLAM_packages-main/slam_gmapping/slam_gmapping
 
 //Value Computed by CMake

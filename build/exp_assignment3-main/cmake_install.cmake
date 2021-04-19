@@ -37,6 +37,22 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/exp_assignment3/action" TYPE FILE FILES "/home/cristina/new_ws/src/exp_assignment3-main/action/Planning.action")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/exp_assignment3/msg" TYPE FILE FILES
+    "/home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningAction.msg"
+    "/home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningActionGoal.msg"
+    "/home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningActionResult.msg"
+    "/home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningActionFeedback.msg"
+    "/home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningGoal.msg"
+    "/home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningResult.msg"
+    "/home/cristina/new_ws/devel/share/exp_assignment3/msg/PlanningFeedback.msg"
+    )
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/exp_assignment3/cmake" TYPE FILE FILES "/home/cristina/new_ws/build/exp_assignment3-main/catkin_generated/installspace/exp_assignment3-msg-paths.cmake")
 endif()
 
