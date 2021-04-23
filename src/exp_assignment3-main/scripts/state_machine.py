@@ -38,6 +38,9 @@ def user_action(data):
     elif(data=='NORMAL'):
 	return ('normal')
 
+    elif(data=='FIND'):
+	return ('find')
+
    
 
 
@@ -77,11 +80,11 @@ class Normal(smach.State):
         rospy.loginfo('Executing state NORMAL ')
 	#send to the actionlib client the target positions to reach
       	pub = rospy.Publisher('targetPosition', Num,queue_size=10)
-	rospy.Subscriber("/cmd_vel", Twist, self.callback2)
+	subscriber2=rospy.Subscriber("/cmd_vel", Twist, self.callback2)
         self.vel_pub = rospy.Publisher("cmd_vel",
                                        Twist, queue_size=1)
         # subscribed to the camera topic
-        self.subscriber = rospy.Subscriber("camera1/image_raw/compressed",
+        subscriber1= rospy.Subscriber("camera1/image_raw/compressed",
                                            CompressedImage, self.callback,  queue_size=1)
 
 
@@ -108,16 +111,17 @@ class Normal(smach.State):
 #			self.var='FALSE'
 			return user_action('SLEEP')
 	
-		if self.play_count==2 :
+		if self.play_count==5 :
 			self.play_count=0
 #			self.var='FALSE'
+			subscriber1.unregister()
+			subscriber2.unregister()
 			return user_action('PLAY')	
 
 
  
     def callback2(self, msg):
 	#se il robot è fermo
-#	rospy.loginfo("x,y,z")
 #	print(msg.linear.x)
 #	print(msg.angular.z)	
 	if(msg.linear.x==0.0 and msg.angular.z==0.0):
@@ -297,7 +301,7 @@ class Normal(smach.State):
                 vel.linear.x = -0.01*(radius-100)
                 self.vel_pub.publish(vel)
 		#if the robot is almost not moving register on the parameter server that the corresponding ball has been reached
-		if (vel.angular.z<0.1 and vel.angular.z>-0.1 and vel.linear.x<0.1 and vel.linear.x>-0.1 or self.counter>200 ):
+		if (vel.angular.z<0.1 and vel.angular.z>-0.1 and vel.linear.x<0.1 and vel.linear.x>-0.1 or self.counter>100 ):
 			rospy.loginfo('sono dalla pallinaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
 			self.counter=0
 			vel.angular.z=0.0
@@ -398,7 +402,7 @@ class Play(smach.State):
     def __init__(self):
 	
         smach.State.__init__(self, 
-                             outcomes=['normal'])
+                             outcomes=['normal', 'find'])
         self.var2=0
 	self.count=0
 	self.play_pose=[-5, 8]
@@ -408,80 +412,110 @@ class Play(smach.State):
                           
 
     def execute(self,userdata):
-
 	rospy.loginfo('Executing state PLAY')
-        pub = rospy.Publisher('targetPosition', Num,queue_size=10) 
-	rospy.Subscriber("/cmd_vel", Twist, self.callback)
-	pub.publish(self.play_pose)
-	rospy.loginfo('going to the play pose')		
-	time.sleep(3)
-	#waint until the robot moves 
-	while(self.stopFlag==0):
-		pass
-	self.rooms= rospy.get_param('/rooms')
-	n = random.randint(0,5)
-	self.goTo= self.rooms[n]
+	pub = rospy.Publisher('targetPosition', Num,queue_size=10) 
+	subscriber=rospy.Subscriber("/cmd_vel", Twist, self.callback)
 
-	if(self.goTo=='red_ball'):
-		self.param= rospy.get_param('/red_ball')
-		if(self.param[2]=='T'):
-			lista=[]
-			lista.append(self.param[0])
-			lista.append(self.param[1])
-	        	rospy.loginfo('sending the room position: %s', lista)		
-			pub.publish(lista)
 
-	elif(self.goTo=='yellow_ball'):
-		self.param= rospy.get_param('/yellow_ball')
-		if(self.param[2]=='T'):
-			lista=[]
-			lista.append(self.param[0])
-			lista.append(self.param[1])
-	        	rospy.loginfo('sending the room position: %s', lista)		
-			pub.publish(lista)
+	while(self.count<3):
+		self.count=self.count+1
+		pub.publish(self.play_pose)
+		rospy.loginfo('going to the play pose')		
+		time.sleep(3)
+		#waint until the robot stop moving 
+		while(self.stopFlag==0):
+			pass
+		self.rooms= rospy.get_param('/rooms')
+		n = random.randint(0,5)
+		print(n)
+		self.goTo= self.rooms[n]
 
-	elif(self.goTo=='black_ball'):
-		self.param= rospy.get_param('/black_ball')
-		if(self.param[2]=='T'):
-			lista=[]
-			lista.append(self.param[0])
-			lista.append(self.param[1])
-	        	rospy.loginfo('sending the room position: %s', lista)		
-			pub.publish(lista)
+		if(self.goTo=='red_ball'):
+			self.param= rospy.get_param('/red_ball')
+			if(self.param[2]=='T'):
+				lista=[]
+				lista.append(self.param[0])
+				lista.append(self.param[1])
+				rospy.loginfo('sending the room position: %s', lista)		
+				pub.publish(lista)
+			#move to the find state
+			else: 	
+				self.count=0
+				subscriber.unregister()
+				return user_action('FIND')	
 
-	elif(self.goTo=='green_ball'):
-		self.param= rospy.get_param('/green_ball')
-		if(self.param[2]=='T'):
-			lista=[]
-			lista.append(self.param[0])
-			lista.append(self.param[1])
-	        	rospy.loginfo('sending the room position: %s', lista)		
-			pub.publish(lista)
+		elif(self.goTo=='yellow_ball'):
+			self.param= rospy.get_param('/yellow_ball')
+			if(self.param[2]=='T'):
+				lista=[]
+				lista.append(self.param[0])
+				lista.append(self.param[1])
+				rospy.loginfo('sending the room position: %s', lista)		
+				pub.publish(lista)
+			else: 	
+				self.count=0
+				subscriber.unregister()
+				return user_action('FIND')
 
-	elif(self.goTo=='magenta_ball'):
-		self.param= rospy.get_param('/black_ball')
-		if(self.param[2]=='T'):
-			lista=[]
-			lista.append(self.param[0])
-			lista.append(self.param[1])
-	        	rospy.loginfo('sending the room position: %s', lista)		
-			pub.publish(lista)
+		elif(self.goTo=='black_ball'):
+			self.param= rospy.get_param('/black_ball')
+			if(self.param[2]=='T'):
+				lista=[]
+				lista.append(self.param[0])
+				lista.append(self.param[1])
+				rospy.loginfo('sending the room position: %s', lista)		
+				pub.publish(lista)
+			else: 
+				self.count=0
+				subscriber.unregister()	
+				return user_action('FIND')
 
-	elif(self.goTo=='blue_ball'):
-		self.param= rospy.get_param('/blue_ball')
-		if(self.param[2]=='T'):
-			lista=[]
-			lista.append(self.param[0])
-			lista.append(self.param[1])
-	        	rospy.loginfo('sending the room position: %s', lista)		
-			pub.publish(lista)
+		elif(self.goTo=='green_ball'):
+			self.param= rospy.get_param('/green_ball')
+			if(self.param[2]=='T'):
+				lista=[]
+				lista.append(self.param[0])
+				lista.append(self.param[1])
+				rospy.loginfo('sending the room position: %s', lista)		
+				pub.publish(lista)
+			else: 	
+				self.count=0
+				subscriber.unregister()
+				return user_action('FIND')
 
-	time.sleep(2)
-	#waint until the robot moves 
-	while(self.stopFlag==0):
-		pass
-	time.sleep(5)
+		elif(self.goTo=='magenta_ball'):
+			self.param= rospy.get_param('/magenta_ball')
+			if(self.param[2]=='T'):
+				lista=[]
+				lista.append(self.param[0])
+				lista.append(self.param[1])
+				rospy.loginfo('sending the room position: %s', lista)		
+				pub.publish(lista)
+			else:
+				self.count=0 
+				subscriber.unregister()	
+				return user_action('FIND')
 
+		elif(self.goTo=='blue_ball'):
+			self.param= rospy.get_param('/blue_ball')
+			if(self.param[2]=='T'):
+				lista=[]
+				lista.append(self.param[0])
+				lista.append(self.param[1])
+				rospy.loginfo('sending the room: %s', lista)		
+				pub.publish(lista)
+			else: 	
+				self.count=0
+				subscriber.unregister()
+				return user_action('FIND')
+
+		time.sleep(2)
+		#waint until the robot stop moving 
+		while(self.stopFlag==0):
+			pass
+		time.sleep(5)
+	subscriber.unregister()
+	self.count=0
 	return user_action('NORMAL')	
 
 
@@ -496,6 +530,136 @@ class Play(smach.State):
 	
 	else:
 		self.stopFlag=0
+
+
+
+class Find(smach.State):
+
+    def __init__(self):
+	
+        smach.State.__init__(self, 
+                             outcomes=['play'])
+        self.var2=0
+	self.count=0
+	self.play_pose=[-5, 8]
+	self.rooms=[]
+	self.param=[]
+	self.stopFlag=0
+	self.stopIter=False
+
+    def execute(self,userdata):
+
+	rospy.loginfo('Executing state FIND')
+	rospy.Subscriber("/cmd_vel", Twist, self.callback)
+	pub = rospy.Publisher('targetPosition', Num,queue_size=10)
+	n=0 
+
+	#choose randomly a room and check that it has not been discovered yet. If not go there, then check if it corresponds to the user target
+#	self.rooms= rospy.get_param('/rooms')
+#	n = random.randint(0,5)
+#	print(n)
+#	self.goTo= self.rooms[n]
+
+	while(1):
+		if(self.stopIter==False):
+			self.param= rospy.get_param('/red_ball')
+			if(self.param[2]=='F'):
+				position=[]
+				position.append(self.param[0])
+				position.append(self.param[1])
+				pub.publish(position)
+				rospy.loginfo('going to the room position: %s', position)
+				self.param[2]='T'
+				rospy.set_param('/red_ball', self.param)
+				current_room='red_ball'
+				self.stopIter=True
+
+		if(self.stopIter==False):
+			self.param= rospy.get_param('/yellow_ball')
+			if(self.param[2]=='F'):
+				position=[]
+				position.append(self.param[0])
+				position.append(self.param[1])
+				pub.publish(position)
+				rospy.loginfo('going to the room position: %s', position)
+				self.param[2]='T'
+				rospy.set_param('/yellow_ball', self.param)
+				current_room='yellow_ball'
+				self.stopIter=True
+
+		if(self.stopIter==False):
+			self.param= rospy.get_param('/blue_ball')
+			if(self.param[2]=='F'):
+				position=[]
+				position.append(self.param[0])
+				position.append(self.param[1])
+				pub.publish(position)
+				rospy.loginfo('going to the room position: %s', position)
+				self.param[2]='T'
+				rospy.set_param('/blue_ball', self.param)
+				current_room='blue_ball'
+				self.stopIter=True
+
+		if(self.stopIter==False):
+			self.param= rospy.get_param('/magenta_ball')
+			if(self.param[2]=='F'):
+				position=[]
+				position.append(self.param[0])
+				position.append(self.param[1])
+				pub.publish(position)
+				rospy.loginfo('going to the room position: %s', position)
+				self.param[2]='T'
+				rospy.set_param('/magenta_ball', self.param)
+				current_room='magenta_ball'
+				self.stopIter=True
+
+		if(self.stopIter==False):
+			self.param= rospy.get_param('/green_ball')
+			if(self.param[2]=='F'):
+				position=[]
+				position.append(self.param[0])
+				position.append(self.param[1])
+				pub.publish(position)
+				rospy.loginfo('going to the room position: %s', position)
+				self.param[2]='T'
+				rospy.set_param('/green_ball', self.param)
+				current_room='green_ball'
+				self.stopIter=True
+		if(self.stopIter==False):
+			self.param= rospy.get_param('/black_ball')
+			if(self.param[2]=='F'):
+				position=[]
+				position.append(self.param[0])
+				position.append(self.param[1])
+				pub.publish(position)
+				rospy.loginfo('going to the room position: %s', position)
+				self.param[2]='T'
+				rospy.set_param('/black_ball', self.param)
+				current_room='black_ball'
+				self.stopIter=True
+
+
+		time.sleep(2)
+		self.stopIter=False
+		#waint until the robot stop moving 
+		while(self.stopFlag==0):
+			pass
+
+		#controllo che current_room sa uguale a goTo che arriva da play. se sono uguali faccio return play. se no nulla. Metto stop =false
+
+    def callback(self, msg):
+	#se il robot è fermo
+#	rospy.loginfo("x,y,z")
+#	print(msg.linear.x)
+#	print(msg.angular.z)	
+	if(msg.linear.x==0 and msg.angular.z==0):
+
+		self.stopFlag=1
+	
+	else:
+		self.stopFlag=0
+					
+			
 	
 	
 
@@ -525,10 +689,15 @@ class func():
 				             'sleep' : 'SLEEP'})
                                               
         smach.StateMachine.add('PLAY', Play(), 
-                               transitions={'normal':'NORMAL' 
-                                             })
+                               transitions={'normal':'NORMAL',
+					    'find':'FIND'}) 
+                                            
 	smach.StateMachine.add('SLEEP', Sleep(), 
                                transitions={'normal':'NORMAL'})
+
+	smach.StateMachine.add('FIND', Find(), 
+				transitions={'play':'PLAY'})
+						
                                
                                
 
