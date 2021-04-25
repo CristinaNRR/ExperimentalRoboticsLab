@@ -301,7 +301,7 @@ class Normal(smach.State):
                 vel.linear.x = -0.01*(radius-100)
                 self.vel_pub.publish(vel)
 		#if the robot is almost not moving register on the parameter server that the corresponding ball has been reached
-		if (vel.angular.z<0.1 and vel.angular.z>-0.1 and vel.linear.x<0.1 and vel.linear.x>-0.1 or self.counter>100 ):
+		if (vel.angular.z<0.1 and vel.angular.z>-0.1 and vel.linear.x<0.1 and vel.linear.x>-0.1 or self.counter>200 ):
 			rospy.loginfo('sono dalla pallinaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
 			self.counter=0
 			vel.angular.z=0.0
@@ -402,7 +402,8 @@ class Play(smach.State):
     def __init__(self):
 	
         smach.State.__init__(self, 
-                             outcomes=['normal', 'find'])
+                             outcomes=['normal', 'find'],
+                             output_keys=['room_out'])
         self.var2=0
 	self.count=0
 	self.play_pose=[-5, 8]
@@ -417,11 +418,11 @@ class Play(smach.State):
 	subscriber=rospy.Subscriber("/cmd_vel", Twist, self.callback)
 
 
-	while(self.count<3):
+	while(self.count<2):
 		self.count=self.count+1
 		pub.publish(self.play_pose)
 		rospy.loginfo('going to the play pose')		
-		time.sleep(3)
+		time.sleep(4)
 		#waint until the robot stop moving 
 		while(self.stopFlag==0):
 			pass
@@ -442,6 +443,7 @@ class Play(smach.State):
 			else: 	
 				self.count=0
 				subscriber.unregister()
+				userdata.room_out=self.goTo
 				return user_action('FIND')	
 
 		elif(self.goTo=='yellow_ball'):
@@ -455,6 +457,7 @@ class Play(smach.State):
 			else: 	
 				self.count=0
 				subscriber.unregister()
+				userdata.room_out=self.goTo
 				return user_action('FIND')
 
 		elif(self.goTo=='black_ball'):
@@ -468,6 +471,7 @@ class Play(smach.State):
 			else: 
 				self.count=0
 				subscriber.unregister()	
+				userdata.room_out=self.goTo
 				return user_action('FIND')
 
 		elif(self.goTo=='green_ball'):
@@ -481,6 +485,7 @@ class Play(smach.State):
 			else: 	
 				self.count=0
 				subscriber.unregister()
+				userdata.room_out=self.goTo
 				return user_action('FIND')
 
 		elif(self.goTo=='magenta_ball'):
@@ -494,6 +499,7 @@ class Play(smach.State):
 			else:
 				self.count=0 
 				subscriber.unregister()	
+				userdata.room_out=self.goTo
 				return user_action('FIND')
 
 		elif(self.goTo=='blue_ball'):
@@ -507,6 +513,7 @@ class Play(smach.State):
 			else: 	
 				self.count=0
 				subscriber.unregister()
+				userdata.room_out=self.goTo
 				return user_action('FIND')
 
 		time.sleep(2)
@@ -538,7 +545,8 @@ class Find(smach.State):
     def __init__(self):
 	
         smach.State.__init__(self, 
-                             outcomes=['play'])
+                             outcomes=['play'],
+                             input_keys=['room_in'])
         self.var2=0
 	self.count=0
 	self.play_pose=[-5, 8]
@@ -549,7 +557,7 @@ class Find(smach.State):
 
     def execute(self,userdata):
 
-	rospy.loginfo('Executing state FIND')
+	rospy.loginfo('Executing state FIND (room received=%s)' %userdata.room_in)
 	rospy.Subscriber("/cmd_vel", Twist, self.callback)
 	pub = rospy.Publisher('targetPosition', Num,queue_size=10)
 	n=0 
@@ -568,10 +576,10 @@ class Find(smach.State):
 				position.append(self.param[0])
 				position.append(self.param[1])
 				pub.publish(position)
-				rospy.loginfo('going to the room position: %s', position)
+				current_room='red_ball'
+				rospy.loginfo('going to the room position: %s', current_room)
 				self.param[2]='T'
 				rospy.set_param('/red_ball', self.param)
-				current_room='red_ball'
 				self.stopIter=True
 
 		if(self.stopIter==False):
@@ -581,10 +589,10 @@ class Find(smach.State):
 				position.append(self.param[0])
 				position.append(self.param[1])
 				pub.publish(position)
-				rospy.loginfo('going to the room position: %s', position)
+				current_room='yellow_ball'
+				rospy.loginfo('going to the room position: %s', current_room)
 				self.param[2]='T'
 				rospy.set_param('/yellow_ball', self.param)
-				current_room='yellow_ball'
 				self.stopIter=True
 
 		if(self.stopIter==False):
@@ -594,10 +602,10 @@ class Find(smach.State):
 				position.append(self.param[0])
 				position.append(self.param[1])
 				pub.publish(position)
-				rospy.loginfo('going to the room position: %s', position)
+				current_room='blue_ball'
+				rospy.loginfo('going to the room position: %s', current_room)
 				self.param[2]='T'
 				rospy.set_param('/blue_ball', self.param)
-				current_room='blue_ball'
 				self.stopIter=True
 
 		if(self.stopIter==False):
@@ -607,10 +615,10 @@ class Find(smach.State):
 				position.append(self.param[0])
 				position.append(self.param[1])
 				pub.publish(position)
-				rospy.loginfo('going to the room position: %s', position)
+				current_room='magenta_ball'
+				rospy.loginfo('going to the room position: %s', current_room)
 				self.param[2]='T'
 				rospy.set_param('/magenta_ball', self.param)
-				current_room='magenta_ball'
 				self.stopIter=True
 
 		if(self.stopIter==False):
@@ -620,10 +628,10 @@ class Find(smach.State):
 				position.append(self.param[0])
 				position.append(self.param[1])
 				pub.publish(position)
-				rospy.loginfo('going to the room position: %s', position)
+				current_room='green_ball'
+				rospy.loginfo('going to the room position: %s', current_room)
 				self.param[2]='T'
 				rospy.set_param('/green_ball', self.param)
-				current_room='green_ball'
 				self.stopIter=True
 		if(self.stopIter==False):
 			self.param= rospy.get_param('/black_ball')
@@ -632,10 +640,10 @@ class Find(smach.State):
 				position.append(self.param[0])
 				position.append(self.param[1])
 				pub.publish(position)
-				rospy.loginfo('going to the room position: %s', position)
+				current_room='black_ball'
+				rospy.loginfo('going to the room position: %s', current_room)
 				self.param[2]='T'
 				rospy.set_param('/black_ball', self.param)
-				current_room='black_ball'
 				self.stopIter=True
 
 
@@ -644,8 +652,9 @@ class Find(smach.State):
 		#waint until the robot stop moving 
 		while(self.stopFlag==0):
 			pass
+		if(current_room==userdata.room_in):
+			return user_action('PLAY')	
 
-		#controllo che current_room sa uguale a goTo che arriva da play. se sono uguali faccio return play. se no nulla. Metto stop =false
 
     def callback(self, msg):
 	#se il robot è fermo
@@ -690,13 +699,15 @@ class func():
                                               
         smach.StateMachine.add('PLAY', Play(), 
                                transitions={'normal':'NORMAL',
-					    'find':'FIND'}) 
+					    'find':'FIND'},
+			       remapping={'room_out':'sm_room'}) 
                                             
 	smach.StateMachine.add('SLEEP', Sleep(), 
                                transitions={'normal':'NORMAL'})
 
 	smach.StateMachine.add('FIND', Find(), 
-				transitions={'play':'PLAY'})
+				transitions={'play':'PLAY'},
+			       remapping={'room_in':'sm_room'}) 
 						
                                
                                
