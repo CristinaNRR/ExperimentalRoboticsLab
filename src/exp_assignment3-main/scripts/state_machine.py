@@ -111,7 +111,7 @@ class Normal(smach.State):
 #			self.var='FALSE'
 			return user_action('SLEEP')
 	
-		if self.play_count==5 :
+		if self.play_count==3 :
 			self.play_count=0
 #			self.var='FALSE'
 			subscriber1.unregister()
@@ -548,19 +548,25 @@ class Find(smach.State):
                              outcomes=['play'],
                              input_keys=['room_in'])
         self.var2=0
-	self.count=0
+	self.counter=0
 	self.play_pose=[-5, 8]
 	self.rooms=[]
 	self.param=[]
 	self.stopFlag=0
 	self.stopIter=False
+	self.play_state=False
 
     def execute(self,userdata):
 
 	rospy.loginfo('Executing state FIND (room received=%s)' %userdata.room_in)
 	rospy.Subscriber("/cmd_vel", Twist, self.callback)
 	pub = rospy.Publisher('targetPosition', Num,queue_size=10)
+	self.vel_pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
+        # subscribed to the camera topic
+        subscriber1= rospy.Subscriber("camera1/image_raw/compressed",
+                                           CompressedImage, self.callback2,  queue_size=1)
 	n=0 
+	self.requested_room=userdata.room_in
 
 	#choose randomly a room and check that it has not been discovered yet. If not go there, then check if it corresponds to the user target
 #	self.rooms= rospy.get_param('/rooms')
@@ -568,92 +574,305 @@ class Find(smach.State):
 #	print(n)
 #	self.goTo= self.rooms[n]
 
-	while(1):
-		if(self.stopIter==False):
-			self.param= rospy.get_param('/red_ball')
-			if(self.param[2]=='F'):
-				position=[]
-				position.append(self.param[0])
-				position.append(self.param[1])
-				pub.publish(position)
-				current_room='red_ball'
-				rospy.loginfo('going to the room position: %s', current_room)
-				self.param[2]='T'
-				rospy.set_param('/red_ball', self.param)
-				self.stopIter=True
-
-		if(self.stopIter==False):
-			self.param= rospy.get_param('/yellow_ball')
-			if(self.param[2]=='F'):
-				position=[]
-				position.append(self.param[0])
-				position.append(self.param[1])
-				pub.publish(position)
-				current_room='yellow_ball'
-				rospy.loginfo('going to the room position: %s', current_room)
-				self.param[2]='T'
-				rospy.set_param('/yellow_ball', self.param)
-				self.stopIter=True
-
-		if(self.stopIter==False):
-			self.param= rospy.get_param('/blue_ball')
-			if(self.param[2]=='F'):
-				position=[]
-				position.append(self.param[0])
-				position.append(self.param[1])
-				pub.publish(position)
-				current_room='blue_ball'
-				rospy.loginfo('going to the room position: %s', current_room)
-				self.param[2]='T'
-				rospy.set_param('/blue_ball', self.param)
-				self.stopIter=True
-
-		if(self.stopIter==False):
-			self.param= rospy.get_param('/magenta_ball')
-			if(self.param[2]=='F'):
-				position=[]
-				position.append(self.param[0])
-				position.append(self.param[1])
-				pub.publish(position)
-				current_room='magenta_ball'
-				rospy.loginfo('going to the room position: %s', current_room)
-				self.param[2]='T'
-				rospy.set_param('/magenta_ball', self.param)
-				self.stopIter=True
-
-		if(self.stopIter==False):
-			self.param= rospy.get_param('/green_ball')
-			if(self.param[2]=='F'):
-				position=[]
-				position.append(self.param[0])
-				position.append(self.param[1])
-				pub.publish(position)
-				current_room='green_ball'
-				rospy.loginfo('going to the room position: %s', current_room)
-				self.param[2]='T'
-				rospy.set_param('/green_ball', self.param)
-				self.stopIter=True
-		if(self.stopIter==False):
-			self.param= rospy.get_param('/black_ball')
-			if(self.param[2]=='F'):
-				position=[]
-				position.append(self.param[0])
-				position.append(self.param[1])
-				pub.publish(position)
-				current_room='black_ball'
-				rospy.loginfo('going to the room position: %s', current_room)
-				self.param[2]='T'
-				rospy.set_param('/black_ball', self.param)
-				self.stopIter=True
 
 
-		time.sleep(2)
-		self.stopIter=False
-		#waint until the robot stop moving 
-		while(self.stopFlag==0):
+	while(self.play_state==False):
+        	#send the robot random positions
+		randomlist = []
+		for i in range(0,2):
+			n = random.randint(-6,8)
+			randomlist.append(n)
+	        rospy.loginfo('sending the random position: %s', randomlist)		
+		pub.publish(randomlist)
+		time.sleep(4)
+		#se il robot si muove non mando i comandi
+ 		while(self.stopFlag==0):
 			pass
-		if(current_room==userdata.room_in):
-			return user_action('PLAY')	
+
+	self.play_state=False
+	return user_action('PLAY')
+	
+
+
+ 		
+
+
+
+
+#	while(1):
+#		if(self.stopIter==False):
+#			self.param= rospy.get_param('/red_ball')
+#			if(self.param[2]=='F'):
+#				position=[]
+#				position.append(self.param[0])
+#				position.append(self.param[1])
+#				pub.publish(position)
+#				current_room='red_ball'
+#				rospy.loginfo('going to the room position: %s', current_room)
+#				self.param[2]='T'
+#				rospy.set_param('/red_ball', self.param)
+#				self.stopIter=True
+
+
+#		time.sleep(2)
+#		self.stopIter=False
+#		#waint until the robot stop moving 
+#		while(self.stopFlag==0):
+#			pass
+#		if(current_room==userdata.room_in):
+#			return user_action('PLAY')
+
+    def callback2(self,ros_data):
+
+	#self.stopFlag=0
+ #### direct conversion to CV2 ####
+        np_arr = np.fromstring(ros_data.data, np.uint8)
+        image_np = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)  # OpenCV >= 3.0:
+
+ #       greenLower = (50, 50, 50)#era 20 l uktimo
+  #      greenUpper = (70, 255, 255)
+
+        blurred = cv2.GaussianBlur(image_np, (11, 11), 0)
+        hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
+#if i detect the green
+	greenLower = (50, 50, 50)#era 20 l uktimo
+        greenUpper = (70, 255, 255)
+        mask = cv2.inRange(hsv, greenLower, greenUpper)
+        mask = cv2.erode(mask, None, iterations=2)
+        mask = cv2.dilate(mask, None, iterations=2)
+        #cv2.imshow('mask', mask)
+        cnts = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL,
+                                cv2.CHAIN_APPROX_SIMPLE)
+        cnts = imutils.grab_contours(cnts)
+        center = None
+        # only proceed if at least one contour was found
+	#put a flag to true when the robot sees the ball
+        if len(cnts) > 0:
+#   		self.var = 'TRUE' 
+		self.param = rospy.get_param('/green_ball')
+		if (self.param[2] == 'T'):
+			return
+ 	        rospy.loginfo('green ball detected')
+		self.ball_detected = 'green_ball'
+		#call the sub_track function
+		self.sub_track(cnts, image_np, self.ball_detected)
+		return	
+#if i detect the black
+	blackLower = (0, 0, 0)#era 20 l uktimo
+        blackUpper = (5, 50, 50)
+        mask = cv2.inRange(hsv, blackLower, blackUpper)
+        mask = cv2.erode(mask, None, iterations=2)
+        mask = cv2.dilate(mask, None, iterations=2)
+        #cv2.imshow('mask', mask)
+        cnts = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL,
+                                cv2.CHAIN_APPROX_SIMPLE)
+        cnts = imutils.grab_contours(cnts)
+        center = None
+        # only proceed if at least one contour was found
+	#put a flag to true when the robot sees the ball
+        if len(cnts) > 0:
+#   		self.var = 'TRUE' 
+		self.param = rospy.get_param('/black_ball')
+		if (self.param[2] == 'T'):
+			return
+
+	        rospy.loginfo('black ball detected')
+		self.ball_detected = 'black_ball'
+		self.sub_track(cnts, image_np, self.ball_detected)
+		return	
+#if i detect the red
+	redLower = (0, 50, 50)#era 20 l uktimo
+        redUpper = (5, 255, 255)
+        mask = cv2.inRange(hsv, redLower, redUpper)
+        mask = cv2.erode(mask, None, iterations=2)
+        mask = cv2.dilate(mask, None, iterations=2)
+        #cv2.imshow('mask', mask)
+        cnts = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL,
+                                cv2.CHAIN_APPROX_SIMPLE)
+        cnts = imutils.grab_contours(cnts)
+        center = None
+        # only proceed if at least one contour was found
+	#put a flag to true when the robot sees the ball
+        if len(cnts) > 0:
+#   		self.var = 'TRUE' 
+		self.param = rospy.get_param('/red_ball')
+		if (self.param[2] == 'T'):
+			return
+	        rospy.loginfo('red ball detected')
+		self.ball_detected = 'red_ball'
+		self.sub_track(cnts, image_np, self.ball_detected)
+		return	
+#if i detect the yellow
+	yellowLower = (25, 50, 50)#era 20 l uktimo
+        yellowUpper = (35, 255, 255)
+        mask = cv2.inRange(hsv, yellowLower, yellowUpper)
+        mask = cv2.erode(mask, None, iterations=2)
+        mask = cv2.dilate(mask, None, iterations=2)
+        #cv2.imshow('mask', mask)
+        cnts = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL,
+                                cv2.CHAIN_APPROX_SIMPLE)
+        cnts = imutils.grab_contours(cnts)
+        center = None
+        # only proceed if at least one contour was found
+	#put a flag to true when the robot sees the ball
+        if len(cnts) > 0:
+#   		self.var = 'TRUE' 
+		self.param = rospy.get_param('/yellow_ball')
+		if (self.param[2] == 'T'):
+			return
+
+	        rospy.loginfo('yellow ball detected')
+		self.ball_detected = 'yellow_ball'
+		self.sub_track(cnts, image_np, self.ball_detected)
+		return	
+#if i detect the blue
+	blueLower = (100, 50, 50)#era 20 l uktimo
+        blueUpper = (130, 255, 255)
+        mask = cv2.inRange(hsv, blueLower, blueUpper)
+        mask = cv2.erode(mask, None, iterations=2)
+        mask = cv2.dilate(mask, None, iterations=2)
+        #cv2.imshow('mask', mask)
+        cnts = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL,
+                                cv2.CHAIN_APPROX_SIMPLE)
+        cnts = imutils.grab_contours(cnts)
+        center = None
+        # only proceed if at least one contour was found
+	#put a flag to true when the robot sees the ball
+        if len(cnts) > 0:
+#   		self.var = 'TRUE' 
+		self.param = rospy.get_param('/blue_ball')
+		if (self.param[2] == 'T'):
+			return
+
+	        rospy.loginfo('blue ball detected')
+		self.ball_detected = 'blue_ball'
+		self.sub_track(cnts, image_np, self.ball_detected)
+		return	
+#if i detect the magenta
+	magentaLower = (125, 50, 50)#era 20 l uktimo
+        magentaUpper = (150, 255, 255)
+        mask = cv2.inRange(hsv, magentaLower, magentaUpper)
+        mask = cv2.erode(mask, None, iterations=2)
+        mask = cv2.dilate(mask, None, iterations=2)
+        #cv2.imshow('mask', mask)
+        cnts = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL,
+                                cv2.CHAIN_APPROX_SIMPLE)
+        cnts = imutils.grab_contours(cnts)
+        center = None
+        # only proceed if at least one contour was found
+	#put a flag to true when the robot sees the ball
+        if len(cnts) > 0:
+#   		self.var = 'TRUE' 
+		self.param = rospy.get_param('/magenta_ball')
+		if (self.param[2] == 'T'):
+			return
+
+	        rospy.loginfo('magenta ball detected')
+		self.ball_detected = 'magenta_ball'
+		self.sub_track(cnts, image_np, self.ball_detected)
+		return	
+
+
+    def sub_track(self,cnts, image_np, ball_detected):
+
+	    rospy.loginfo('sub_track function!')
+	    self.counter=self.counter+1
+            c = max(cnts, key=cv2.contourArea)
+            ((x, y), radius) = cv2.minEnclosingCircle(c)
+            M = cv2.moments(c)
+            center = (int(M["m10"] / M["m00"]), int(M["m01"] / M["m00"]))
+
+            # only proceed if the radius meets a minimum size
+            if radius > 10:
+                # draw the circle and centroid on the frame,
+                # then update the list of tracked points
+                cv2.circle(image_np, (int(x), int(y)), int(radius),
+                           (0, 255, 255), 2)
+                cv2.circle(image_np, center, 5, (0, 0, 255), -1)
+                vel = Twist()
+                vel.angular.z = -0.002*(center[0]-400)
+                vel.linear.x = -0.01*(radius-100)
+                self.vel_pub.publish(vel)
+		#if the robot is almost not moving register on the parameter server that the corresponding ball has been reached
+		if (vel.angular.z<0.1 and vel.angular.z>-0.1 and vel.linear.x<0.1 and vel.linear.x>-0.1 or self.counter>100 ):
+			rospy.loginfo('sono dalla pallinaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
+			self.counter=0
+
+			if(ball_detected=='blue_ball'):
+				rospy.loginfo('1')
+				self.param= rospy.get_param('/blue_ball')
+				self.param[2] = 'T'
+				rospy.set_param('/blue_ball', self.param)
+				if(self.requested_room==ball_detected):
+					rospy.loginfo('SONO DENTRO')
+					self.play_state=True
+					time.sleep(1)
+				return
+			if(ball_detected=='yellow_ball'):
+				rospy.loginfo('1')
+				self.param= rospy.get_param('/yellow_ball')
+				self.param[2] = 'T'
+				rospy.set_param('/yellow_ball', self.param)
+				if(self.requested_room==ball_detected):
+					rospy.loginfo('SONO DENTRO')
+					self.play_state=True
+			
+					time.sleep(1)
+				return
+			if(ball_detected=='magenta_ball'):
+				rospy.loginfo('1')
+				self.param= rospy.get_param('/magenta_ball')
+				self.param[2] = 'T'
+				rospy.set_param('/magenta_ball', self.param)
+				if(self.requested_room==ball_detected):
+					rospy.loginfo('SONO DENTRO')
+					self.play_state=True
+			
+					time.sleep(1)
+				return
+			if(ball_detected=='black_ball'):
+				rospy.loginfo('1')
+				self.param= rospy.get_param('/black_ball')
+				self.param[2] = 'T'
+				rospy.set_param('/black_ball', self.param)
+				if(self.requested_room==ball_detected):
+					rospy.loginfo('SONO DENTRO')
+					self.play_state=True
+
+					time.sleep(1)
+				return
+			if(ball_detected=='green_ball'):
+				rospy.loginfo('1')
+				self.param= rospy.get_param('/green_ball')
+				self.param[2] = 'T'
+				rospy.set_param('/green_ball', self.param)
+				if(self.requested_room==ball_detected):
+					rospy.loginfo('SONO DENTRO')
+					self.play_state=True
+			
+					time.sleep(1)
+				return
+			if(ball_detected=='red_ball'):
+				rospy.loginfo('1')
+				self.param= rospy.get_param('/red_ball')
+				self.param[2] = 'T'
+				rospy.set_param('/red_ball', self.param)
+				if(self.requested_room==ball_detected):
+					rospy.loginfo('SONO DENTRO')
+					self.play_state=True
+			
+					time.sleep(1)
+				return
+				
+
+            else:
+                vel = Twist()
+                vel.linear.x = 0.3
+                self.vel_pub.publish(vel)
+
+	    time.sleep(2/1000000.0)
+
+	
 
 
     def callback(self, msg):
