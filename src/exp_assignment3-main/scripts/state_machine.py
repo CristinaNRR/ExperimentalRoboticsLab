@@ -80,7 +80,7 @@ class Normal(smach.State):
         rospy.loginfo('Executing state NORMAL ')
 	#send to the actionlib client the target positions to reach
       	pub = rospy.Publisher('targetPosition', Num,queue_size=10)
-	subscriber2=rospy.Subscriber("/cmd_vel", Twist, self.callback2)
+	subscriber2=rospy.Subscriber("cmd_vel", Twist, self.callback2)
         self.vel_pub = rospy.Publisher("cmd_vel",
                                        Twist, queue_size=1)
         # subscribed to the camera topic
@@ -304,9 +304,9 @@ class Normal(smach.State):
 		if (vel.angular.z<0.1 and vel.angular.z>-0.1 and vel.linear.x<0.1 and vel.linear.x>-0.1 or self.counter>200 ):
 			rospy.loginfo('sono dalla pallinaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
 			self.counter=0
-			vel.angular.z=0.0
-			vel.linear.x=0.0
-                	self.vel_pub.publish(vel)
+#			vel.angular.z=0.0
+#			vel.linear.x=0.0
+ #               	self.vel_pub.publish(vel)
 			if(ball_detected=='blue_ball'):
 				self.param= rospy.get_param('/Entrance')
 				self.param[2] = 'T'
@@ -344,7 +344,7 @@ class Normal(smach.State):
                 vel.linear.x = 0.3
                 self.vel_pub.publish(vel)
 
-	    time.sleep(2/1000000.0)
+#	    time.sleep(2/1000000.0)
 
 
 				
@@ -369,7 +369,7 @@ class Sleep(smach.State):
         rospy.loginfo('Executing state SLEEP')
 	#send the actionlib client the target position to reach
         pub = rospy.Publisher('targetPosition', Num,queue_size=10) 
-	rospy.Subscriber("/cmd_vel", Twist, self.callback)
+	rospy.Subscriber("cmd_vel", Twist, self.callback)
 	rospy.loginfo('sending the home position: %s', self.home)		
 	pub.publish(self.home)	
         #rospy.wait_for_message('chatter', Int8)
@@ -415,7 +415,7 @@ class Play(smach.State):
     def execute(self,userdata):
 	rospy.loginfo('Executing state PLAY')
 	pub = rospy.Publisher('targetPosition', Num,queue_size=10) 
-	subscriber=rospy.Subscriber("/cmd_vel", Twist, self.callback)
+	subscriber=rospy.Subscriber("cmd_vel", Twist, self.callback)
 
 
 	while(self.count<2):
@@ -563,9 +563,9 @@ class Find(smach.State):
     def execute(self,userdata):
 
 	rospy.loginfo('Executing state FIND (room received=%s)' %userdata.room_in)
-	rospy.Subscriber("/cmd_vel", Twist, self.callback)
+	rospy.Subscriber("cmd_vel", Twist, self.callback)
 	pub = rospy.Publisher('targetPosition', Num,queue_size=10)
-	self.vel_pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
+	self.vel_pub = rospy.Publisher('cmd_vel', Twist, queue_size=10)
         # subscribed to the camera topic
         subscriber1= rospy.Subscriber("camera1/image_raw/compressed",
                                            CompressedImage, self.callback2,  queue_size=1)
@@ -851,7 +851,7 @@ class Find(smach.State):
                 vel.linear.x = 0.3
                 self.vel_pub.publish(vel)
 
-	    time.sleep(2/1000000.0)
+#	    time.sleep(2/1000000.0)
 
 	
 

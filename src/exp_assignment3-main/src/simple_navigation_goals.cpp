@@ -5,7 +5,6 @@
 #include <std_msgs/Float64.h>
 #include "std_msgs/String.h"
 #include <sstream>
-#include <std_msgs/Int8.h>
 
 #include <unistd.h>
 
@@ -72,7 +71,7 @@ int main(int argc, char** argv){
   ROS_INFO("sono nel main");
 
   ros::NodeHandle nh;
-  pub = nh.advertise<std_msgs::Int8>("chatter", 1000);
+
 
   ros::Subscriber sub = nh.subscribe("targetPosition",4,Callback);
 
