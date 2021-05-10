@@ -38,7 +38,7 @@ In the end, I stored some default position
 playPose: [-5, 8]
 homePose:
 
-![plot](./new_ws/src/exp_assignment3-main/state_machine_diagram.png)
+![plot](./final_exp/src/exp_assignment3-main/state_machine_diagram.png)
 
 
 Inside the state machine are implemented the four abovementioned states:
