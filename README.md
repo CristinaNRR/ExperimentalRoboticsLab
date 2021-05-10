@@ -38,7 +38,7 @@ In the end, I stored some default position
 playPose: [-5, 8]
 homePose:
 
-![alt text](https://github.com/CristinaNRR/final_exp/blob/kinetic/state_machine_diagram.png?raw=true)
+![plot](./new_ws/src/exp_assignment3-main/state_machine_diagram.png)
 
 
 Inside the state machine are implemented the four abovementioned states:
