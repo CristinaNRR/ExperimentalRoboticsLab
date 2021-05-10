@@ -160,11 +160,11 @@ class Normal(smach.State):
 	#put a flag to true when the robot sees the ball
         if len(cnts) > 0:
  #   		self.var = 'TRUE' 
-		self.param = rospy.get_param('/green_ball')
+		self.param = rospy.get_param('/LivingRoom')
 		if (self.param[2] == 'T'):
 			return
 	        rospy.loginfo('green ball detected')
-		self.ball_detected = 'G'
+		self.ball_detected = self.param[3]
 		#call the sub_track function
 		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
@@ -183,11 +183,11 @@ class Normal(smach.State):
 	#put a flag to true when the robot sees the ball
         if len(cnts) > 0:
  #   		self.var = 'TRUE' 
-		self.param = rospy.get_param('/black_ball')
+		self.param = rospy.get_param('/Bedroom')
 		if (self.param[2] == 'T'):
 			return
 	        rospy.loginfo('black ball detected')
-		self.ball_detected = 'BL'
+		self.ball_detected = self.param[3]
 		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
 #if i detect the red
@@ -205,11 +205,11 @@ class Normal(smach.State):
 	#put a flag to true when the robot sees the ball
         if len(cnts) > 0:
  #   		self.var = 'TRUE' 
-		self.param = rospy.get_param('/red_ball')
+		self.param = rospy.get_param('/Closet')
 		if (self.param[2] == 'T'):
 			return
 	        rospy.loginfo('red ball detected')
-		self.ball_detected = 'R'
+		self.ball_detected = self.param[3]
 		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
 #if i detect the yellow
@@ -227,11 +227,11 @@ class Normal(smach.State):
 	#put a flag to true when the robot sees the ball
         if len(cnts) > 0:
  #   		self.var = 'TRUE' 
-		self.param = rospy.get_param('/yellow_ball')
+		self.param = rospy.get_param('/Kitchen')
 		if (self.param[2] == 'T'):
 			return
 	        rospy.loginfo('yellow ball detected')
-		self.ball_detected = 'Y'
+		self.ball_detected = self.param[3]
 		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
 #if i detect the blue
@@ -249,11 +249,11 @@ class Normal(smach.State):
 	#put a flag to true when the robot sees the ball
         if len(cnts) > 0:
  #   		self.var = 'TRUE' 
-		self.param = rospy.get_param('/blue_ball')
+		self.param = rospy.get_param('/Entrance')
 		if (self.param[2] == 'T'):
 			return
 	        rospy.loginfo('blue ball detected')
-		self.ball_detected = 'B'
+		self.ball_detected = self.param[3]
 		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
 #if i detect the magenta
@@ -271,11 +271,11 @@ class Normal(smach.State):
 	#put a flag to true when the robot sees the ball
         if len(cnts) > 0:
  #   		self.var = 'TRUE' 
-		self.param = rospy.get_param('/magenta_ball')
+		self.param = rospy.get_param('/Bathroom')
 		if (self.param[2] == 'T'):
 			return
 	        rospy.loginfo('magenta ball detected')
-		self.ball_detected = 'M'
+		self.ball_detected = self.param[3]
 		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
 
@@ -307,35 +307,35 @@ class Normal(smach.State):
 			vel.angular.z=0.0
 			vel.linear.x=0.0
                 	self.vel_pub.publish(vel)
-			if(ball_detected=='B'):
-				self.param= rospy.get_param('/blue_ball')
+			if(ball_detected=='blue_ball'):
+				self.param= rospy.get_param('/Entrance')
 				self.param[2] = 'T'
-				rospy.set_param('/blue_ball', self.param)
+				rospy.set_param('/Entrance', self.param)
 				return
-			if(ball_detected=='Y'):
-				self.param= rospy.get_param('/yellow_ball')
+			if(ball_detected=='yellow_ball'):
+				self.param= rospy.get_param('/Kitchen')
 				self.param[2] = 'T'
-				rospy.set_param('/yellow_ball', self.param)
+				rospy.set_param('/Kitchen', self.param)
 				return
-			if(ball_detected=='M'):
-				self.param= rospy.get_param('/magenta_ball')
+			if(ball_detected=='magenta_ball'):
+				self.param= rospy.get_param('/Bathroom')
 				self.param[2] = 'T'
-				rospy.set_param('/magenta_ball', self.param)
+				rospy.set_param('/Bathroom', self.param)
 				return
-			if(ball_detected=='BL'):
-				self.param= rospy.get_param('/black_ball')
+			if(ball_detected=='black_ball'):
+				self.param= rospy.get_param('/Bedroom')
 				self.param[2] = 'T'
-				rospy.set_param('/black_ball', self.param)
+				rospy.set_param('/Bedroom', self.param)
 				return
-			if(ball_detected=='G'):
-				self.param= rospy.get_param('/green_ball')
+			if(ball_detected=='green_ball'):
+				self.param= rospy.get_param('/LivingRoom')
 				self.param[2] = 'T'
-				rospy.set_param('/green_ball', self.param)
+				rospy.set_param('/LivingRoom', self.param)
 				return
-			if(ball_detected=='R'):
-				self.param= rospy.get_param('/red_ball')
+			if(ball_detected=='red_ball'):
+				self.param= rospy.get_param('/Closet')
 				self.param[2] = 'T'
-				rospy.set_param('/red_ball', self.param)
+				rospy.set_param('/Closet', self.param)
 				return
 				
 
@@ -420,7 +420,11 @@ class Play(smach.State):
 
 	while(self.count<2):
 		self.count=self.count+1
-		pub.publish(self.play_pose)
+		playPosition= rospy.get_param('/playPose')
+		lista=[]
+		lista.append(playPosition[0])
+		lista.append(playPosition[1])
+		pub.publish(lista)
 		rospy.loginfo('going to the play pose')		
 		time.sleep(4)
 		#waint until the robot stop moving 
@@ -430,9 +434,9 @@ class Play(smach.State):
 		n = random.randint(0,5)
 		print(n)
 		self.goTo= self.rooms[n]
-
-		if(self.goTo=='red_ball'):
-			self.param= rospy.get_param('/red_ball')
+		rospy.loginfo('goTo command: %s', self.goTo)
+		if(self.goTo=='Closet'):
+			self.param= rospy.get_param('/Closet')
 			if(self.param[2]=='T'):
 				lista=[]
 				lista.append(self.param[0])
@@ -443,11 +447,11 @@ class Play(smach.State):
 			else: 	
 				self.count=0
 				subscriber.unregister()
-				userdata.room_out=self.goTo
+				userdata.room_out=self.param[3]
 				return user_action('FIND')	
 
-		elif(self.goTo=='yellow_ball'):
-			self.param= rospy.get_param('/yellow_ball')
+		elif(self.goTo=='LivingRoom'):
+			self.param= rospy.get_param('/LivingRoom')
 			if(self.param[2]=='T'):
 				lista=[]
 				lista.append(self.param[0])
@@ -457,11 +461,11 @@ class Play(smach.State):
 			else: 	
 				self.count=0
 				subscriber.unregister()
-				userdata.room_out=self.goTo
+				userdata.room_out=self.param[3]
 				return user_action('FIND')
 
-		elif(self.goTo=='black_ball'):
-			self.param= rospy.get_param('/black_ball')
+		elif(self.goTo=='Entrance'):
+			self.param= rospy.get_param('/Entrance')
 			if(self.param[2]=='T'):
 				lista=[]
 				lista.append(self.param[0])
@@ -471,11 +475,11 @@ class Play(smach.State):
 			else: 
 				self.count=0
 				subscriber.unregister()	
-				userdata.room_out=self.goTo
+				userdata.room_out=self.param[3]
 				return user_action('FIND')
 
-		elif(self.goTo=='green_ball'):
-			self.param= rospy.get_param('/green_ball')
+		elif(self.goTo=='Bedroom'):
+			self.param= rospy.get_param('/Bedroom')
 			if(self.param[2]=='T'):
 				lista=[]
 				lista.append(self.param[0])
@@ -485,11 +489,11 @@ class Play(smach.State):
 			else: 	
 				self.count=0
 				subscriber.unregister()
-				userdata.room_out=self.goTo
+				userdata.room_out=self.param[3]
 				return user_action('FIND')
 
-		elif(self.goTo=='magenta_ball'):
-			self.param= rospy.get_param('/magenta_ball')
+		elif(self.goTo=='Bathroom'):
+			self.param= rospy.get_param('/Bathroom')
 			if(self.param[2]=='T'):
 				lista=[]
 				lista.append(self.param[0])
@@ -499,11 +503,11 @@ class Play(smach.State):
 			else:
 				self.count=0 
 				subscriber.unregister()	
-				userdata.room_out=self.goTo
+				userdata.room_out= self.param[3]
 				return user_action('FIND')
 
-		elif(self.goTo=='blue_ball'):
-			self.param= rospy.get_param('/blue_ball')
+		elif(self.goTo=='Kitchen'):
+			self.param= rospy.get_param('/Kitchen')
 			if(self.param[2]=='T'):
 				lista=[]
 				lista.append(self.param[0])
@@ -513,7 +517,7 @@ class Play(smach.State):
 			else: 	
 				self.count=0
 				subscriber.unregister()
-				userdata.room_out=self.goTo
+				userdata.room_out= self.param[3]
 				return user_action('FIND')
 
 		time.sleep(2)
@@ -553,7 +557,7 @@ class Find(smach.State):
 	self.rooms=[]
 	self.param=[]
 	self.stopFlag=0
-	self.stopIter=False
+
 	self.play_state=False
 
     def execute(self,userdata):
@@ -599,29 +603,6 @@ class Find(smach.State):
 
 
 
-#	while(1):
-#		if(self.stopIter==False):
-#			self.param= rospy.get_param('/red_ball')
-#			if(self.param[2]=='F'):
-#				position=[]
-#				position.append(self.param[0])
-#				position.append(self.param[1])
-#				pub.publish(position)
-#				current_room='red_ball'
-#				rospy.loginfo('going to the room position: %s', current_room)
-#				self.param[2]='T'
-#				rospy.set_param('/red_ball', self.param)
-#				self.stopIter=True
-
-
-#		time.sleep(2)
-#		self.stopIter=False
-#		#waint until the robot stop moving 
-#		while(self.stopFlag==0):
-#			pass
-#		if(current_room==userdata.room_in):
-#			return user_action('PLAY')
-
     def callback2(self,ros_data):
 
 	#self.stopFlag=0
@@ -649,11 +630,11 @@ class Find(smach.State):
 	#put a flag to true when the robot sees the ball
         if len(cnts) > 0:
 #   		self.var = 'TRUE' 
-		self.param = rospy.get_param('/green_ball')
+		self.param = rospy.get_param('/LivingRoom')
 		if (self.param[2] == 'T'):
 			return
  	        rospy.loginfo('green ball detected')
-		self.ball_detected = 'green_ball'
+		self.ball_detected = self.param[3]
 		#call the sub_track function
 		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
@@ -672,12 +653,12 @@ class Find(smach.State):
 	#put a flag to true when the robot sees the ball
         if len(cnts) > 0:
 #   		self.var = 'TRUE' 
-		self.param = rospy.get_param('/black_ball')
+		self.param = rospy.get_param('/Bedroom')
 		if (self.param[2] == 'T'):
 			return
 
 	        rospy.loginfo('black ball detected')
-		self.ball_detected = 'black_ball'
+		self.ball_detected = self.param[3]
 		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
 #if i detect the red
@@ -695,11 +676,11 @@ class Find(smach.State):
 	#put a flag to true when the robot sees the ball
         if len(cnts) > 0:
 #   		self.var = 'TRUE' 
-		self.param = rospy.get_param('/red_ball')
+		self.param = rospy.get_param('/Closet')
 		if (self.param[2] == 'T'):
 			return
 	        rospy.loginfo('red ball detected')
-		self.ball_detected = 'red_ball'
+		self.ball_detected = self.param[3]
 		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
 #if i detect the yellow
@@ -717,12 +698,12 @@ class Find(smach.State):
 	#put a flag to true when the robot sees the ball
         if len(cnts) > 0:
 #   		self.var = 'TRUE' 
-		self.param = rospy.get_param('/yellow_ball')
+		self.param = rospy.get_param('/Kitchen')
 		if (self.param[2] == 'T'):
 			return
 
 	        rospy.loginfo('yellow ball detected')
-		self.ball_detected = 'yellow_ball'
+		self.ball_detected = self.param[3]
 		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
 #if i detect the blue
@@ -740,12 +721,12 @@ class Find(smach.State):
 	#put a flag to true when the robot sees the ball
         if len(cnts) > 0:
 #   		self.var = 'TRUE' 
-		self.param = rospy.get_param('/blue_ball')
+		self.param = rospy.get_param('/Entrance')
 		if (self.param[2] == 'T'):
 			return
 
 	        rospy.loginfo('blue ball detected')
-		self.ball_detected = 'blue_ball'
+		self.ball_detected = self.param[3]
 		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
 #if i detect the magenta
@@ -763,12 +744,12 @@ class Find(smach.State):
 	#put a flag to true when the robot sees the ball
         if len(cnts) > 0:
 #   		self.var = 'TRUE' 
-		self.param = rospy.get_param('/magenta_ball')
+		self.param = rospy.get_param('/Bathroom')
 		if (self.param[2] == 'T'):
 			return
 
 	        rospy.loginfo('magenta ball detected')
-		self.ball_detected = 'magenta_ball'
+		self.ball_detected = self.param[3]
 		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
 
@@ -800,9 +781,9 @@ class Find(smach.State):
 
 			if(ball_detected=='blue_ball'):
 				rospy.loginfo('1')
-				self.param= rospy.get_param('/blue_ball')
+				self.param= rospy.get_param('/Entrance')
 				self.param[2] = 'T'
-				rospy.set_param('/blue_ball', self.param)
+				rospy.set_param('/Entrance', self.param)
 				if(self.requested_room==ball_detected):
 					rospy.loginfo('SONO DENTRO')
 					self.play_state=True
@@ -810,9 +791,9 @@ class Find(smach.State):
 				return
 			if(ball_detected=='yellow_ball'):
 				rospy.loginfo('1')
-				self.param= rospy.get_param('/yellow_ball')
+				self.param= rospy.get_param('/Kitchen')
 				self.param[2] = 'T'
-				rospy.set_param('/yellow_ball', self.param)
+				rospy.set_param('/Kitchen', self.param)
 				if(self.requested_room==ball_detected):
 					rospy.loginfo('SONO DENTRO')
 					self.play_state=True
@@ -821,9 +802,9 @@ class Find(smach.State):
 				return
 			if(ball_detected=='magenta_ball'):
 				rospy.loginfo('1')
-				self.param= rospy.get_param('/magenta_ball')
+				self.param= rospy.get_param('/Bathroom')
 				self.param[2] = 'T'
-				rospy.set_param('/magenta_ball', self.param)
+				rospy.set_param('/Bathroom', self.param)
 				if(self.requested_room==ball_detected):
 					rospy.loginfo('SONO DENTRO')
 					self.play_state=True
@@ -832,9 +813,9 @@ class Find(smach.State):
 				return
 			if(ball_detected=='black_ball'):
 				rospy.loginfo('1')
-				self.param= rospy.get_param('/black_ball')
+				self.param= rospy.get_param('/Bedroom')
 				self.param[2] = 'T'
-				rospy.set_param('/black_ball', self.param)
+				rospy.set_param('/Bedroom', self.param)
 				if(self.requested_room==ball_detected):
 					rospy.loginfo('SONO DENTRO')
 					self.play_state=True
@@ -843,9 +824,9 @@ class Find(smach.State):
 				return
 			if(ball_detected=='green_ball'):
 				rospy.loginfo('1')
-				self.param= rospy.get_param('/green_ball')
+				self.param= rospy.get_param('/LivingRoom')
 				self.param[2] = 'T'
-				rospy.set_param('/green_ball', self.param)
+				rospy.set_param('/LivingRoom', self.param)
 				if(self.requested_room==ball_detected):
 					rospy.loginfo('SONO DENTRO')
 					self.play_state=True
@@ -854,9 +835,9 @@ class Find(smach.State):
 				return
 			if(ball_detected=='red_ball'):
 				rospy.loginfo('1')
-				self.param= rospy.get_param('/red_ball')
+				self.param= rospy.get_param('/Closet')
 				self.param[2] = 'T'
-				rospy.set_param('/red_ball', self.param)
+				rospy.set_param('/Closet', self.param)
 				if(self.requested_room==ball_detected):
 					rospy.loginfo('SONO DENTRO')
 					self.play_state=True
