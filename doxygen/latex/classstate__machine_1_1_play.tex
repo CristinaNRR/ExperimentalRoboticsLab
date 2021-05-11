@@ -1,0 +1,84 @@
+\hypertarget{classstate__machine_1_1_play}{}\doxysection{state\+\_\+machine.\+Play Class Reference}
+\label{classstate__machine_1_1_play}\index{state\_machine.Play@{state\_machine.Play}}
+
+
+Inheritance diagram for state\+\_\+machine.\+Play\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classstate__machine_1_1_play__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for state\+\_\+machine.\+Play\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classstate__machine_1_1_play__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstate__machine_1_1_play_a5993a23d8be7f7b2647f71ede0334957}\label{classstate__machine_1_1_play_a5993a23d8be7f7b2647f71ede0334957}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classstate__machine_1_1_play_a04168d6842960585b4bbcf58f950547b}\label{classstate__machine_1_1_play_a04168d6842960585b4bbcf58f950547b}} 
+def {\bfseries execute} (self, userdata)
+\item 
+\mbox{\Hypertarget{classstate__machine_1_1_play_af3108766d3633975079b6c2f26456f9a}\label{classstate__machine_1_1_play_af3108766d3633975079b6c2f26456f9a}} 
+def {\bfseries callback} (self, msg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstate__machine_1_1_play_ad7c0631dbb9d98be3065c2e65b6dbc63}\label{classstate__machine_1_1_play_ad7c0631dbb9d98be3065c2e65b6dbc63}} 
+{\bfseries var2}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstate__machine_1_1_play_a276faca960b7836501ec5e2f0da038a3}\label{classstate__machine_1_1_play_a276faca960b7836501ec5e2f0da038a3}} 
+{\bfseries count}
+\item 
+\mbox{\Hypertarget{classstate__machine_1_1_play_a82da4b0d9cc752a92a6bb4c793df9aaf}\label{classstate__machine_1_1_play_a82da4b0d9cc752a92a6bb4c793df9aaf}} 
+{\bfseries play\+\_\+pose}
+\item 
+\mbox{\Hypertarget{classstate__machine_1_1_play_a1fae7e215371b18cf947e8cd1babb346}\label{classstate__machine_1_1_play_a1fae7e215371b18cf947e8cd1babb346}} 
+{\bfseries rooms}
+\item 
+\mbox{\Hypertarget{classstate__machine_1_1_play_a41a074c4bf967a31676ee879b4522e85}\label{classstate__machine_1_1_play_a41a074c4bf967a31676ee879b4522e85}} 
+{\bfseries param}
+\item 
+\mbox{\Hypertarget{classstate__machine_1_1_play_a60431dacf2811b3dc7e954473c281985}\label{classstate__machine_1_1_play_a60431dacf2811b3dc7e954473c281985}} 
+{\bfseries stop\+Flag}
+\item 
+\mbox{\Hypertarget{classstate__machine_1_1_play_af5202f566cb22d7ff7d915cecb2ce5cb}\label{classstate__machine_1_1_play_af5202f566cb22d7ff7d915cecb2ce5cb}} 
+{\bfseries pub} = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, Num,queue\+\_\+size=10)
+\item 
+\mbox{\Hypertarget{classstate__machine_1_1_play_a1b8fda22ac06420d622dcb2d328ca5cd}\label{classstate__machine_1_1_play_a1b8fda22ac06420d622dcb2d328ca5cd}} 
+{\bfseries subscriber} = rospy.\+Subscriber(\char`\"{}cmd\+\_\+vel\char`\"{}, Twist, self.\+callback)
+\item 
+\mbox{\Hypertarget{classstate__machine_1_1_play_a2d23491183560adebc8b74b65ef94062}\label{classstate__machine_1_1_play_a2d23491183560adebc8b74b65ef94062}} 
+{\bfseries play\+Position} = rospy.\+get\+\_\+param(\textquotesingle{}/play\+Pose\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classstate__machine_1_1_play_a5dd403c310eba8f21d2d6acd74e7b843}\label{classstate__machine_1_1_play_a5dd403c310eba8f21d2d6acd74e7b843}} 
+list {\bfseries lista} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{classstate__machine_1_1_play_a12eb6239336b4ee7c9d1f4399794aaba}\label{classstate__machine_1_1_play_a12eb6239336b4ee7c9d1f4399794aaba}} 
+{\bfseries n} = random.\+randint(0,5)
+\item 
+\mbox{\Hypertarget{classstate__machine_1_1_play_a9ffb340aab6992abdb021d3a3aa59099}\label{classstate__machine_1_1_play_a9ffb340aab6992abdb021d3a3aa59099}} 
+{\bfseries go\+To}
+\item 
+\mbox{\Hypertarget{classstate__machine_1_1_play_a32b35a6f3a55b1991402bb2c060048cd}\label{classstate__machine_1_1_play_a32b35a6f3a55b1991402bb2c060048cd}} 
+{\bfseries room\+\_\+out}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/exp\+\_\+assignment3-\/main/scripts/state\+\_\+machine.\+py\end{DoxyCompactItemize}

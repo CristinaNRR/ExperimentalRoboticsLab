@@ -44,12 +44,9 @@ def user_action(data):
    
 
 
-
-
-#In the normal state the robot reaches random positions. After a certain time move to the sleep behaviour.
-#when it sees the ball it moves to the play behavior
-
 class Normal(smach.State):
+##In the normal state the robot reaches random positions. After a certain time move to the sleep behaviour.
+#when it sees the ball it moves to the play behavior
 
 
     def __init__(self):
@@ -96,7 +93,7 @@ class Normal(smach.State):
 		for i in range(0,2):
 			n = random.randint(-6,8)
 			randomlist.append(n)
-	        rospy.loginfo('sending the random position: %s', randomlist)		
+	        rospy.loginfo('moving to the random position: %s', randomlist)		
 		pub.publish(randomlist)
 		time.sleep(4)
 		#se il robot si muove non mando i comandi
@@ -134,6 +131,8 @@ class Normal(smach.State):
 
 
     def callback(self,ros_data):
+    ##In the normal state the robot reaches random positions. After a certain time move to the sleep behaviour.
+    #when it sees the ball it moves to the play behavior
    
 	#self.stopFlag=0
  #### direct conversion to CV2 ####
@@ -301,8 +300,8 @@ class Normal(smach.State):
                 vel.linear.x = -0.01*(radius-100)
                 self.vel_pub.publish(vel)
 		#if the robot is almost not moving register on the parameter server that the corresponding ball has been reached
-		if (vel.angular.z<0.1 and vel.angular.z>-0.1 and vel.linear.x<0.1 and vel.linear.x>-0.1 or self.counter>200 ):
-			rospy.loginfo('sono dalla pallinaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
+		if ( vel.linear.x<0.1 and vel.linear.x>-0.1 or self.counter>200 ):
+			rospy.loginfo('New room position stored!!')
 			self.counter=0
 #			vel.angular.z=0.0
 #			vel.linear.x=0.0
@@ -370,7 +369,7 @@ class Sleep(smach.State):
 	#send the actionlib client the target position to reach
         pub = rospy.Publisher('targetPosition', Num,queue_size=10) 
 	rospy.Subscriber("cmd_vel", Twist, self.callback)
-	rospy.loginfo('sending the home position: %s', self.home)		
+	rospy.loginfo('going to the home position: %s', self.home)		
 	pub.publish(self.home)	
         #rospy.wait_for_message('chatter', Int8)
 	while(self.stopFlag==0):
@@ -441,7 +440,7 @@ class Play(smach.State):
 				lista=[]
 				lista.append(self.param[0])
 				lista.append(self.param[1])
-				rospy.loginfo('sending the room position: %s', lista)		
+				rospy.loginfo('going to the predefined room position: %s', lista)		
 				pub.publish(lista)
 			#move to the find state
 			else: 	
@@ -456,7 +455,7 @@ class Play(smach.State):
 				lista=[]
 				lista.append(self.param[0])
 				lista.append(self.param[1])
-				rospy.loginfo('sending the room position: %s', lista)		
+				rospy.loginfo('going to the predefined room position: %s', lista)		
 				pub.publish(lista)
 			else: 	
 				self.count=0
@@ -470,7 +469,7 @@ class Play(smach.State):
 				lista=[]
 				lista.append(self.param[0])
 				lista.append(self.param[1])
-				rospy.loginfo('sending the room position: %s', lista)		
+				rospy.loginfo('going to the predefined room position: %s', lista)		
 				pub.publish(lista)
 			else: 
 				self.count=0
@@ -484,7 +483,7 @@ class Play(smach.State):
 				lista=[]
 				lista.append(self.param[0])
 				lista.append(self.param[1])
-				rospy.loginfo('sending the room position: %s', lista)		
+				rospy.loginfo('going to the predefined room position: %s', lista)		
 				pub.publish(lista)
 			else: 	
 				self.count=0
@@ -498,7 +497,7 @@ class Play(smach.State):
 				lista=[]
 				lista.append(self.param[0])
 				lista.append(self.param[1])
-				rospy.loginfo('sending the room position: %s', lista)		
+				rospy.loginfo('going to the predefined room position: %s', lista)		
 				pub.publish(lista)
 			else:
 				self.count=0 
@@ -512,7 +511,7 @@ class Play(smach.State):
 				lista=[]
 				lista.append(self.param[0])
 				lista.append(self.param[1])
-				rospy.loginfo('sending the room: %s', lista)		
+				rospy.loginfo('going to the predefined room position: %s', lista)		
 				pub.publish(lista)
 			else: 	
 				self.count=0
@@ -569,14 +568,8 @@ class Find(smach.State):
         # subscribed to the camera topic
         subscriber1= rospy.Subscriber("camera1/image_raw/compressed",
                                            CompressedImage, self.callback2,  queue_size=1)
-	n=0 
-	self.requested_room=userdata.room_in
 
-	#choose randomly a room and check that it has not been discovered yet. If not go there, then check if it corresponds to the user target
-#	self.rooms= rospy.get_param('/rooms')
-#	n = random.randint(0,5)
-#	print(n)
-#	self.goTo= self.rooms[n]
+	self.requested_room=userdata.room_in
 
 
 
@@ -586,7 +579,7 @@ class Find(smach.State):
 		for i in range(0,2):
 			n = random.randint(-6,8)
 			randomlist.append(n)
-	        rospy.loginfo('sending the random position: %s', randomlist)		
+	        rospy.loginfo('going to the random position: %s', randomlist)		
 		pub.publish(randomlist)
 		time.sleep(4)
 		#se il robot si muove non mando i comandi
@@ -610,8 +603,6 @@ class Find(smach.State):
         np_arr = np.fromstring(ros_data.data, np.uint8)
         image_np = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)  # OpenCV >= 3.0:
 
- #       greenLower = (50, 50, 50)#era 20 l uktimo
-  #      greenUpper = (70, 255, 255)
 
         blurred = cv2.GaussianBlur(image_np, (11, 11), 0)
         hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
@@ -775,8 +766,8 @@ class Find(smach.State):
                 vel.linear.x = -0.01*(radius-100)
                 self.vel_pub.publish(vel)
 		#if the robot is almost not moving register on the parameter server that the corresponding ball has been reached
-		if (vel.angular.z<0.1 and vel.angular.z>-0.1 and vel.linear.x<0.1 and vel.linear.x>-0.1 or self.counter>100 ):
-			rospy.loginfo('sono dalla pallinaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
+		if ( vel.linear.x<0.1 and vel.linear.x>-0.1 or self.counter>200 ):
+			rospy.loginfo('New room position stored!!')
 			self.counter=0
 
 			if(ball_detected=='blue_ball'):
@@ -785,7 +776,6 @@ class Find(smach.State):
 				self.param[2] = 'T'
 				rospy.set_param('/Entrance', self.param)
 				if(self.requested_room==ball_detected):
-					rospy.loginfo('SONO DENTRO')
 					self.play_state=True
 					time.sleep(1)
 				return
@@ -795,7 +785,6 @@ class Find(smach.State):
 				self.param[2] = 'T'
 				rospy.set_param('/Kitchen', self.param)
 				if(self.requested_room==ball_detected):
-					rospy.loginfo('SONO DENTRO')
 					self.play_state=True
 			
 					time.sleep(1)
@@ -806,7 +795,6 @@ class Find(smach.State):
 				self.param[2] = 'T'
 				rospy.set_param('/Bathroom', self.param)
 				if(self.requested_room==ball_detected):
-					rospy.loginfo('SONO DENTRO')
 					self.play_state=True
 			
 					time.sleep(1)
@@ -817,7 +805,6 @@ class Find(smach.State):
 				self.param[2] = 'T'
 				rospy.set_param('/Bedroom', self.param)
 				if(self.requested_room==ball_detected):
-					rospy.loginfo('SONO DENTRO')
 					self.play_state=True
 
 					time.sleep(1)
@@ -828,7 +815,6 @@ class Find(smach.State):
 				self.param[2] = 'T'
 				rospy.set_param('/LivingRoom', self.param)
 				if(self.requested_room==ball_detected):
-					rospy.loginfo('SONO DENTRO')
 					self.play_state=True
 			
 					time.sleep(1)
@@ -839,7 +825,6 @@ class Find(smach.State):
 				self.param[2] = 'T'
 				rospy.set_param('/Closet', self.param)
 				if(self.requested_room==ball_detected):
-					rospy.loginfo('SONO DENTRO')
 					self.play_state=True
 			
 					time.sleep(1)

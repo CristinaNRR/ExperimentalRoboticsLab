@@ -24,11 +24,11 @@ In order to build the map of the house and make the robot navigate around it pro
 Inside the folder script of the same package I implemented the state machine 'state_machine.py', that leads the whole process. This node communicates with the action client publishing target positions expressed as a list of integers(as shown inside the msg folder). 
 The state machine makes use of some data: inside the workspace the file 'param.yaml' can be found, which contains default data that will be stored in the parameter server once the program is executed.
 
- In the first x line we can find the representation I decided to use in order to associate each room with a color. If we consider the first line:
+ In the first 6 line we can find the representation I decided to use in order to associate each room with a color. If we consider the first line:
 
 Closet: [-5.41, 2.48, 'F', red_ball]
 
-I described each room with a list of arguments, the first two indicates the (x,y) coordinates of the room(extracted using Rviz), the third indicates if the room as already been discovered by the robot, while the last simply associate the room to a ball as required.
+I described each room with a list of arguments, the first two indicates the (x,y) reference coordinates of the room(extracted using Rviz), the third indicates if the room as already been discovered by the robot, while the last simply associate the room to a ball as required.
 With the following line I simly created a list with the rooms of the apartment 
 
 rooms: ['red_ball', 'green_ball', 'blue_ball', 'black_ball', 'magenta_ball', 'yellow_ball']
@@ -38,7 +38,6 @@ In the end, I stored some default position
 playPose: [-5, 8]
 homePose:
 
-![plot](./final_exp/src/exp_assignment3-main/state_machine_diagram.png)
 
 
 Inside the state machine are implemented the four abovementioned states:
@@ -48,12 +47,14 @@ Inside the state machine are implemented the four abovementioned states:
 * Play State: the robot goes to the play pose waiting for a goTo command. The goTo command is simulated extracting randomly from the parmeter 'rooms' in the parameter server. The robot checks if the extracted room has already been discovered. If so, goes there using the (x,y) coordinates stored in the parameter server. After this it goes back to the play pose waiting for another goTo command. On the contraty, if the room has not been discovered yet, it switches to the Find state passing as parameter the name of the room.
 * Find state: the robot start moving around the house. When it detects a new ball it switches to the Track function that works as in the normal state. Then the robot checks if the just discovered room coincide with the room received by the Play state. If so, it goes back to the play behaviour; if not, keeps moving around the house.
 
+In each state I used a lot of 'loginfo' functions in order to be able to follow the state machine behaviour and check that everyting was working properly.
+Inside the package exp_assignment3 it can be found a state machine diagram showing the possible transitions among states.
 
 ## Packages and file list
 Inside the workspace we can find the following packages:
-* exp_assignment3: contains the state machine inside the folder script, the simple_navigation_goals action client inside the folder src, the launch file simulation.launch inside the folder launch.
+* exp_assignment3: contains the state machine inside the folder script, the simple_navigation_goals action client inside the folder src, the launch file simulation.launch inside the folder launch(which is used to launch the whole simulation, opening both Gazebo and Rviz).
 * planning: contains the gmapping.launch and the the move_base.launch files inside the launch folder.
-* gmapping: contains the description of the robot inside the urdf folder.
+* gmapping: contains the description of the robot inside the urdf folder and the code used by the gmapping algorithm.
 
 ## Installation and running procedure
 * clone the repository inside home
@@ -72,6 +73,13 @@ Inside the workspace we can find the following packages:
       $ roslaunch exp_assignment3 simulation.launch 
   ```
 
--prendere posizione senza salvarla nel PS
--usare una strategia migliore nel find behaviour
--far passare il robot nello stato play leggendo il comando da un altro nodo invece che farlo dopo un tot di tempo
+Looking at the terminal we can follow all the steps performed by the state machine including its change of states.
+
+## System limitations and possible tecnical improvements
+Some possible improvements:
+* Adopting a more efficient strategy in the find behaviour in order to explore the still unknown rooms.
+* In order to execute the transition between normal and play state I simply introduced a counter in the normal state. Once the counter reaches a predefined value the system switches to the play state. One improvement might be to receive the play command from a stand alone node.
+* As said before, the reference positions of each ball i.e room, have been stored manually before the execution inside the parameter server. However, the positions will be unknown to the robot until it actually explore the rooms. Only in that moment the reference positions will be marked as 'T' and therefore the robot will be able to use them. 
+One improvement might be to obtain the positions at runtime once the robot gets close to the ball.
+
+Regarding the last point, I decided to store the reference positions of the rooms myself because during the code testing I noticed that sometimes when the robot detects a new ball it is not always able to actually gets close to it since it may get stucked in some walls between its position and the ball. This of course may happen since in the ball tracking the robot is not relying on the moveBase package to guide its motion. 

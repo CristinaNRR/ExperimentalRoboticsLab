@@ -37,8 +37,6 @@ std_msgs/String.h
 /home/cristina/new_ws/src/exp_assignment3-main/src/std_msgs/String.h
 sstream
 -
-std_msgs/Int8.h
--
 unistd.h
 -
 
@@ -1179,22 +1177,6 @@ ros/message_operations.h
 -
 
 /opt/ros/kinetic/include/std_msgs/Header.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-
-/opt/ros/kinetic/include/std_msgs/Int8.h
 string
 -
 vector
