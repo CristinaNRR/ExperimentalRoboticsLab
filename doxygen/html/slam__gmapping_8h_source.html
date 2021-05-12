@@ -69,7 +69,7 @@ $(function() {
 <div class="title">slam_gmapping.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<a href="slam__gmapping_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * slam_gmapping</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (c) 2008, Willow Garage, Inc.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
@@ -117,20 +117,20 @@ $(function() {
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_slam_g_mapping.html">   46</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_slam_g_mapping.html">SlamGMapping</a></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_slam_g_mapping.html">SlamGMapping</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_slam_g_mapping.html">SlamGMapping</a>(ros::NodeHandle&amp; nh, ros::NodeHandle&amp; pnh);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_slam_g_mapping.html">SlamGMapping</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> seed, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> max_duration_buffer);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    ~<a class="code" href="class_slam_g_mapping.html">SlamGMapping</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_slam_g_mapping.html#aa40ca229b3db4d0cf5bf7448c475a4c3">SlamGMapping</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_slam_g_mapping.html#aa40ca229b3db4d0cf5bf7448c475a4c3">SlamGMapping</a>(ros::NodeHandle&amp; nh, ros::NodeHandle&amp; pnh);</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_slam_g_mapping.html#a6a4853715facc1ee2591955180e830a2">   51</a></span>&#160;    <a class="code" href="class_slam_g_mapping.html#a6a4853715facc1ee2591955180e830a2">SlamGMapping</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> seed, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> max_duration_buffer);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_slam_g_mapping.html#ae4a539b79ee1f11b7430f313ad445667">~SlamGMapping</a>();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> startLiveSlam();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> startReplay(<span class="keyword">const</span> std::string &amp; bag_fname, std::string scan_topic);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> publishTransform();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_slam_g_mapping.html#aca7f6aaa57c8ac675068701adda348ea">init</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_slam_g_mapping.html#ab0d5567e7a8e010ff11068fcce0d9c04">startLiveSlam</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_slam_g_mapping.html#a90bee18e7c96af13916caae4a4bfd618">startReplay</a>(<span class="keyword">const</span> std::string &amp; bag_fname, std::string scan_topic);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_slam_g_mapping.html#a2447af8faad253af05c7dc9f492b8489">publishTransform</a>();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> laserCallback(<span class="keyword">const</span> sensor_msgs::LaserScan::ConstPtr&amp; scan);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> mapCallback(nav_msgs::GetMap::Request  &amp;req,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_slam_g_mapping.html#a49172a6ae33df4daf397959789dc1c34">laserCallback</a>(<span class="keyword">const</span> sensor_msgs::LaserScan::ConstPtr&amp; scan);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_slam_g_mapping.html#a780899c48f753bf4768580fb46580d83">mapCallback</a>(nav_msgs::GetMap::Request  &amp;req,</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                     nav_msgs::GetMap::Response &amp;res);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> publishLoop(<span class="keywordtype">double</span> transform_publish_period);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_slam_g_mapping.html#a00a01ecfacccbfcfccc3e138de6bd00f">publishLoop</a>(<span class="keywordtype">double</span> transform_publish_period);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    ros::NodeHandle node_;</div>
@@ -223,6 +223,16 @@ $(function() {
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">double</span> tf_delay_;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;};</div>
 <div class="ttc" id="aclass_slam_g_mapping_html"><div class="ttname"><a href="class_slam_g_mapping.html">SlamGMapping</a></div><div class="ttdef"><b>Definition:</b> slam_gmapping.h:47</div></div>
+<div class="ttc" id="aclass_slam_g_mapping_html_a00a01ecfacccbfcfccc3e138de6bd00f"><div class="ttname"><a href="class_slam_g_mapping.html#a00a01ecfacccbfcfccc3e138de6bd00f">SlamGMapping::publishLoop</a></div><div class="ttdeci">void publishLoop(double transform_publish_period)</div><div class="ttdef"><b>Definition:</b> slam_gmapping.cpp:352</div></div>
+<div class="ttc" id="aclass_slam_g_mapping_html_a2447af8faad253af05c7dc9f492b8489"><div class="ttname"><a href="class_slam_g_mapping.html#a2447af8faad253af05c7dc9f492b8489">SlamGMapping::publishTransform</a></div><div class="ttdeci">void publishTransform()</div><div class="ttdef"><b>Definition:</b> slam_gmapping.cpp:798</div></div>
+<div class="ttc" id="aclass_slam_g_mapping_html_a49172a6ae33df4daf397959789dc1c34"><div class="ttname"><a href="class_slam_g_mapping.html#a49172a6ae33df4daf397959789dc1c34">SlamGMapping::laserCallback</a></div><div class="ttdeci">void laserCallback(const sensor_msgs::LaserScan::ConstPtr &amp;scan)</div><div class="ttdef"><b>Definition:</b> slam_gmapping.cpp:610</div></div>
+<div class="ttc" id="aclass_slam_g_mapping_html_a6a4853715facc1ee2591955180e830a2"><div class="ttname"><a href="class_slam_g_mapping.html#a6a4853715facc1ee2591955180e830a2">SlamGMapping::SlamGMapping</a></div><div class="ttdeci">SlamGMapping(unsigned long int seed, unsigned long int max_duration_buffer)</div></div>
+<div class="ttc" id="aclass_slam_g_mapping_html_a780899c48f753bf4768580fb46580d83"><div class="ttname"><a href="class_slam_g_mapping.html#a780899c48f753bf4768580fb46580d83">SlamGMapping::mapCallback</a></div><div class="ttdeci">bool mapCallback(nav_msgs::GetMap::Request &amp;req, nav_msgs::GetMap::Response &amp;res)</div><div class="ttdef"><b>Definition:</b> slam_gmapping.cpp:785</div></div>
+<div class="ttc" id="aclass_slam_g_mapping_html_a90bee18e7c96af13916caae4a4bfd618"><div class="ttname"><a href="class_slam_g_mapping.html#a90bee18e7c96af13916caae4a4bfd618">SlamGMapping::startReplay</a></div><div class="ttdeci">void startReplay(const std::string &amp;bag_fname, std::string scan_topic)</div><div class="ttdef"><b>Definition:</b> slam_gmapping.cpp:282</div></div>
+<div class="ttc" id="aclass_slam_g_mapping_html_aa40ca229b3db4d0cf5bf7448c475a4c3"><div class="ttname"><a href="class_slam_g_mapping.html#aa40ca229b3db4d0cf5bf7448c475a4c3">SlamGMapping::SlamGMapping</a></div><div class="ttdeci">SlamGMapping()</div><div class="ttdef"><b>Definition:</b> slam_gmapping.cpp:142</div></div>
+<div class="ttc" id="aclass_slam_g_mapping_html_ab0d5567e7a8e010ff11068fcce0d9c04"><div class="ttname"><a href="class_slam_g_mapping.html#ab0d5567e7a8e010ff11068fcce0d9c04">SlamGMapping::startLiveSlam</a></div><div class="ttdeci">void startLiveSlam()</div><div class="ttdef"><b>Definition:</b> slam_gmapping.cpp:269</div></div>
+<div class="ttc" id="aclass_slam_g_mapping_html_aca7f6aaa57c8ac675068701adda348ea"><div class="ttname"><a href="class_slam_g_mapping.html#aca7f6aaa57c8ac675068701adda348ea">SlamGMapping::init</a></div><div class="ttdeci">void init()</div><div class="ttdef"><b>Definition:</b> slam_gmapping.cpp:167</div></div>
+<div class="ttc" id="aclass_slam_g_mapping_html_ae4a539b79ee1f11b7430f313ad445667"><div class="ttname"><a href="class_slam_g_mapping.html#ae4a539b79ee1f11b7430f313ad445667">SlamGMapping::~SlamGMapping</a></div><div class="ttdeci">~SlamGMapping()</div><div class="ttdef"><b>Definition:</b> slam_gmapping.cpp:363</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

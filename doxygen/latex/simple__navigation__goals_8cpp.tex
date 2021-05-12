@@ -1,0 +1,54 @@
+\hypertarget{simple__navigation__goals_8cpp}{}\doxysection{src/exp\+\_\+assignment3-\/main/src/simple\+\_\+navigation\+\_\+goals.cpp File Reference}
+\label{simple__navigation__goals_8cpp}\index{src/exp\_assignment3-\/main/src/simple\_navigation\_goals.cpp@{src/exp\_assignment3-\/main/src/simple\_navigation\_goals.cpp}}
+{\ttfamily \#include $<$ros/ros.\+h$>$}\newline
+{\ttfamily \#include $<$exp\+\_\+assignment3/\+Num.\+h$>$}\newline
+{\ttfamily \#include $<$move\+\_\+base\+\_\+msgs/\+Move\+Base\+Action.\+h$>$}\newline
+{\ttfamily \#include $<$actionlib/client/simple\+\_\+action\+\_\+client.\+h$>$}\newline
+{\ttfamily \#include $<$std\+\_\+msgs/\+Float64.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}std\+\_\+msgs/\+String.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+Include dependency graph for simple\+\_\+navigation\+\_\+goals.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{simple__navigation__goals_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef actionlib\+::\+Simple\+Action\+Client$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$ \mbox{\hyperlink{simple__navigation__goals_8cpp_a21e20cc0b6656ae897b3cbb969b93241}{Move\+Base\+Client}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{simple__navigation__goals_8cpp_a7b85e6fd13e6563d54f34f2b362f3b39}{Callback}} (const exp\+\_\+assignment3\+::\+Num\+::\+Const\+Ptr \&msg)
+\item 
+int \mbox{\hyperlink{simple__navigation__goals_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{simple__navigation__goals_8cpp_a21e20cc0b6656ae897b3cbb969b93241}\label{simple__navigation__goals_8cpp_a21e20cc0b6656ae897b3cbb969b93241}} 
+\index{simple\_navigation\_goals.cpp@{simple\_navigation\_goals.cpp}!MoveBaseClient@{MoveBaseClient}}
+\index{MoveBaseClient@{MoveBaseClient}!simple\_navigation\_goals.cpp@{simple\_navigation\_goals.cpp}}
+\doxysubsubsection{\texorpdfstring{MoveBaseClient}{MoveBaseClient}}
+{\footnotesize\ttfamily typedef actionlib\+::\+Simple\+Action\+Client$<$move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action$>$ \mbox{\hyperlink{simple__navigation__goals_8cpp_a21e20cc0b6656ae897b3cbb969b93241}{Move\+Base\+Client}}}
+
+A move\+Base action client is implemented and used to send the desired goal positions to the default move\+Base action server 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{simple__navigation__goals_8cpp_a7b85e6fd13e6563d54f34f2b362f3b39}\label{simple__navigation__goals_8cpp_a7b85e6fd13e6563d54f34f2b362f3b39}} 
+\index{simple\_navigation\_goals.cpp@{simple\_navigation\_goals.cpp}!Callback@{Callback}}
+\index{Callback@{Callback}!simple\_navigation\_goals.cpp@{simple\_navigation\_goals.cpp}}
+\doxysubsubsection{\texorpdfstring{Callback()}{Callback()}}
+{\footnotesize\ttfamily void Callback (\begin{DoxyParamCaption}\item[{const exp\+\_\+assignment3\+::\+Num\+::\+Const\+Ptr \&}]{msg }\end{DoxyParamCaption})}
+
+The program enters here everytime a new goal position is received from the state machine. Once received, the positions(expressed with respect to the map frame) are converted and sent to the move\+Base action server. \mbox{\Hypertarget{simple__navigation__goals_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{simple__navigation__goals_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{simple\_navigation\_goals.cpp@{simple\_navigation\_goals.cpp}!main@{main}}
+\index{main@{main}!simple\_navigation\_goals.cpp@{simple\_navigation\_goals.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+

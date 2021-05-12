@@ -2,6 +2,11 @@
 \label{classstate__machine_1_1_find}\index{state\_machine.Find@{state\_machine.Find}}
 
 
+The robot starts moving randomly in the environment.  
+
+
+
+
 Inheritance diagram for state\+\_\+machine.\+Find\+:
 \nopagebreak
 \begin{figure}[H]
@@ -23,133 +28,178 @@ Collaboration diagram for state\+\_\+machine.\+Find\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_aa7bd4d07590561e39233a3759ee25f49}\label{classstate__machine_1_1_find_aa7bd4d07590561e39233a3759ee25f49}} 
-def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+def \mbox{\hyperlink{classstate__machine_1_1_find_aa7bd4d07590561e39233a3759ee25f49}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_aa79a6408d288a202d766d86a34d26c22}\label{classstate__machine_1_1_find_aa79a6408d288a202d766d86a34d26c22}} 
-def {\bfseries execute} (self, userdata)
+def \mbox{\hyperlink{classstate__machine_1_1_find_aa79a6408d288a202d766d86a34d26c22}{execute}} (self, userdata)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a8d0cabef2b2a52d974cd32fabb9d3b92}\label{classstate__machine_1_1_find_a8d0cabef2b2a52d974cd32fabb9d3b92}} 
-def {\bfseries callback2} (self, ros\+\_\+data)
-\item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a23a53054f145be77ca51188ecc22f5d6}\label{classstate__machine_1_1_find_a23a53054f145be77ca51188ecc22f5d6}} 
-def {\bfseries sub\+\_\+track} (self, cnts, image\+\_\+np, ball\+\_\+detected)
-\item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_ab73a685b11418314ef5ff90eb209f146}\label{classstate__machine_1_1_find_ab73a685b11418314ef5ff90eb209f146}} 
-def {\bfseries callback} (self, msg)
-\end{DoxyCompactItemize}
+def \mbox{\hyperlink{classstate__machine_1_1_find_a8d0cabef2b2a52d974cd32fabb9d3b92}{callback2}} (self, ros\+\_\+data)
+\begin{DoxyCompactList}\small\item\em The program enters here everytime e new image is available from the camera. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classstate__machine_1_1_find_a23a53054f145be77ca51188ecc22f5d6}{sub\+\_\+track}} (self, \mbox{\hyperlink{classstate__machine_1_1_find_ac07e4324d4b304740943523d4dead028}{cnts}}, image\+\_\+np, \mbox{\hyperlink{classstate__machine_1_1_find_af437dcbbad0c31f83c7c134261d5bc98}{ball\+\_\+detected}})
+\begin{DoxyCompactList}\small\item\em This function is executed everytime the robot detects a colored object which was not previously detected. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classstate__machine_1_1_find_ab73a685b11418314ef5ff90eb209f146}{callback}} (self, msg)
+\begin{DoxyCompactList}\small\item\em A flag is set to 1 if the robot is not moving, to 0 otherwise ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a7e39204157d4f942427c5d6d14d3c53e}\label{classstate__machine_1_1_find_a7e39204157d4f942427c5d6d14d3c53e}} 
-{\bfseries var2}
+\mbox{\hyperlink{classstate__machine_1_1_find_a7e39204157d4f942427c5d6d14d3c53e}{var2}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a03b9653ba644781fbeae01fea8227931}\label{classstate__machine_1_1_find_a03b9653ba644781fbeae01fea8227931}} 
-{\bfseries counter}
+\mbox{\hyperlink{classstate__machine_1_1_find_a03b9653ba644781fbeae01fea8227931}{counter}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_af358a6d79133cf476bf08a8ad3642f54}\label{classstate__machine_1_1_find_af358a6d79133cf476bf08a8ad3642f54}} 
-{\bfseries play\+\_\+pose}
+\mbox{\hyperlink{classstate__machine_1_1_find_af358a6d79133cf476bf08a8ad3642f54}{play\+\_\+pose}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_ab8412e1cb66e671caf6977f03828a2bd}\label{classstate__machine_1_1_find_ab8412e1cb66e671caf6977f03828a2bd}} 
-{\bfseries rooms}
+\mbox{\hyperlink{classstate__machine_1_1_find_ab8412e1cb66e671caf6977f03828a2bd}{rooms}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a147a928dffe82913a947d06b1da343e4}\label{classstate__machine_1_1_find_a147a928dffe82913a947d06b1da343e4}} 
-{\bfseries param}
+\mbox{\hyperlink{classstate__machine_1_1_find_a147a928dffe82913a947d06b1da343e4}{param}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a56c334f3d8214ea21e7caf8849e9bb63}\label{classstate__machine_1_1_find_a56c334f3d8214ea21e7caf8849e9bb63}} 
-{\bfseries stop\+Flag}
+\mbox{\hyperlink{classstate__machine_1_1_find_a56c334f3d8214ea21e7caf8849e9bb63}{stop\+Flag}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a4c1e9b99c291eea6d2d77e0220cc695c}\label{classstate__machine_1_1_find_a4c1e9b99c291eea6d2d77e0220cc695c}} 
-{\bfseries play\+\_\+state}
+\mbox{\hyperlink{classstate__machine_1_1_find_a4c1e9b99c291eea6d2d77e0220cc695c}{play\+\_\+state}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a2688c1572ae4b50265d1acb68a3ad4ff}\label{classstate__machine_1_1_find_a2688c1572ae4b50265d1acb68a3ad4ff}} 
-{\bfseries pub} = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, Num,queue\+\_\+size=10)
+\mbox{\hyperlink{classstate__machine_1_1_find_a2688c1572ae4b50265d1acb68a3ad4ff}{pub}} = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, Num,\mbox{\hyperlink{classstate__machine_1_1_find_a264fa9455d4286aa26b670ac87d712ab}{queue\+\_\+size}}=10)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a72180d3ff6b58a93eb9efb2e65f08f66}\label{classstate__machine_1_1_find_a72180d3ff6b58a93eb9efb2e65f08f66}} 
-{\bfseries vel\+\_\+pub}
+\mbox{\hyperlink{classstate__machine_1_1_find_a72180d3ff6b58a93eb9efb2e65f08f66}{vel\+\_\+pub}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_ad0300ceff8872223de0bc6ebf8484070}\label{classstate__machine_1_1_find_ad0300ceff8872223de0bc6ebf8484070}} 
-{\bfseries Twist}
+\mbox{\hyperlink{classstate__machine_1_1_find_ad0300ceff8872223de0bc6ebf8484070}{Twist}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a264fa9455d4286aa26b670ac87d712ab}\label{classstate__machine_1_1_find_a264fa9455d4286aa26b670ac87d712ab}} 
-{\bfseries queue\+\_\+size}
+\mbox{\hyperlink{classstate__machine_1_1_find_a264fa9455d4286aa26b670ac87d712ab}{queue\+\_\+size}}
 \item 
-{\bfseries subscriber1}
+\mbox{\hyperlink{classstate__machine_1_1_find_a5a9dc667feda492e362147ca048b23cf}{subscriber1}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_ac31d8f1d8f7bee55c09c21d42ca37562}\label{classstate__machine_1_1_find_ac31d8f1d8f7bee55c09c21d42ca37562}} 
-{\bfseries requested\+\_\+room}
+\mbox{\hyperlink{classstate__machine_1_1_find_ac31d8f1d8f7bee55c09c21d42ca37562}{requested\+\_\+room}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a32d0065999c3bfe648fc780556cb6d1c}\label{classstate__machine_1_1_find_a32d0065999c3bfe648fc780556cb6d1c}} 
-list {\bfseries randomlist} = \mbox{[}$\,$\mbox{]}
+list \mbox{\hyperlink{classstate__machine_1_1_find_a32d0065999c3bfe648fc780556cb6d1c}{randomlist}} = \mbox{[}$\,$\mbox{]}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_abce5793259e7c3888b073630925af70b}\label{classstate__machine_1_1_find_abce5793259e7c3888b073630925af70b}} 
-{\bfseries n} = random.\+randint(-\/6,8)
+\mbox{\hyperlink{classstate__machine_1_1_find_abce5793259e7c3888b073630925af70b}{n}} = random.\+randint(-\/6,8)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a0db6266a833477626a5ddb310a310613}\label{classstate__machine_1_1_find_a0db6266a833477626a5ddb310a310613}} 
-\mbox{\hyperlink{classstate__machine_1_1_find_a0db6266a833477626a5ddb310a310613}{np\+\_\+arr}} = np.\+fromstring(ros\+\_\+data.\+data, np.\+uint8)
-\begin{DoxyCompactList}\small\item\em direct conversion to CV2 \#\#\#\# \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a9cc4f75bbed0e9e92c99d5507ccacc37}\label{classstate__machine_1_1_find_a9cc4f75bbed0e9e92c99d5507ccacc37}} 
-{\bfseries image\+\_\+np} = cv2.\+imdecode(\mbox{\hyperlink{classstate__machine_1_1_find_a0db6266a833477626a5ddb310a310613}{np\+\_\+arr}}, cv2.\+IMREAD\+\_\+\+COLOR)
+tuple \mbox{\hyperlink{classstate__machine_1_1_find_a527cf2af476eb16566cf0e9b73807ea1}{green\+Lower}} = (50, 50, 50)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a1e3a6dbea6fcb42c3fa19ae7c8824306}\label{classstate__machine_1_1_find_a1e3a6dbea6fcb42c3fa19ae7c8824306}} 
-{\bfseries blurred} = cv2.\+Gaussian\+Blur(image\+\_\+np, (11, 11), 0)
+tuple \mbox{\hyperlink{classstate__machine_1_1_find_a37da222e5b351208a0da7939ad9d4e1d}{green\+Upper}} = (70, 255, 255)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a4329217e912cfc7abaa0eff829fc82ef}\label{classstate__machine_1_1_find_a4329217e912cfc7abaa0eff829fc82ef}} 
-{\bfseries hsv} = cv2.\+cvt\+Color(blurred, cv2.\+COLOR\+\_\+\+BGR2\+HSV)
+\mbox{\hyperlink{classstate__machine_1_1_find_a90336201a9a87a50249024e0a2c75915}{mask}} = cv2.\+in\+Range(hsv, \mbox{\hyperlink{classstate__machine_1_1_find_a527cf2af476eb16566cf0e9b73807ea1}{green\+Lower}}, \mbox{\hyperlink{classstate__machine_1_1_find_a37da222e5b351208a0da7939ad9d4e1d}{green\+Upper}})
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a527cf2af476eb16566cf0e9b73807ea1}\label{classstate__machine_1_1_find_a527cf2af476eb16566cf0e9b73807ea1}} 
-tuple {\bfseries green\+Lower} = (50, 50, 50)
+\mbox{\hyperlink{classstate__machine_1_1_find_ac07e4324d4b304740943523d4dead028}{cnts}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a37da222e5b351208a0da7939ad9d4e1d}\label{classstate__machine_1_1_find_a37da222e5b351208a0da7939ad9d4e1d}} 
-tuple {\bfseries green\+Upper} = (70, 255, 255)
+\mbox{\hyperlink{classstate__machine_1_1_find_a268b17e99c7af64ce215a4502ced4a71}{center}} = None
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a90336201a9a87a50249024e0a2c75915}\label{classstate__machine_1_1_find_a90336201a9a87a50249024e0a2c75915}} 
-{\bfseries mask} = cv2.\+in\+Range(hsv, green\+Lower, green\+Upper)
+\mbox{\hyperlink{classstate__machine_1_1_find_af437dcbbad0c31f83c7c134261d5bc98}{ball\+\_\+detected}}
 \item 
-{\bfseries cnts}
+tuple \mbox{\hyperlink{classstate__machine_1_1_find_a505d7c8848afd43463b5934fd87e450e}{black\+Lower}} = (0, 0, 0)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a268b17e99c7af64ce215a4502ced4a71}\label{classstate__machine_1_1_find_a268b17e99c7af64ce215a4502ced4a71}} 
-{\bfseries center} = None
+tuple \mbox{\hyperlink{classstate__machine_1_1_find_afb190716fb4cc3736847b423975d3208}{black\+Upper}} = (5, 50, 50)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_af437dcbbad0c31f83c7c134261d5bc98}\label{classstate__machine_1_1_find_af437dcbbad0c31f83c7c134261d5bc98}} 
-{\bfseries ball\+\_\+detected}
+tuple \mbox{\hyperlink{classstate__machine_1_1_find_ac869d1476120eb9b7a8ac0b27cae49c8}{red\+Lower}} = (0, 50, 50)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a505d7c8848afd43463b5934fd87e450e}\label{classstate__machine_1_1_find_a505d7c8848afd43463b5934fd87e450e}} 
-tuple {\bfseries black\+Lower} = (0, 0, 0)
+tuple \mbox{\hyperlink{classstate__machine_1_1_find_a9694c2b1dfa947c7b884509502f7ffc3}{red\+Upper}} = (5, 255, 255)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_afb190716fb4cc3736847b423975d3208}\label{classstate__machine_1_1_find_afb190716fb4cc3736847b423975d3208}} 
-tuple {\bfseries black\+Upper} = (5, 50, 50)
+tuple \mbox{\hyperlink{classstate__machine_1_1_find_a86b8761fa217fa855b5cfc9bc507ae90}{yellow\+Lower}} = (25, 50, 50)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_ac869d1476120eb9b7a8ac0b27cae49c8}\label{classstate__machine_1_1_find_ac869d1476120eb9b7a8ac0b27cae49c8}} 
-tuple {\bfseries red\+Lower} = (0, 50, 50)
+tuple \mbox{\hyperlink{classstate__machine_1_1_find_abdfede4913c2b1a363394ab8ea755bdf}{yellow\+Upper}} = (35, 255, 255)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a9694c2b1dfa947c7b884509502f7ffc3}\label{classstate__machine_1_1_find_a9694c2b1dfa947c7b884509502f7ffc3}} 
-tuple {\bfseries red\+Upper} = (5, 255, 255)
+tuple \mbox{\hyperlink{classstate__machine_1_1_find_ac99d2bff458cf0a91cefcef161744e3c}{blue\+Lower}} = (100, 50, 50)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a86b8761fa217fa855b5cfc9bc507ae90}\label{classstate__machine_1_1_find_a86b8761fa217fa855b5cfc9bc507ae90}} 
-tuple {\bfseries yellow\+Lower} = (25, 50, 50)
+tuple \mbox{\hyperlink{classstate__machine_1_1_find_adc473ee33bb859f517ad8773789ff329}{blue\+Upper}} = (130, 255, 255)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_abdfede4913c2b1a363394ab8ea755bdf}\label{classstate__machine_1_1_find_abdfede4913c2b1a363394ab8ea755bdf}} 
-tuple {\bfseries yellow\+Upper} = (35, 255, 255)
+tuple \mbox{\hyperlink{classstate__machine_1_1_find_a07f9da739fa1dc411833af091c4a2224}{magenta\+Lower}} = (125, 50, 50)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_ac99d2bff458cf0a91cefcef161744e3c}\label{classstate__machine_1_1_find_ac99d2bff458cf0a91cefcef161744e3c}} 
-tuple {\bfseries blue\+Lower} = (100, 50, 50)
-\item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_adc473ee33bb859f517ad8773789ff329}\label{classstate__machine_1_1_find_adc473ee33bb859f517ad8773789ff329}} 
-tuple {\bfseries blue\+Upper} = (130, 255, 255)
-\item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a07f9da739fa1dc411833af091c4a2224}\label{classstate__machine_1_1_find_a07f9da739fa1dc411833af091c4a2224}} 
-tuple {\bfseries magenta\+Lower} = (125, 50, 50)
-\item 
-\mbox{\Hypertarget{classstate__machine_1_1_find_aa1da061384e2a13e9ce75663526dcce6}\label{classstate__machine_1_1_find_aa1da061384e2a13e9ce75663526dcce6}} 
-tuple {\bfseries magenta\+Upper} = (150, 255, 255)
+tuple \mbox{\hyperlink{classstate__machine_1_1_find_aa1da061384e2a13e9ce75663526dcce6}{magenta\+Upper}} = (150, 255, 255)
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+The robot starts moving randomly in the environment. 
+
+Once it detects a new ball it checks if it corresponds to the ball received by the play state. If so it goes back to the play behaviour. Otherwise it keeps moving around the house. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classstate__machine_1_1_find_aa7bd4d07590561e39233a3759ee25f49}\label{classstate__machine_1_1_find_aa7bd4d07590561e39233a3759ee25f49}} 
+\index{state\_machine.Find@{state\_machine.Find}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def state\+\_\+machine.\+Find.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classstate__machine_1_1_find_ab73a685b11418314ef5ff90eb209f146}\label{classstate__machine_1_1_find_ab73a685b11418314ef5ff90eb209f146}} 
+\index{state\_machine.Find@{state\_machine.Find}!callback@{callback}}
+\index{callback@{callback}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}}
+{\footnotesize\ttfamily def state\+\_\+machine.\+Find.\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+
+
+A flag is set to 1 if the robot is not moving, to 0 otherwise ~\newline
+ 
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_a8d0cabef2b2a52d974cd32fabb9d3b92}\label{classstate__machine_1_1_find_a8d0cabef2b2a52d974cd32fabb9d3b92}} 
+\index{state\_machine.Find@{state\_machine.Find}!callback2@{callback2}}
+\index{callback2@{callback2}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{callback2()}{callback2()}}
+{\footnotesize\ttfamily def state\+\_\+machine.\+Find.\+callback2 (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ros\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+The program enters here everytime e new image is available from the camera. 
+
+An algorithm is implemented to detect six different colored ball. \mbox{\Hypertarget{classstate__machine_1_1_find_aa79a6408d288a202d766d86a34d26c22}\label{classstate__machine_1_1_find_aa79a6408d288a202d766d86a34d26c22}} 
+\index{state\_machine.Find@{state\_machine.Find}!execute@{execute}}
+\index{execute@{execute}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily def state\+\_\+machine.\+Find.\+execute (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{userdata }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_a23a53054f145be77ca51188ecc22f5d6}\label{classstate__machine_1_1_find_a23a53054f145be77ca51188ecc22f5d6}} 
+\index{state\_machine.Find@{state\_machine.Find}!sub\_track@{sub\_track}}
+\index{sub\_track@{sub\_track}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{sub\_track()}{sub\_track()}}
+{\footnotesize\ttfamily def state\+\_\+machine.\+Find.\+sub\+\_\+track (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cnts,  }\item[{}]{image\+\_\+np,  }\item[{}]{ball\+\_\+detected }\end{DoxyParamCaption})}
+
+
+
+This function is executed everytime the robot detects a colored object which was not previously detected. 
+
+The robot tries to go closer to the detected object. Once done, the reference position of the room is marked as reached modifying data in the parameter server. 
+
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classstate__machine_1_1_find_af437dcbbad0c31f83c7c134261d5bc98}\label{classstate__machine_1_1_find_af437dcbbad0c31f83c7c134261d5bc98}} 
+\index{state\_machine.Find@{state\_machine.Find}!ball\_detected@{ball\_detected}}
+\index{ball\_detected@{ball\_detected}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{ball\_detected}{ball\_detected}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+ball\+\_\+detected\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_a505d7c8848afd43463b5934fd87e450e}\label{classstate__machine_1_1_find_a505d7c8848afd43463b5934fd87e450e}} 
+\index{state\_machine.Find@{state\_machine.Find}!blackLower@{blackLower}}
+\index{blackLower@{blackLower}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{blackLower}{blackLower}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Find.\+black\+Lower = (0, 0, 0)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_afb190716fb4cc3736847b423975d3208}\label{classstate__machine_1_1_find_afb190716fb4cc3736847b423975d3208}} 
+\index{state\_machine.Find@{state\_machine.Find}!blackUpper@{blackUpper}}
+\index{blackUpper@{blackUpper}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{blackUpper}{blackUpper}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Find.\+black\+Upper = (5, 50, 50)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_ac99d2bff458cf0a91cefcef161744e3c}\label{classstate__machine_1_1_find_ac99d2bff458cf0a91cefcef161744e3c}} 
+\index{state\_machine.Find@{state\_machine.Find}!blueLower@{blueLower}}
+\index{blueLower@{blueLower}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{blueLower}{blueLower}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Find.\+blue\+Lower = (100, 50, 50)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_adc473ee33bb859f517ad8773789ff329}\label{classstate__machine_1_1_find_adc473ee33bb859f517ad8773789ff329}} 
+\index{state\_machine.Find@{state\_machine.Find}!blueUpper@{blueUpper}}
+\index{blueUpper@{blueUpper}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{blueUpper}{blueUpper}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Find.\+blue\+Upper = (130, 255, 255)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_a268b17e99c7af64ce215a4502ced4a71}\label{classstate__machine_1_1_find_a268b17e99c7af64ce215a4502ced4a71}} 
+\index{state\_machine.Find@{state\_machine.Find}!center@{center}}
+\index{center@{center}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{center}{center}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+center = None\hspace{0.3cm}{\ttfamily [static]}}
+
 \mbox{\Hypertarget{classstate__machine_1_1_find_ac07e4324d4b304740943523d4dead028}\label{classstate__machine_1_1_find_ac07e4324d4b304740943523d4dead028}} 
 \index{state\_machine.Find@{state\_machine.Find}!cnts@{cnts}}
 \index{cnts@{cnts}!state\_machine.Find@{state\_machine.Find}}
@@ -162,6 +212,114 @@ tuple {\bfseries magenta\+Upper} = (150, 255, 255)
 \DoxyCodeLine{                                cv2.CHAIN\_APPROX\_SIMPLE)}
 
 \end{DoxyCode}
+\mbox{\Hypertarget{classstate__machine_1_1_find_a03b9653ba644781fbeae01fea8227931}\label{classstate__machine_1_1_find_a03b9653ba644781fbeae01fea8227931}} 
+\index{state\_machine.Find@{state\_machine.Find}!counter@{counter}}
+\index{counter@{counter}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+counter\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_a527cf2af476eb16566cf0e9b73807ea1}\label{classstate__machine_1_1_find_a527cf2af476eb16566cf0e9b73807ea1}} 
+\index{state\_machine.Find@{state\_machine.Find}!greenLower@{greenLower}}
+\index{greenLower@{greenLower}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{greenLower}{greenLower}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Find.\+green\+Lower = (50, 50, 50)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_a37da222e5b351208a0da7939ad9d4e1d}\label{classstate__machine_1_1_find_a37da222e5b351208a0da7939ad9d4e1d}} 
+\index{state\_machine.Find@{state\_machine.Find}!greenUpper@{greenUpper}}
+\index{greenUpper@{greenUpper}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{greenUpper}{greenUpper}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Find.\+green\+Upper = (70, 255, 255)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_a07f9da739fa1dc411833af091c4a2224}\label{classstate__machine_1_1_find_a07f9da739fa1dc411833af091c4a2224}} 
+\index{state\_machine.Find@{state\_machine.Find}!magentaLower@{magentaLower}}
+\index{magentaLower@{magentaLower}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{magentaLower}{magentaLower}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Find.\+magenta\+Lower = (125, 50, 50)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_aa1da061384e2a13e9ce75663526dcce6}\label{classstate__machine_1_1_find_aa1da061384e2a13e9ce75663526dcce6}} 
+\index{state\_machine.Find@{state\_machine.Find}!magentaUpper@{magentaUpper}}
+\index{magentaUpper@{magentaUpper}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{magentaUpper}{magentaUpper}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Find.\+magenta\+Upper = (150, 255, 255)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_a90336201a9a87a50249024e0a2c75915}\label{classstate__machine_1_1_find_a90336201a9a87a50249024e0a2c75915}} 
+\index{state\_machine.Find@{state\_machine.Find}!mask@{mask}}
+\index{mask@{mask}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{mask}{mask}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+mask = cv2.\+in\+Range(hsv, \mbox{\hyperlink{classstate__machine_1_1_find_a527cf2af476eb16566cf0e9b73807ea1}{green\+Lower}}, \mbox{\hyperlink{classstate__machine_1_1_find_a37da222e5b351208a0da7939ad9d4e1d}{green\+Upper}})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_abce5793259e7c3888b073630925af70b}\label{classstate__machine_1_1_find_abce5793259e7c3888b073630925af70b}} 
+\index{state\_machine.Find@{state\_machine.Find}!n@{n}}
+\index{n@{n}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+n = random.\+randint(-\/6,8)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_a147a928dffe82913a947d06b1da343e4}\label{classstate__machine_1_1_find_a147a928dffe82913a947d06b1da343e4}} 
+\index{state\_machine.Find@{state\_machine.Find}!param@{param}}
+\index{param@{param}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{param}{param}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+param\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_af358a6d79133cf476bf08a8ad3642f54}\label{classstate__machine_1_1_find_af358a6d79133cf476bf08a8ad3642f54}} 
+\index{state\_machine.Find@{state\_machine.Find}!play\_pose@{play\_pose}}
+\index{play\_pose@{play\_pose}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{play\_pose}{play\_pose}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+play\+\_\+pose\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_a4c1e9b99c291eea6d2d77e0220cc695c}\label{classstate__machine_1_1_find_a4c1e9b99c291eea6d2d77e0220cc695c}} 
+\index{state\_machine.Find@{state\_machine.Find}!play\_state@{play\_state}}
+\index{play\_state@{play\_state}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{play\_state}{play\_state}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+play\+\_\+state\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_a2688c1572ae4b50265d1acb68a3ad4ff}\label{classstate__machine_1_1_find_a2688c1572ae4b50265d1acb68a3ad4ff}} 
+\index{state\_machine.Find@{state\_machine.Find}!pub@{pub}}
+\index{pub@{pub}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{pub}{pub}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+pub = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, Num,\mbox{\hyperlink{classstate__machine_1_1_find_a264fa9455d4286aa26b670ac87d712ab}{queue\+\_\+size}}=10)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_a264fa9455d4286aa26b670ac87d712ab}\label{classstate__machine_1_1_find_a264fa9455d4286aa26b670ac87d712ab}} 
+\index{state\_machine.Find@{state\_machine.Find}!queue\_size@{queue\_size}}
+\index{queue\_size@{queue\_size}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{queue\_size}{queue\_size}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+queue\+\_\+size\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_a32d0065999c3bfe648fc780556cb6d1c}\label{classstate__machine_1_1_find_a32d0065999c3bfe648fc780556cb6d1c}} 
+\index{state\_machine.Find@{state\_machine.Find}!randomlist@{randomlist}}
+\index{randomlist@{randomlist}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{randomlist}{randomlist}}
+{\footnotesize\ttfamily list state\+\_\+machine.\+Find.\+randomlist = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_ac869d1476120eb9b7a8ac0b27cae49c8}\label{classstate__machine_1_1_find_ac869d1476120eb9b7a8ac0b27cae49c8}} 
+\index{state\_machine.Find@{state\_machine.Find}!redLower@{redLower}}
+\index{redLower@{redLower}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{redLower}{redLower}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Find.\+red\+Lower = (0, 50, 50)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_a9694c2b1dfa947c7b884509502f7ffc3}\label{classstate__machine_1_1_find_a9694c2b1dfa947c7b884509502f7ffc3}} 
+\index{state\_machine.Find@{state\_machine.Find}!redUpper@{redUpper}}
+\index{redUpper@{redUpper}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{redUpper}{redUpper}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Find.\+red\+Upper = (5, 255, 255)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_ac31d8f1d8f7bee55c09c21d42ca37562}\label{classstate__machine_1_1_find_ac31d8f1d8f7bee55c09c21d42ca37562}} 
+\index{state\_machine.Find@{state\_machine.Find}!requested\_room@{requested\_room}}
+\index{requested\_room@{requested\_room}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{requested\_room}{requested\_room}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+requested\+\_\+room\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_ab8412e1cb66e671caf6977f03828a2bd}\label{classstate__machine_1_1_find_ab8412e1cb66e671caf6977f03828a2bd}} 
+\index{state\_machine.Find@{state\_machine.Find}!rooms@{rooms}}
+\index{rooms@{rooms}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{rooms}{rooms}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+rooms\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_a56c334f3d8214ea21e7caf8849e9bb63}\label{classstate__machine_1_1_find_a56c334f3d8214ea21e7caf8849e9bb63}} 
+\index{state\_machine.Find@{state\_machine.Find}!stopFlag@{stopFlag}}
+\index{stopFlag@{stopFlag}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{stopFlag}{stopFlag}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+stop\+Flag\hspace{0.3cm}{\ttfamily [static]}}
+
 \mbox{\Hypertarget{classstate__machine_1_1_find_a5a9dc667feda492e362147ca048b23cf}\label{classstate__machine_1_1_find_a5a9dc667feda492e362147ca048b23cf}} 
 \index{state\_machine.Find@{state\_machine.Find}!subscriber1@{subscriber1}}
 \index{subscriber1@{subscriber1}!state\_machine.Find@{state\_machine.Find}}
@@ -174,8 +332,38 @@ tuple {\bfseries magenta\+Upper} = (150, 255, 255)
 \DoxyCodeLine{                                           CompressedImage, self.callback2,  queue\_size=1)}
 
 \end{DoxyCode}
+\mbox{\Hypertarget{classstate__machine_1_1_find_ad0300ceff8872223de0bc6ebf8484070}\label{classstate__machine_1_1_find_ad0300ceff8872223de0bc6ebf8484070}} 
+\index{state\_machine.Find@{state\_machine.Find}!Twist@{Twist}}
+\index{Twist@{Twist}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{Twist}{Twist}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+Twist\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_a7e39204157d4f942427c5d6d14d3c53e}\label{classstate__machine_1_1_find_a7e39204157d4f942427c5d6d14d3c53e}} 
+\index{state\_machine.Find@{state\_machine.Find}!var2@{var2}}
+\index{var2@{var2}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{var2}{var2}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+var2}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_a72180d3ff6b58a93eb9efb2e65f08f66}\label{classstate__machine_1_1_find_a72180d3ff6b58a93eb9efb2e65f08f66}} 
+\index{state\_machine.Find@{state\_machine.Find}!vel\_pub@{vel\_pub}}
+\index{vel\_pub@{vel\_pub}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{vel\_pub}{vel\_pub}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+vel\+\_\+pub\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_a86b8761fa217fa855b5cfc9bc507ae90}\label{classstate__machine_1_1_find_a86b8761fa217fa855b5cfc9bc507ae90}} 
+\index{state\_machine.Find@{state\_machine.Find}!yellowLower@{yellowLower}}
+\index{yellowLower@{yellowLower}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{yellowLower}{yellowLower}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Find.\+yellow\+Lower = (25, 50, 50)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_abdfede4913c2b1a363394ab8ea755bdf}\label{classstate__machine_1_1_find_abdfede4913c2b1a363394ab8ea755bdf}} 
+\index{state\_machine.Find@{state\_machine.Find}!yellowUpper@{yellowUpper}}
+\index{yellowUpper@{yellowUpper}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{yellowUpper}{yellowUpper}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Find.\+yellow\+Upper = (35, 255, 255)\hspace{0.3cm}{\ttfamily [static]}}
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/exp\+\_\+assignment3-\/main/scripts/state\+\_\+machine.\+py\end{DoxyCompactItemize}
+src/exp\+\_\+assignment3-\/main/scripts/\mbox{\hyperlink{state__machine_8py}{state\+\_\+machine.\+py}}\end{DoxyCompactItemize}

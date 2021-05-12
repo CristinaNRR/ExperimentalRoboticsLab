@@ -1,0 +1,43 @@
+\hypertarget{slam__gmapping_8cpp}{}\doxysection{src/\+SLAM\+\_\+packages-\/main/slam\+\_\+gmapping/gmapping/src/slam\+\_\+gmapping.cpp File Reference}
+\label{slam__gmapping_8cpp}\index{src/SLAM\_packages-\/main/slam\_gmapping/gmapping/src/slam\_gmapping.cpp@{src/SLAM\_packages-\/main/slam\_gmapping/gmapping/src/slam\_gmapping.cpp}}
+{\ttfamily \#include \char`\"{}slam\+\_\+gmapping.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}ros/ros.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ros/console.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}nav\+\_\+msgs/\+Map\+Meta\+Data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gmapping/sensor/sensor\+\_\+range/rangesensor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gmapping/sensor/sensor\+\_\+odometry/odometrysensor.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$rosbag/bag.\+h$>$}\newline
+{\ttfamily \#include $<$rosbag/view.\+h$>$}\newline
+{\ttfamily \#include $<$boost/foreach.\+hpp$>$}\newline
+Include dependency graph for slam\+\_\+gmapping.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{slam__gmapping_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{slam__gmapping_8cpp_a85d9ac269eba33293361f4ed7c2a697b}{foreach}}~BOOST\+\_\+\+FOREACH
+\item 
+\#define \mbox{\hyperlink{slam__gmapping_8cpp_a2388723427585df03b86ed963c9de575}{MAP\+\_\+\+IDX}}(sx,  i,  j)~((sx) $\ast$ (j) + (i))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{slam__gmapping_8cpp_a85d9ac269eba33293361f4ed7c2a697b}\label{slam__gmapping_8cpp_a85d9ac269eba33293361f4ed7c2a697b}} 
+\index{slam\_gmapping.cpp@{slam\_gmapping.cpp}!foreach@{foreach}}
+\index{foreach@{foreach}!slam\_gmapping.cpp@{slam\_gmapping.cpp}}
+\doxysubsubsection{\texorpdfstring{foreach}{foreach}}
+{\footnotesize\ttfamily \#define foreach~BOOST\+\_\+\+FOREACH}
+
+\mbox{\Hypertarget{slam__gmapping_8cpp_a2388723427585df03b86ed963c9de575}\label{slam__gmapping_8cpp_a2388723427585df03b86ed963c9de575}} 
+\index{slam\_gmapping.cpp@{slam\_gmapping.cpp}!MAP\_IDX@{MAP\_IDX}}
+\index{MAP\_IDX@{MAP\_IDX}!slam\_gmapping.cpp@{slam\_gmapping.cpp}}
+\doxysubsubsection{\texorpdfstring{MAP\_IDX}{MAP\_IDX}}
+{\footnotesize\ttfamily \#define MAP\+\_\+\+IDX(\begin{DoxyParamCaption}\item[{}]{sx,  }\item[{}]{i,  }\item[{}]{j }\end{DoxyParamCaption})~((sx) $\ast$ (j) + (i))}
+

@@ -28,140 +28,189 @@ Collaboration diagram for state\+\_\+machine.\+Normal\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_acdbc35a37d0350d7805a628048bc3bed}\label{classstate__machine_1_1_normal_acdbc35a37d0350d7805a628048bc3bed}} 
-def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+def \mbox{\hyperlink{classstate__machine_1_1_normal_acdbc35a37d0350d7805a628048bc3bed}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_a2930df5f4890ec4b47b2a8e18f9bff08}\label{classstate__machine_1_1_normal_a2930df5f4890ec4b47b2a8e18f9bff08}} 
-def {\bfseries execute} (self, userdata)
+def \mbox{\hyperlink{classstate__machine_1_1_normal_a2930df5f4890ec4b47b2a8e18f9bff08}{execute}} (self, userdata)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_acf2362fb5723327887a7c724cd8a05b9}\label{classstate__machine_1_1_normal_acf2362fb5723327887a7c724cd8a05b9}} 
-def {\bfseries callback2} (self, msg)
-\item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_ab8bc608e9dab104a02f5ef47b4420aa3}\label{classstate__machine_1_1_normal_ab8bc608e9dab104a02f5ef47b4420aa3}} 
-def {\bfseries callback} (self, ros\+\_\+data)
-\item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_ada7f09af92db43445852f10100ad3549}\label{classstate__machine_1_1_normal_ada7f09af92db43445852f10100ad3549}} 
-def {\bfseries sub\+\_\+track} (self, cnts, image\+\_\+np, ball\+\_\+detected)
-\end{DoxyCompactItemize}
+def \mbox{\hyperlink{classstate__machine_1_1_normal_acf2362fb5723327887a7c724cd8a05b9}{callback2}} (self, msg)
+\begin{DoxyCompactList}\small\item\em A flag is set to 1 if the robot is not moving, to 0 otherwise ~\newline
+ \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classstate__machine_1_1_normal_ab8bc608e9dab104a02f5ef47b4420aa3}{callback}} (self, ros\+\_\+data)
+\begin{DoxyCompactList}\small\item\em The program enters here everytime e new image is available from the camera. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classstate__machine_1_1_normal_ada7f09af92db43445852f10100ad3549}{sub\+\_\+track}} (self, \mbox{\hyperlink{classstate__machine_1_1_normal_ad08998a7ddb318b756fe766fe30e869f}{cnts}}, \mbox{\hyperlink{classstate__machine_1_1_normal_ad247694107d80d709bef6b4a2de17c75}{image\+\_\+np}}, \mbox{\hyperlink{classstate__machine_1_1_normal_aa400514c36784367a6d300a8bbed0692}{ball\+\_\+detected}})
+\begin{DoxyCompactList}\small\item\em This function is executed everytime the robot detects a color object which was not previously detected. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_a70f06e652b5b92b91fc1500c0dff1d46}\label{classstate__machine_1_1_normal_a70f06e652b5b92b91fc1500c0dff1d46}} 
-{\bfseries sleep\+\_\+count}
+\mbox{\hyperlink{classstate__machine_1_1_normal_a70f06e652b5b92b91fc1500c0dff1d46}{sleep\+\_\+count}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_a301b395d50a7aa2268e92fd3a221e6b7}\label{classstate__machine_1_1_normal_a301b395d50a7aa2268e92fd3a221e6b7}} 
-{\bfseries play\+\_\+count}
+\mbox{\hyperlink{classstate__machine_1_1_normal_a301b395d50a7aa2268e92fd3a221e6b7}{play\+\_\+count}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_ad631fe332b431c0001682701dde8dbed}\label{classstate__machine_1_1_normal_ad631fe332b431c0001682701dde8dbed}} 
-{\bfseries counter}
+\mbox{\hyperlink{classstate__machine_1_1_normal_ad631fe332b431c0001682701dde8dbed}{counter}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_a27eca8cdd2bee790ad3eecd42c23e3b5}\label{classstate__machine_1_1_normal_a27eca8cdd2bee790ad3eecd42c23e3b5}} 
-{\bfseries stop\+Flag}
+\mbox{\hyperlink{classstate__machine_1_1_normal_a27eca8cdd2bee790ad3eecd42c23e3b5}{stop\+Flag}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_ad676a7bddfcb08e695d05338b57989f9}\label{classstate__machine_1_1_normal_ad676a7bddfcb08e695d05338b57989f9}} 
-{\bfseries param}
+\mbox{\hyperlink{classstate__machine_1_1_normal_ad676a7bddfcb08e695d05338b57989f9}{param}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_aa400514c36784367a6d300a8bbed0692}\label{classstate__machine_1_1_normal_aa400514c36784367a6d300a8bbed0692}} 
-{\bfseries ball\+\_\+detected}
+\mbox{\hyperlink{classstate__machine_1_1_normal_aa400514c36784367a6d300a8bbed0692}{ball\+\_\+detected}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_ab6d144a3dda6248e1d2f30f9abe9d609}\label{classstate__machine_1_1_normal_ab6d144a3dda6248e1d2f30f9abe9d609}} 
-{\bfseries outcomes}
+\mbox{\hyperlink{classstate__machine_1_1_normal_ab6d144a3dda6248e1d2f30f9abe9d609}{outcomes}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_aacbaeaef5799eece6ea4897f5a1d2880}\label{classstate__machine_1_1_normal_aacbaeaef5799eece6ea4897f5a1d2880}} 
-{\bfseries pub} = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, Num,queue\+\_\+size=10)
+\mbox{\hyperlink{classstate__machine_1_1_normal_aacbaeaef5799eece6ea4897f5a1d2880}{pub}} = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, Num,\mbox{\hyperlink{classstate__machine_1_1_normal_ae4b7ade70a0e23f0dd8738aaca0b4e4d}{queue\+\_\+size}}=10)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_ad5baf6feb3b07de770ba22e847d27acd}\label{classstate__machine_1_1_normal_ad5baf6feb3b07de770ba22e847d27acd}} 
-{\bfseries subscriber2} = rospy.\+Subscriber(\char`\"{}cmd\+\_\+vel\char`\"{}, Twist, self.\+callback2)
+\mbox{\hyperlink{classstate__machine_1_1_normal_ad5baf6feb3b07de770ba22e847d27acd}{subscriber2}} = rospy.\+Subscriber(\char`\"{}cmd\+\_\+vel\char`\"{}, Twist, self.\+callback2)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_abcf3ba4b7e7a92c40a87e3776ffdc89d}\label{classstate__machine_1_1_normal_abcf3ba4b7e7a92c40a87e3776ffdc89d}} 
-{\bfseries vel\+\_\+pub}
+\mbox{\hyperlink{classstate__machine_1_1_normal_abcf3ba4b7e7a92c40a87e3776ffdc89d}{vel\+\_\+pub}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_a6f6f347ff2c917d80cdb28f42e7cfd47}\label{classstate__machine_1_1_normal_a6f6f347ff2c917d80cdb28f42e7cfd47}} 
-{\bfseries Twist}
+\mbox{\hyperlink{classstate__machine_1_1_normal_a6f6f347ff2c917d80cdb28f42e7cfd47}{Twist}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_ae4b7ade70a0e23f0dd8738aaca0b4e4d}\label{classstate__machine_1_1_normal_ae4b7ade70a0e23f0dd8738aaca0b4e4d}} 
-{\bfseries queue\+\_\+size}
+\mbox{\hyperlink{classstate__machine_1_1_normal_ae4b7ade70a0e23f0dd8738aaca0b4e4d}{queue\+\_\+size}}
 \item 
-{\bfseries subscriber1}
+\mbox{\hyperlink{classstate__machine_1_1_normal_acea1e72a256d35d6d48fbd8504235f97}{subscriber1}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_a9696c713d102313a01209dce8e05aea3}\label{classstate__machine_1_1_normal_a9696c713d102313a01209dce8e05aea3}} 
-{\bfseries var}
+\mbox{\hyperlink{classstate__machine_1_1_normal_a9696c713d102313a01209dce8e05aea3}{var}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_a3f175f794f5efb79f582df7edfaa597e}\label{classstate__machine_1_1_normal_a3f175f794f5efb79f582df7edfaa597e}} 
-list {\bfseries randomlist} = \mbox{[}$\,$\mbox{]}
+list \mbox{\hyperlink{classstate__machine_1_1_normal_a3f175f794f5efb79f582df7edfaa597e}{randomlist}} = \mbox{[}$\,$\mbox{]}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_a08777072b6b0a29dd3ebcdf90f3e3cd3}\label{classstate__machine_1_1_normal_a08777072b6b0a29dd3ebcdf90f3e3cd3}} 
-{\bfseries n} = random.\+randint(-\/6,8)
+\mbox{\hyperlink{classstate__machine_1_1_normal_a08777072b6b0a29dd3ebcdf90f3e3cd3}{n}} = random.\+randint(-\/6,8)
 \item 
 \mbox{\hyperlink{classstate__machine_1_1_normal_ae1a186203c0bec90a251b7651ddd2e0b}{np\+\_\+arr}} = np.\+fromstring(ros\+\_\+data.\+data, np.\+uint8)
-\begin{DoxyCompactList}\small\item\em In the normal state the robot reaches random positions. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_ad247694107d80d709bef6b4a2de17c75}\label{classstate__machine_1_1_normal_ad247694107d80d709bef6b4a2de17c75}} 
-{\bfseries image\+\_\+np} = cv2.\+imdecode(\mbox{\hyperlink{classstate__machine_1_1_normal_ae1a186203c0bec90a251b7651ddd2e0b}{np\+\_\+arr}}, cv2.\+IMREAD\+\_\+\+COLOR)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_aa46f8b43329f6691ce361598682c402e}\label{classstate__machine_1_1_normal_aa46f8b43329f6691ce361598682c402e}} 
-{\bfseries blurred} = cv2.\+Gaussian\+Blur(image\+\_\+np, (11, 11), 0)
+\mbox{\hyperlink{classstate__machine_1_1_normal_ad247694107d80d709bef6b4a2de17c75}{image\+\_\+np}} = cv2.\+imdecode(\mbox{\hyperlink{classstate__machine_1_1_normal_ae1a186203c0bec90a251b7651ddd2e0b}{np\+\_\+arr}}, cv2.\+IMREAD\+\_\+\+COLOR)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_aa237960ce995e33de24c65fbe825f6df}\label{classstate__machine_1_1_normal_aa237960ce995e33de24c65fbe825f6df}} 
-{\bfseries hsv} = cv2.\+cvt\+Color(blurred, cv2.\+COLOR\+\_\+\+BGR2\+HSV)
+\mbox{\hyperlink{classstate__machine_1_1_normal_aa46f8b43329f6691ce361598682c402e}{blurred}} = cv2.\+Gaussian\+Blur(\mbox{\hyperlink{classstate__machine_1_1_normal_ad247694107d80d709bef6b4a2de17c75}{image\+\_\+np}}, (11, 11), 0)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_a598a24262c2fb90758c1c254cb5dcab7}\label{classstate__machine_1_1_normal_a598a24262c2fb90758c1c254cb5dcab7}} 
-tuple {\bfseries green\+Lower} = (50, 50, 50)
+\mbox{\hyperlink{classstate__machine_1_1_normal_aa237960ce995e33de24c65fbe825f6df}{hsv}} = cv2.\+cvt\+Color(\mbox{\hyperlink{classstate__machine_1_1_normal_aa46f8b43329f6691ce361598682c402e}{blurred}}, cv2.\+COLOR\+\_\+\+BGR2\+HSV)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_a341a7e1560da0a2bd1048b96bb22428d}\label{classstate__machine_1_1_normal_a341a7e1560da0a2bd1048b96bb22428d}} 
-tuple {\bfseries green\+Upper} = (70, 255, 255)
+tuple \mbox{\hyperlink{classstate__machine_1_1_normal_a598a24262c2fb90758c1c254cb5dcab7}{green\+Lower}} = (50, 50, 50)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_a191be8bfa0b94fb98e2213022d8960e7}\label{classstate__machine_1_1_normal_a191be8bfa0b94fb98e2213022d8960e7}} 
-{\bfseries mask} = cv2.\+in\+Range(hsv, green\+Lower, green\+Upper)
+tuple \mbox{\hyperlink{classstate__machine_1_1_normal_a341a7e1560da0a2bd1048b96bb22428d}{green\+Upper}} = (70, 255, 255)
 \item 
-{\bfseries cnts}
+\mbox{\hyperlink{classstate__machine_1_1_normal_a191be8bfa0b94fb98e2213022d8960e7}{mask}} = cv2.\+in\+Range(\mbox{\hyperlink{classstate__machine_1_1_normal_aa237960ce995e33de24c65fbe825f6df}{hsv}}, \mbox{\hyperlink{classstate__machine_1_1_normal_a598a24262c2fb90758c1c254cb5dcab7}{green\+Lower}}, \mbox{\hyperlink{classstate__machine_1_1_normal_a341a7e1560da0a2bd1048b96bb22428d}{green\+Upper}})
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_a1fb6ebd62ada207ba7f9e5ef60f18773}\label{classstate__machine_1_1_normal_a1fb6ebd62ada207ba7f9e5ef60f18773}} 
-{\bfseries center} = None
+\mbox{\hyperlink{classstate__machine_1_1_normal_ad08998a7ddb318b756fe766fe30e869f}{cnts}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_af0ddc2d166ccbdbbf72b34e1e30cb602}\label{classstate__machine_1_1_normal_af0ddc2d166ccbdbbf72b34e1e30cb602}} 
-tuple {\bfseries black\+Lower} = (0, 0, 0)
+\mbox{\hyperlink{classstate__machine_1_1_normal_a1fb6ebd62ada207ba7f9e5ef60f18773}{center}} = None
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_a35ef516644cbfcb72bcd7409755a69da}\label{classstate__machine_1_1_normal_a35ef516644cbfcb72bcd7409755a69da}} 
-tuple {\bfseries black\+Upper} = (5, 50, 50)
+tuple \mbox{\hyperlink{classstate__machine_1_1_normal_af0ddc2d166ccbdbbf72b34e1e30cb602}{black\+Lower}} = (0, 0, 0)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_a6df2ab2e6e1db9a89fa11aac8653ac94}\label{classstate__machine_1_1_normal_a6df2ab2e6e1db9a89fa11aac8653ac94}} 
-tuple {\bfseries red\+Lower} = (0, 50, 50)
+tuple \mbox{\hyperlink{classstate__machine_1_1_normal_a35ef516644cbfcb72bcd7409755a69da}{black\+Upper}} = (5, 50, 50)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_a73e00a012a0ef0712b7e99f86d77461a}\label{classstate__machine_1_1_normal_a73e00a012a0ef0712b7e99f86d77461a}} 
-tuple {\bfseries red\+Upper} = (5, 255, 255)
+tuple \mbox{\hyperlink{classstate__machine_1_1_normal_a6df2ab2e6e1db9a89fa11aac8653ac94}{red\+Lower}} = (0, 50, 50)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_afda2844f88dd26447a0817bd506f9739}\label{classstate__machine_1_1_normal_afda2844f88dd26447a0817bd506f9739}} 
-tuple {\bfseries yellow\+Lower} = (25, 50, 50)
+tuple \mbox{\hyperlink{classstate__machine_1_1_normal_a73e00a012a0ef0712b7e99f86d77461a}{red\+Upper}} = (5, 255, 255)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_a3c2df56be80b62990fbb23821aa97731}\label{classstate__machine_1_1_normal_a3c2df56be80b62990fbb23821aa97731}} 
-tuple {\bfseries yellow\+Upper} = (35, 255, 255)
+tuple \mbox{\hyperlink{classstate__machine_1_1_normal_afda2844f88dd26447a0817bd506f9739}{yellow\+Lower}} = (25, 50, 50)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_ac1e91f93d21b060d0e7e17df0f9593b1}\label{classstate__machine_1_1_normal_ac1e91f93d21b060d0e7e17df0f9593b1}} 
-tuple {\bfseries blue\+Lower} = (100, 50, 50)
+tuple \mbox{\hyperlink{classstate__machine_1_1_normal_a3c2df56be80b62990fbb23821aa97731}{yellow\+Upper}} = (35, 255, 255)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_a9f8fc4cb5c1723d625cfc8516e402c64}\label{classstate__machine_1_1_normal_a9f8fc4cb5c1723d625cfc8516e402c64}} 
-tuple {\bfseries blue\+Upper} = (130, 255, 255)
+tuple \mbox{\hyperlink{classstate__machine_1_1_normal_ac1e91f93d21b060d0e7e17df0f9593b1}{blue\+Lower}} = (100, 50, 50)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_ac22347975db18b3bdccb3fd2fa7040d5}\label{classstate__machine_1_1_normal_ac22347975db18b3bdccb3fd2fa7040d5}} 
-tuple {\bfseries magenta\+Lower} = (125, 50, 50)
+tuple \mbox{\hyperlink{classstate__machine_1_1_normal_a9f8fc4cb5c1723d625cfc8516e402c64}{blue\+Upper}} = (130, 255, 255)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_abd2c8971138edadcb9b0924468413784}\label{classstate__machine_1_1_normal_abd2c8971138edadcb9b0924468413784}} 
-tuple {\bfseries magenta\+Upper} = (150, 255, 255)
+tuple \mbox{\hyperlink{classstate__machine_1_1_normal_ac22347975db18b3bdccb3fd2fa7040d5}{magenta\+Lower}} = (125, 50, 50)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_aa1d4a50c677406423e29048758a79596}\label{classstate__machine_1_1_normal_aa1d4a50c677406423e29048758a79596}} 
-{\bfseries vel} = Twist()
-\item 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_a474c7681d4377c15bf89a5062887bd49}\label{classstate__machine_1_1_normal_a474c7681d4377c15bf89a5062887bd49}} 
-{\bfseries x}
+tuple \mbox{\hyperlink{classstate__machine_1_1_normal_abd2c8971138edadcb9b0924468413784}{magenta\+Upper}} = (150, 255, 255)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 In the normal state the robot reaches random positions. 
 
-After a certain time move to the sleep behaviour. when it sees the ball it moves to the play behavior 
+When it detects a new colored object it enters the track function. After some times move to the \mbox{\hyperlink{classstate__machine_1_1_sleep}{Sleep}} or \mbox{\hyperlink{classstate__machine_1_1_play}{Play}} behaviour 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classstate__machine_1_1_normal_acdbc35a37d0350d7805a628048bc3bed}\label{classstate__machine_1_1_normal_acdbc35a37d0350d7805a628048bc3bed}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def state\+\_\+machine.\+Normal.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classstate__machine_1_1_normal_ab8bc608e9dab104a02f5ef47b4420aa3}\label{classstate__machine_1_1_normal_ab8bc608e9dab104a02f5ef47b4420aa3}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!callback@{callback}}
+\index{callback@{callback}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}}
+{\footnotesize\ttfamily def state\+\_\+machine.\+Normal.\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ros\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+The program enters here everytime e new image is available from the camera. 
+
+An algorithm is implemented to detect six different colored balls. \mbox{\Hypertarget{classstate__machine_1_1_normal_acf2362fb5723327887a7c724cd8a05b9}\label{classstate__machine_1_1_normal_acf2362fb5723327887a7c724cd8a05b9}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!callback2@{callback2}}
+\index{callback2@{callback2}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{callback2()}{callback2()}}
+{\footnotesize\ttfamily def state\+\_\+machine.\+Normal.\+callback2 (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+
+
+A flag is set to 1 if the robot is not moving, to 0 otherwise ~\newline
+ 
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_a2930df5f4890ec4b47b2a8e18f9bff08}\label{classstate__machine_1_1_normal_a2930df5f4890ec4b47b2a8e18f9bff08}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!execute@{execute}}
+\index{execute@{execute}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily def state\+\_\+machine.\+Normal.\+execute (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{userdata }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_ada7f09af92db43445852f10100ad3549}\label{classstate__machine_1_1_normal_ada7f09af92db43445852f10100ad3549}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!sub\_track@{sub\_track}}
+\index{sub\_track@{sub\_track}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{sub\_track()}{sub\_track()}}
+{\footnotesize\ttfamily def state\+\_\+machine.\+Normal.\+sub\+\_\+track (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cnts,  }\item[{}]{image\+\_\+np,  }\item[{}]{ball\+\_\+detected }\end{DoxyParamCaption})}
+
+
+
+This function is executed everytime the robot detects a color object which was not previously detected. 
+
+The robot tries to go closer to the detected object. Once done, the reference position of the room is marked as reached modifying data in the parameter server. 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classstate__machine_1_1_normal_aa400514c36784367a6d300a8bbed0692}\label{classstate__machine_1_1_normal_aa400514c36784367a6d300a8bbed0692}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!ball\_detected@{ball\_detected}}
+\index{ball\_detected@{ball\_detected}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{ball\_detected}{ball\_detected}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+ball\+\_\+detected\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_af0ddc2d166ccbdbbf72b34e1e30cb602}\label{classstate__machine_1_1_normal_af0ddc2d166ccbdbbf72b34e1e30cb602}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!blackLower@{blackLower}}
+\index{blackLower@{blackLower}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{blackLower}{blackLower}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Normal.\+black\+Lower = (0, 0, 0)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_a35ef516644cbfcb72bcd7409755a69da}\label{classstate__machine_1_1_normal_a35ef516644cbfcb72bcd7409755a69da}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!blackUpper@{blackUpper}}
+\index{blackUpper@{blackUpper}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{blackUpper}{blackUpper}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Normal.\+black\+Upper = (5, 50, 50)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_ac1e91f93d21b060d0e7e17df0f9593b1}\label{classstate__machine_1_1_normal_ac1e91f93d21b060d0e7e17df0f9593b1}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!blueLower@{blueLower}}
+\index{blueLower@{blueLower}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{blueLower}{blueLower}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Normal.\+blue\+Lower = (100, 50, 50)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_a9f8fc4cb5c1723d625cfc8516e402c64}\label{classstate__machine_1_1_normal_a9f8fc4cb5c1723d625cfc8516e402c64}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!blueUpper@{blueUpper}}
+\index{blueUpper@{blueUpper}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{blueUpper}{blueUpper}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Normal.\+blue\+Upper = (130, 255, 255)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_aa46f8b43329f6691ce361598682c402e}\label{classstate__machine_1_1_normal_aa46f8b43329f6691ce361598682c402e}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!blurred@{blurred}}
+\index{blurred@{blurred}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{blurred}{blurred}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+blurred = cv2.\+Gaussian\+Blur(\mbox{\hyperlink{classstate__machine_1_1_normal_ad247694107d80d709bef6b4a2de17c75}{image\+\_\+np}}, (11, 11), 0)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_a1fb6ebd62ada207ba7f9e5ef60f18773}\label{classstate__machine_1_1_normal_a1fb6ebd62ada207ba7f9e5ef60f18773}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!center@{center}}
+\index{center@{center}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{center}{center}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+center = None\hspace{0.3cm}{\ttfamily [static]}}
+
 \mbox{\Hypertarget{classstate__machine_1_1_normal_ad08998a7ddb318b756fe766fe30e869f}\label{classstate__machine_1_1_normal_ad08998a7ddb318b756fe766fe30e869f}} 
 \index{state\_machine.Normal@{state\_machine.Normal}!cnts@{cnts}}
 \index{cnts@{cnts}!state\_machine.Normal@{state\_machine.Normal}}
@@ -174,19 +223,127 @@ After a certain time move to the sleep behaviour. when it sees the ball it moves
 \DoxyCodeLine{                                cv2.CHAIN\_APPROX\_SIMPLE)}
 
 \end{DoxyCode}
+\mbox{\Hypertarget{classstate__machine_1_1_normal_ad631fe332b431c0001682701dde8dbed}\label{classstate__machine_1_1_normal_ad631fe332b431c0001682701dde8dbed}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!counter@{counter}}
+\index{counter@{counter}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+counter\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_a598a24262c2fb90758c1c254cb5dcab7}\label{classstate__machine_1_1_normal_a598a24262c2fb90758c1c254cb5dcab7}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!greenLower@{greenLower}}
+\index{greenLower@{greenLower}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{greenLower}{greenLower}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Normal.\+green\+Lower = (50, 50, 50)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_a341a7e1560da0a2bd1048b96bb22428d}\label{classstate__machine_1_1_normal_a341a7e1560da0a2bd1048b96bb22428d}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!greenUpper@{greenUpper}}
+\index{greenUpper@{greenUpper}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{greenUpper}{greenUpper}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Normal.\+green\+Upper = (70, 255, 255)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_aa237960ce995e33de24c65fbe825f6df}\label{classstate__machine_1_1_normal_aa237960ce995e33de24c65fbe825f6df}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!hsv@{hsv}}
+\index{hsv@{hsv}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{hsv}{hsv}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+hsv = cv2.\+cvt\+Color(\mbox{\hyperlink{classstate__machine_1_1_normal_aa46f8b43329f6691ce361598682c402e}{blurred}}, cv2.\+COLOR\+\_\+\+BGR2\+HSV)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_ad247694107d80d709bef6b4a2de17c75}\label{classstate__machine_1_1_normal_ad247694107d80d709bef6b4a2de17c75}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!image\_np@{image\_np}}
+\index{image\_np@{image\_np}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{image\_np}{image\_np}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+image\+\_\+np = cv2.\+imdecode(\mbox{\hyperlink{classstate__machine_1_1_normal_ae1a186203c0bec90a251b7651ddd2e0b}{np\+\_\+arr}}, cv2.\+IMREAD\+\_\+\+COLOR)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_ac22347975db18b3bdccb3fd2fa7040d5}\label{classstate__machine_1_1_normal_ac22347975db18b3bdccb3fd2fa7040d5}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!magentaLower@{magentaLower}}
+\index{magentaLower@{magentaLower}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{magentaLower}{magentaLower}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Normal.\+magenta\+Lower = (125, 50, 50)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_abd2c8971138edadcb9b0924468413784}\label{classstate__machine_1_1_normal_abd2c8971138edadcb9b0924468413784}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!magentaUpper@{magentaUpper}}
+\index{magentaUpper@{magentaUpper}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{magentaUpper}{magentaUpper}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Normal.\+magenta\+Upper = (150, 255, 255)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_a191be8bfa0b94fb98e2213022d8960e7}\label{classstate__machine_1_1_normal_a191be8bfa0b94fb98e2213022d8960e7}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!mask@{mask}}
+\index{mask@{mask}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{mask}{mask}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+mask = cv2.\+in\+Range(\mbox{\hyperlink{classstate__machine_1_1_normal_aa237960ce995e33de24c65fbe825f6df}{hsv}}, \mbox{\hyperlink{classstate__machine_1_1_normal_a598a24262c2fb90758c1c254cb5dcab7}{green\+Lower}}, \mbox{\hyperlink{classstate__machine_1_1_normal_a341a7e1560da0a2bd1048b96bb22428d}{green\+Upper}})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_a08777072b6b0a29dd3ebcdf90f3e3cd3}\label{classstate__machine_1_1_normal_a08777072b6b0a29dd3ebcdf90f3e3cd3}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!n@{n}}
+\index{n@{n}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+n = random.\+randint(-\/6,8)\hspace{0.3cm}{\ttfamily [static]}}
+
 \mbox{\Hypertarget{classstate__machine_1_1_normal_ae1a186203c0bec90a251b7651ddd2e0b}\label{classstate__machine_1_1_normal_ae1a186203c0bec90a251b7651ddd2e0b}} 
 \index{state\_machine.Normal@{state\_machine.Normal}!np\_arr@{np\_arr}}
 \index{np\_arr@{np\_arr}!state\_machine.Normal@{state\_machine.Normal}}
 \doxysubsubsection{\texorpdfstring{np\_arr}{np\_arr}}
 {\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+np\+\_\+arr = np.\+fromstring(ros\+\_\+data.\+data, np.\+uint8)\hspace{0.3cm}{\ttfamily [static]}}
 
+\mbox{\Hypertarget{classstate__machine_1_1_normal_ab6d144a3dda6248e1d2f30f9abe9d609}\label{classstate__machine_1_1_normal_ab6d144a3dda6248e1d2f30f9abe9d609}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!outcomes@{outcomes}}
+\index{outcomes@{outcomes}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{outcomes}{outcomes}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+outcomes\hspace{0.3cm}{\ttfamily [static]}}
 
+\mbox{\Hypertarget{classstate__machine_1_1_normal_ad676a7bddfcb08e695d05338b57989f9}\label{classstate__machine_1_1_normal_ad676a7bddfcb08e695d05338b57989f9}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!param@{param}}
+\index{param@{param}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{param}{param}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+param\hspace{0.3cm}{\ttfamily [static]}}
 
-In the normal state the robot reaches random positions. 
+\mbox{\Hypertarget{classstate__machine_1_1_normal_a301b395d50a7aa2268e92fd3a221e6b7}\label{classstate__machine_1_1_normal_a301b395d50a7aa2268e92fd3a221e6b7}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!play\_count@{play\_count}}
+\index{play\_count@{play\_count}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{play\_count}{play\_count}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+play\+\_\+count\hspace{0.3cm}{\ttfamily [static]}}
 
-After a certain time move to the sleep behaviour. when it sees the ball it moves to the play behavior
+\mbox{\Hypertarget{classstate__machine_1_1_normal_aacbaeaef5799eece6ea4897f5a1d2880}\label{classstate__machine_1_1_normal_aacbaeaef5799eece6ea4897f5a1d2880}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!pub@{pub}}
+\index{pub@{pub}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{pub}{pub}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+pub = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, Num,\mbox{\hyperlink{classstate__machine_1_1_normal_ae4b7ade70a0e23f0dd8738aaca0b4e4d}{queue\+\_\+size}}=10)\hspace{0.3cm}{\ttfamily [static]}}
 
-direct conversion to CV2 \#\#\#\# \mbox{\Hypertarget{classstate__machine_1_1_normal_acea1e72a256d35d6d48fbd8504235f97}\label{classstate__machine_1_1_normal_acea1e72a256d35d6d48fbd8504235f97}} 
+\mbox{\Hypertarget{classstate__machine_1_1_normal_ae4b7ade70a0e23f0dd8738aaca0b4e4d}\label{classstate__machine_1_1_normal_ae4b7ade70a0e23f0dd8738aaca0b4e4d}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!queue\_size@{queue\_size}}
+\index{queue\_size@{queue\_size}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{queue\_size}{queue\_size}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+queue\+\_\+size\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_a3f175f794f5efb79f582df7edfaa597e}\label{classstate__machine_1_1_normal_a3f175f794f5efb79f582df7edfaa597e}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!randomlist@{randomlist}}
+\index{randomlist@{randomlist}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{randomlist}{randomlist}}
+{\footnotesize\ttfamily list state\+\_\+machine.\+Normal.\+randomlist = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_a6df2ab2e6e1db9a89fa11aac8653ac94}\label{classstate__machine_1_1_normal_a6df2ab2e6e1db9a89fa11aac8653ac94}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!redLower@{redLower}}
+\index{redLower@{redLower}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{redLower}{redLower}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Normal.\+red\+Lower = (0, 50, 50)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_a73e00a012a0ef0712b7e99f86d77461a}\label{classstate__machine_1_1_normal_a73e00a012a0ef0712b7e99f86d77461a}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!redUpper@{redUpper}}
+\index{redUpper@{redUpper}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{redUpper}{redUpper}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Normal.\+red\+Upper = (5, 255, 255)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_a70f06e652b5b92b91fc1500c0dff1d46}\label{classstate__machine_1_1_normal_a70f06e652b5b92b91fc1500c0dff1d46}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!sleep\_count@{sleep\_count}}
+\index{sleep\_count@{sleep\_count}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{sleep\_count}{sleep\_count}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+sleep\+\_\+count\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_a27eca8cdd2bee790ad3eecd42c23e3b5}\label{classstate__machine_1_1_normal_a27eca8cdd2bee790ad3eecd42c23e3b5}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!stopFlag@{stopFlag}}
+\index{stopFlag@{stopFlag}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{stopFlag}{stopFlag}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+stop\+Flag\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_acea1e72a256d35d6d48fbd8504235f97}\label{classstate__machine_1_1_normal_acea1e72a256d35d6d48fbd8504235f97}} 
 \index{state\_machine.Normal@{state\_machine.Normal}!subscriber1@{subscriber1}}
 \index{subscriber1@{subscriber1}!state\_machine.Normal@{state\_machine.Normal}}
 \doxysubsubsection{\texorpdfstring{subscriber1}{subscriber1}}
@@ -198,8 +355,44 @@ direct conversion to CV2 \#\#\#\# \mbox{\Hypertarget{classstate__machine_1_1_nor
 \DoxyCodeLine{                                           CompressedImage, self.callback,  queue\_size=1)}
 
 \end{DoxyCode}
+\mbox{\Hypertarget{classstate__machine_1_1_normal_ad5baf6feb3b07de770ba22e847d27acd}\label{classstate__machine_1_1_normal_ad5baf6feb3b07de770ba22e847d27acd}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!subscriber2@{subscriber2}}
+\index{subscriber2@{subscriber2}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{subscriber2}{subscriber2}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+subscriber2 = rospy.\+Subscriber(\char`\"{}cmd\+\_\+vel\char`\"{}, Twist, self.\+callback2)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_a6f6f347ff2c917d80cdb28f42e7cfd47}\label{classstate__machine_1_1_normal_a6f6f347ff2c917d80cdb28f42e7cfd47}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!Twist@{Twist}}
+\index{Twist@{Twist}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{Twist}{Twist}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+Twist\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_a9696c713d102313a01209dce8e05aea3}\label{classstate__machine_1_1_normal_a9696c713d102313a01209dce8e05aea3}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!var@{var}}
+\index{var@{var}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{var}{var}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+var\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_abcf3ba4b7e7a92c40a87e3776ffdc89d}\label{classstate__machine_1_1_normal_abcf3ba4b7e7a92c40a87e3776ffdc89d}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!vel\_pub@{vel\_pub}}
+\index{vel\_pub@{vel\_pub}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{vel\_pub}{vel\_pub}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+vel\+\_\+pub\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_afda2844f88dd26447a0817bd506f9739}\label{classstate__machine_1_1_normal_afda2844f88dd26447a0817bd506f9739}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!yellowLower@{yellowLower}}
+\index{yellowLower@{yellowLower}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{yellowLower}{yellowLower}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Normal.\+yellow\+Lower = (25, 50, 50)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_normal_a3c2df56be80b62990fbb23821aa97731}\label{classstate__machine_1_1_normal_a3c2df56be80b62990fbb23821aa97731}} 
+\index{state\_machine.Normal@{state\_machine.Normal}!yellowUpper@{yellowUpper}}
+\index{yellowUpper@{yellowUpper}!state\_machine.Normal@{state\_machine.Normal}}
+\doxysubsubsection{\texorpdfstring{yellowUpper}{yellowUpper}}
+{\footnotesize\ttfamily tuple state\+\_\+machine.\+Normal.\+yellow\+Upper = (35, 255, 255)\hspace{0.3cm}{\ttfamily [static]}}
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/exp\+\_\+assignment3-\/main/scripts/state\+\_\+machine.\+py\end{DoxyCompactItemize}
+src/exp\+\_\+assignment3-\/main/scripts/\mbox{\hyperlink{state__machine_8py}{state\+\_\+machine.\+py}}\end{DoxyCompactItemize}

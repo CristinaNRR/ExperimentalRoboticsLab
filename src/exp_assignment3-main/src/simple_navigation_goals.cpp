@@ -8,9 +8,18 @@
 
 #include <unistd.h>
 
-ros::Publisher pub;
+
+/*!
+A moveBase action client is implemented and used to send the desired
+goal positions to the default moveBase action server
+*/
 typedef actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> MoveBaseClient;
 
+/*!
+The program enters here everytime a new goal position is received
+from the state machine. Once received, the positions(expressed with respect to the map frame)
+are converted and sent to the moveBase action server.
+*/
 void Callback (const exp_assignment3::Num::ConstPtr& msg) { 
 
   ROS_INFO("sono nella callback");
@@ -34,37 +43,20 @@ void Callback (const exp_assignment3::Num::ConstPtr& msg) {
 
   move_base_msgs::MoveBaseGoal goal;
 
-  //we'll send a goal to the robot to move 1 meter forward
   goal.target_pose.header.frame_id = "/map";
   goal.target_pose.header.stamp = ros::Time::now();
 
   goal.target_pose.pose.position.x = pos_x;
   goal.target_pose.pose.position.y = pos_y;
   goal.target_pose.pose.orientation.w = 1.0;
-  //goal.target_pose.pose.position.y = 0.1;
+
 
   ROS_INFO("Sending goal");
   ac.sendGoal(goal);
 
-//  ac.waitForResult();
-
-//  if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED){
- //   ROS_INFO("Hooray, the base moved 1 meter forward");
-    //send a message to the state machine to alert that the target as been reached
-  //  std_msgs::Int8 msg;
-   // msg.data = 1;
-
- //   pub.publish(msg);
- //  }
-//  else
- //   ROS_INFO("The base failed to move forward 1 meter for some reason");
-
-
-
-
-
 
 }
+
 
 int main(int argc, char** argv){
   ros::init(argc, argv, "simple_navigation_goals");

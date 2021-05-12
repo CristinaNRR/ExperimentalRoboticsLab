@@ -1,38 +1,109 @@
 \hypertarget{class_slam_g_mapping}{}\doxysection{Slam\+GMapping Class Reference}
 \label{class_slam_g_mapping}\index{SlamGMapping@{SlamGMapping}}
+
+
+{\ttfamily \#include $<$slam\+\_\+gmapping.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_slam_g_mapping_a3f9432f78c6eff17041a4b0b0f87a1ad}\label{class_slam_g_mapping_a3f9432f78c6eff17041a4b0b0f87a1ad}} 
-{\bfseries Slam\+GMapping} (ros\+::\+Node\+Handle \&nh, ros\+::\+Node\+Handle \&pnh)
+\mbox{\hyperlink{class_slam_g_mapping_aa40ca229b3db4d0cf5bf7448c475a4c3}{Slam\+GMapping}} ()
 \item 
-\mbox{\Hypertarget{class_slam_g_mapping_a6a4853715facc1ee2591955180e830a2}\label{class_slam_g_mapping_a6a4853715facc1ee2591955180e830a2}} 
-{\bfseries Slam\+GMapping} (unsigned long int seed, unsigned long int max\+\_\+duration\+\_\+buffer)
+\mbox{\hyperlink{class_slam_g_mapping_a3f9432f78c6eff17041a4b0b0f87a1ad}{Slam\+GMapping}} (ros\+::\+Node\+Handle \&nh, ros\+::\+Node\+Handle \&pnh)
 \item 
-\mbox{\Hypertarget{class_slam_g_mapping_aca7f6aaa57c8ac675068701adda348ea}\label{class_slam_g_mapping_aca7f6aaa57c8ac675068701adda348ea}} 
-void {\bfseries init} ()
+\mbox{\hyperlink{class_slam_g_mapping_a6a4853715facc1ee2591955180e830a2}{Slam\+GMapping}} (unsigned long int seed, unsigned long int max\+\_\+duration\+\_\+buffer)
 \item 
-\mbox{\Hypertarget{class_slam_g_mapping_ab0d5567e7a8e010ff11068fcce0d9c04}\label{class_slam_g_mapping_ab0d5567e7a8e010ff11068fcce0d9c04}} 
-void {\bfseries start\+Live\+Slam} ()
+\mbox{\hyperlink{class_slam_g_mapping_ae4a539b79ee1f11b7430f313ad445667}{$\sim$\+Slam\+GMapping}} ()
 \item 
-\mbox{\Hypertarget{class_slam_g_mapping_a90bee18e7c96af13916caae4a4bfd618}\label{class_slam_g_mapping_a90bee18e7c96af13916caae4a4bfd618}} 
-void {\bfseries start\+Replay} (const std\+::string \&bag\+\_\+fname, std\+::string scan\+\_\+topic)
+void \mbox{\hyperlink{class_slam_g_mapping_aca7f6aaa57c8ac675068701adda348ea}{init}} ()
 \item 
-\mbox{\Hypertarget{class_slam_g_mapping_a2447af8faad253af05c7dc9f492b8489}\label{class_slam_g_mapping_a2447af8faad253af05c7dc9f492b8489}} 
-void {\bfseries publish\+Transform} ()
+void \mbox{\hyperlink{class_slam_g_mapping_ab0d5567e7a8e010ff11068fcce0d9c04}{start\+Live\+Slam}} ()
 \item 
-\mbox{\Hypertarget{class_slam_g_mapping_a49172a6ae33df4daf397959789dc1c34}\label{class_slam_g_mapping_a49172a6ae33df4daf397959789dc1c34}} 
-void {\bfseries laser\+Callback} (const sensor\+\_\+msgs\+::\+Laser\+Scan\+::\+Const\+Ptr \&scan)
+void \mbox{\hyperlink{class_slam_g_mapping_a90bee18e7c96af13916caae4a4bfd618}{start\+Replay}} (const std\+::string \&bag\+\_\+fname, std\+::string scan\+\_\+topic)
 \item 
-\mbox{\Hypertarget{class_slam_g_mapping_a780899c48f753bf4768580fb46580d83}\label{class_slam_g_mapping_a780899c48f753bf4768580fb46580d83}} 
-bool {\bfseries map\+Callback} (nav\+\_\+msgs\+::\+Get\+Map\+::\+Request \&req, nav\+\_\+msgs\+::\+Get\+Map\+::\+Response \&res)
+void \mbox{\hyperlink{class_slam_g_mapping_a2447af8faad253af05c7dc9f492b8489}{publish\+Transform}} ()
 \item 
-\mbox{\Hypertarget{class_slam_g_mapping_a00a01ecfacccbfcfccc3e138de6bd00f}\label{class_slam_g_mapping_a00a01ecfacccbfcfccc3e138de6bd00f}} 
-void {\bfseries publish\+Loop} (double transform\+\_\+publish\+\_\+period)
+void \mbox{\hyperlink{class_slam_g_mapping_a49172a6ae33df4daf397959789dc1c34}{laser\+Callback}} (const sensor\+\_\+msgs\+::\+Laser\+Scan\+::\+Const\+Ptr \&scan)
+\item 
+bool \mbox{\hyperlink{class_slam_g_mapping_a780899c48f753bf4768580fb46580d83}{map\+Callback}} (nav\+\_\+msgs\+::\+Get\+Map\+::\+Request \&req, nav\+\_\+msgs\+::\+Get\+Map\+::\+Response \&res)
+\item 
+void \mbox{\hyperlink{class_slam_g_mapping_a00a01ecfacccbfcfccc3e138de6bd00f}{publish\+Loop}} (double transform\+\_\+publish\+\_\+period)
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_slam_g_mapping_aa40ca229b3db4d0cf5bf7448c475a4c3}\label{class_slam_g_mapping_aa40ca229b3db4d0cf5bf7448c475a4c3}} 
+\index{SlamGMapping@{SlamGMapping}!SlamGMapping@{SlamGMapping}}
+\index{SlamGMapping@{SlamGMapping}!SlamGMapping@{SlamGMapping}}
+\doxysubsubsection{\texorpdfstring{SlamGMapping()}{SlamGMapping()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Slam\+GMapping\+::\+Slam\+GMapping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_slam_g_mapping_a3f9432f78c6eff17041a4b0b0f87a1ad}\label{class_slam_g_mapping_a3f9432f78c6eff17041a4b0b0f87a1ad}} 
+\index{SlamGMapping@{SlamGMapping}!SlamGMapping@{SlamGMapping}}
+\index{SlamGMapping@{SlamGMapping}!SlamGMapping@{SlamGMapping}}
+\doxysubsubsection{\texorpdfstring{SlamGMapping()}{SlamGMapping()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Slam\+GMapping\+::\+Slam\+GMapping (\begin{DoxyParamCaption}\item[{ros\+::\+Node\+Handle \&}]{nh,  }\item[{ros\+::\+Node\+Handle \&}]{pnh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_slam_g_mapping_a6a4853715facc1ee2591955180e830a2}\label{class_slam_g_mapping_a6a4853715facc1ee2591955180e830a2}} 
+\index{SlamGMapping@{SlamGMapping}!SlamGMapping@{SlamGMapping}}
+\index{SlamGMapping@{SlamGMapping}!SlamGMapping@{SlamGMapping}}
+\doxysubsubsection{\texorpdfstring{SlamGMapping()}{SlamGMapping()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Slam\+GMapping\+::\+Slam\+GMapping (\begin{DoxyParamCaption}\item[{unsigned long int}]{seed,  }\item[{unsigned long int}]{max\+\_\+duration\+\_\+buffer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_slam_g_mapping_ae4a539b79ee1f11b7430f313ad445667}\label{class_slam_g_mapping_ae4a539b79ee1f11b7430f313ad445667}} 
+\index{SlamGMapping@{SlamGMapping}!````~SlamGMapping@{$\sim$SlamGMapping}}
+\index{````~SlamGMapping@{$\sim$SlamGMapping}!SlamGMapping@{SlamGMapping}}
+\doxysubsubsection{\texorpdfstring{$\sim$SlamGMapping()}{~SlamGMapping()}}
+{\footnotesize\ttfamily Slam\+GMapping\+::$\sim$\+Slam\+GMapping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_slam_g_mapping_aca7f6aaa57c8ac675068701adda348ea}\label{class_slam_g_mapping_aca7f6aaa57c8ac675068701adda348ea}} 
+\index{SlamGMapping@{SlamGMapping}!init@{init}}
+\index{init@{init}!SlamGMapping@{SlamGMapping}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Slam\+GMapping\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_slam_g_mapping_a49172a6ae33df4daf397959789dc1c34}\label{class_slam_g_mapping_a49172a6ae33df4daf397959789dc1c34}} 
+\index{SlamGMapping@{SlamGMapping}!laserCallback@{laserCallback}}
+\index{laserCallback@{laserCallback}!SlamGMapping@{SlamGMapping}}
+\doxysubsubsection{\texorpdfstring{laserCallback()}{laserCallback()}}
+{\footnotesize\ttfamily void Slam\+GMapping\+::laser\+Callback (\begin{DoxyParamCaption}\item[{const sensor\+\_\+msgs\+::\+Laser\+Scan\+::\+Const\+Ptr \&}]{scan }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_slam_g_mapping_a780899c48f753bf4768580fb46580d83}\label{class_slam_g_mapping_a780899c48f753bf4768580fb46580d83}} 
+\index{SlamGMapping@{SlamGMapping}!mapCallback@{mapCallback}}
+\index{mapCallback@{mapCallback}!SlamGMapping@{SlamGMapping}}
+\doxysubsubsection{\texorpdfstring{mapCallback()}{mapCallback()}}
+{\footnotesize\ttfamily bool Slam\+GMapping\+::map\+Callback (\begin{DoxyParamCaption}\item[{nav\+\_\+msgs\+::\+Get\+Map\+::\+Request \&}]{req,  }\item[{nav\+\_\+msgs\+::\+Get\+Map\+::\+Response \&}]{res }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_slam_g_mapping_a00a01ecfacccbfcfccc3e138de6bd00f}\label{class_slam_g_mapping_a00a01ecfacccbfcfccc3e138de6bd00f}} 
+\index{SlamGMapping@{SlamGMapping}!publishLoop@{publishLoop}}
+\index{publishLoop@{publishLoop}!SlamGMapping@{SlamGMapping}}
+\doxysubsubsection{\texorpdfstring{publishLoop()}{publishLoop()}}
+{\footnotesize\ttfamily void Slam\+GMapping\+::publish\+Loop (\begin{DoxyParamCaption}\item[{double}]{transform\+\_\+publish\+\_\+period }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_slam_g_mapping_a2447af8faad253af05c7dc9f492b8489}\label{class_slam_g_mapping_a2447af8faad253af05c7dc9f492b8489}} 
+\index{SlamGMapping@{SlamGMapping}!publishTransform@{publishTransform}}
+\index{publishTransform@{publishTransform}!SlamGMapping@{SlamGMapping}}
+\doxysubsubsection{\texorpdfstring{publishTransform()}{publishTransform()}}
+{\footnotesize\ttfamily void Slam\+GMapping\+::publish\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_slam_g_mapping_ab0d5567e7a8e010ff11068fcce0d9c04}\label{class_slam_g_mapping_ab0d5567e7a8e010ff11068fcce0d9c04}} 
+\index{SlamGMapping@{SlamGMapping}!startLiveSlam@{startLiveSlam}}
+\index{startLiveSlam@{startLiveSlam}!SlamGMapping@{SlamGMapping}}
+\doxysubsubsection{\texorpdfstring{startLiveSlam()}{startLiveSlam()}}
+{\footnotesize\ttfamily void Slam\+GMapping\+::start\+Live\+Slam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_slam_g_mapping_a90bee18e7c96af13916caae4a4bfd618}\label{class_slam_g_mapping_a90bee18e7c96af13916caae4a4bfd618}} 
+\index{SlamGMapping@{SlamGMapping}!startReplay@{startReplay}}
+\index{startReplay@{startReplay}!SlamGMapping@{SlamGMapping}}
+\doxysubsubsection{\texorpdfstring{startReplay()}{startReplay()}}
+{\footnotesize\ttfamily void Slam\+GMapping\+::start\+Replay (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{bag\+\_\+fname,  }\item[{std\+::string}]{scan\+\_\+topic }\end{DoxyParamCaption})}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/\+SLAM\+\_\+packages-\/main/slam\+\_\+gmapping/gmapping/src/slam\+\_\+gmapping.\+h\item 
-src/\+SLAM\+\_\+packages-\/main/slam\+\_\+gmapping/gmapping/src/slam\+\_\+gmapping.\+cpp\end{DoxyCompactItemize}
+src/\+SLAM\+\_\+packages-\/main/slam\+\_\+gmapping/gmapping/src/\mbox{\hyperlink{slam__gmapping_8h}{slam\+\_\+gmapping.\+h}}\item 
+src/\+SLAM\+\_\+packages-\/main/slam\+\_\+gmapping/gmapping/src/\mbox{\hyperlink{slam__gmapping_8cpp}{slam\+\_\+gmapping.\+cpp}}\end{DoxyCompactItemize}

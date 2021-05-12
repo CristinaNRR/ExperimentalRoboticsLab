@@ -2,6 +2,11 @@
 \label{classstate__machine_1_1_sleep}\index{state\_machine.Sleep@{state\_machine.Sleep}}
 
 
+The robot reached a predefined location obtained accessing the parameter server.  
+
+
+
+
 Inheritance diagram for state\+\_\+machine.\+Sleep\+:
 \nopagebreak
 \begin{figure}[H]
@@ -23,32 +28,82 @@ Collaboration diagram for state\+\_\+machine.\+Sleep\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_sleep_a473b93a1ddf11f9e664d1fb694ce1a3c}\label{classstate__machine_1_1_sleep_a473b93a1ddf11f9e664d1fb694ce1a3c}} 
-def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+def \mbox{\hyperlink{classstate__machine_1_1_sleep_a473b93a1ddf11f9e664d1fb694ce1a3c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_sleep_a89527836f1edcefb6467fa9c041fbbfe}\label{classstate__machine_1_1_sleep_a89527836f1edcefb6467fa9c041fbbfe}} 
-def {\bfseries execute} (self, userdata)
+def \mbox{\hyperlink{classstate__machine_1_1_sleep_a89527836f1edcefb6467fa9c041fbbfe}{execute}} (self, userdata)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_sleep_ae741424b99fbde54de3bc71c2bff8d03}\label{classstate__machine_1_1_sleep_ae741424b99fbde54de3bc71c2bff8d03}} 
-def {\bfseries callback} (self, msg)
-\end{DoxyCompactItemize}
+def \mbox{\hyperlink{classstate__machine_1_1_sleep_ae741424b99fbde54de3bc71c2bff8d03}{callback}} (self, msg)
+\begin{DoxyCompactList}\small\item\em A flag is set to 1 if the robot is not moving, to 0 otherwise ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_sleep_a6bd959627ed45867516c94e3eafc05bb}\label{classstate__machine_1_1_sleep_a6bd959627ed45867516c94e3eafc05bb}} 
-{\bfseries home}
+\mbox{\hyperlink{classstate__machine_1_1_sleep_a6bd959627ed45867516c94e3eafc05bb}{home}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_sleep_a00b879885a7e1f565d91faba0403513d}\label{classstate__machine_1_1_sleep_a00b879885a7e1f565d91faba0403513d}} 
-{\bfseries stop\+Flag}
+\mbox{\hyperlink{classstate__machine_1_1_sleep_a00b879885a7e1f565d91faba0403513d}{stop\+Flag}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_sleep_a05c781f257bf69254f485a225442d09f}\label{classstate__machine_1_1_sleep_a05c781f257bf69254f485a225442d09f}} 
-{\bfseries pub} = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, Num,queue\+\_\+size=10)
+\mbox{\hyperlink{classstate__machine_1_1_sleep_a05c781f257bf69254f485a225442d09f}{pub}} = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, Num,queue\+\_\+size=10)
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The robot reached a predefined location obtained accessing the parameter server. 
+
+Once reached it stays there for some time and then move to the normal behaviour. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classstate__machine_1_1_sleep_a473b93a1ddf11f9e664d1fb694ce1a3c}\label{classstate__machine_1_1_sleep_a473b93a1ddf11f9e664d1fb694ce1a3c}} 
+\index{state\_machine.Sleep@{state\_machine.Sleep}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!state\_machine.Sleep@{state\_machine.Sleep}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def state\+\_\+machine.\+Sleep.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classstate__machine_1_1_sleep_ae741424b99fbde54de3bc71c2bff8d03}\label{classstate__machine_1_1_sleep_ae741424b99fbde54de3bc71c2bff8d03}} 
+\index{state\_machine.Sleep@{state\_machine.Sleep}!callback@{callback}}
+\index{callback@{callback}!state\_machine.Sleep@{state\_machine.Sleep}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}}
+{\footnotesize\ttfamily def state\+\_\+machine.\+Sleep.\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+
+
+A flag is set to 1 if the robot is not moving, to 0 otherwise ~\newline
+ 
+
+\mbox{\Hypertarget{classstate__machine_1_1_sleep_a89527836f1edcefb6467fa9c041fbbfe}\label{classstate__machine_1_1_sleep_a89527836f1edcefb6467fa9c041fbbfe}} 
+\index{state\_machine.Sleep@{state\_machine.Sleep}!execute@{execute}}
+\index{execute@{execute}!state\_machine.Sleep@{state\_machine.Sleep}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily def state\+\_\+machine.\+Sleep.\+execute (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{userdata }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classstate__machine_1_1_sleep_a6bd959627ed45867516c94e3eafc05bb}\label{classstate__machine_1_1_sleep_a6bd959627ed45867516c94e3eafc05bb}} 
+\index{state\_machine.Sleep@{state\_machine.Sleep}!home@{home}}
+\index{home@{home}!state\_machine.Sleep@{state\_machine.Sleep}}
+\doxysubsubsection{\texorpdfstring{home}{home}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Sleep.\+home}
+
+\mbox{\Hypertarget{classstate__machine_1_1_sleep_a05c781f257bf69254f485a225442d09f}\label{classstate__machine_1_1_sleep_a05c781f257bf69254f485a225442d09f}} 
+\index{state\_machine.Sleep@{state\_machine.Sleep}!pub@{pub}}
+\index{pub@{pub}!state\_machine.Sleep@{state\_machine.Sleep}}
+\doxysubsubsection{\texorpdfstring{pub}{pub}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Sleep.\+pub = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, Num,queue\+\_\+size=10)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_sleep_a00b879885a7e1f565d91faba0403513d}\label{classstate__machine_1_1_sleep_a00b879885a7e1f565d91faba0403513d}} 
+\index{state\_machine.Sleep@{state\_machine.Sleep}!stopFlag@{stopFlag}}
+\index{stopFlag@{stopFlag}!state\_machine.Sleep@{state\_machine.Sleep}}
+\doxysubsubsection{\texorpdfstring{stopFlag}{stopFlag}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Sleep.\+stop\+Flag\hspace{0.3cm}{\ttfamily [static]}}
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/exp\+\_\+assignment3-\/main/scripts/state\+\_\+machine.\+py\end{DoxyCompactItemize}
+src/exp\+\_\+assignment3-\/main/scripts/\mbox{\hyperlink{state__machine_8py}{state\+\_\+machine.\+py}}\end{DoxyCompactItemize}

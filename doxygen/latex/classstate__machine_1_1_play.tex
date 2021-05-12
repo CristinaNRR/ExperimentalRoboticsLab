@@ -2,6 +2,11 @@
 \label{classstate__machine_1_1_play}\index{state\_machine.Play@{state\_machine.Play}}
 
 
+The robot goes to a predefined location and waits to receive a go\+To command which is extracted randomly from the parameter server.  
+
+
+
+
 Inheritance diagram for state\+\_\+machine.\+Play\+:
 \nopagebreak
 \begin{figure}[H]
@@ -23,62 +28,161 @@ Collaboration diagram for state\+\_\+machine.\+Play\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_play_a5993a23d8be7f7b2647f71ede0334957}\label{classstate__machine_1_1_play_a5993a23d8be7f7b2647f71ede0334957}} 
-def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+def \mbox{\hyperlink{classstate__machine_1_1_play_a5993a23d8be7f7b2647f71ede0334957}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_play_a04168d6842960585b4bbcf58f950547b}\label{classstate__machine_1_1_play_a04168d6842960585b4bbcf58f950547b}} 
-def {\bfseries execute} (self, userdata)
+def \mbox{\hyperlink{classstate__machine_1_1_play_a04168d6842960585b4bbcf58f950547b}{execute}} (self, userdata)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_play_af3108766d3633975079b6c2f26456f9a}\label{classstate__machine_1_1_play_af3108766d3633975079b6c2f26456f9a}} 
-def {\bfseries callback} (self, msg)
-\end{DoxyCompactItemize}
+def \mbox{\hyperlink{classstate__machine_1_1_play_af3108766d3633975079b6c2f26456f9a}{callback}} (self, msg)
+\begin{DoxyCompactList}\small\item\em A flag is set to 1 if the robot is not moving, to 0 otherwise. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_play_ad7c0631dbb9d98be3065c2e65b6dbc63}\label{classstate__machine_1_1_play_ad7c0631dbb9d98be3065c2e65b6dbc63}} 
-{\bfseries var2}
+\mbox{\hyperlink{classstate__machine_1_1_play_ad7c0631dbb9d98be3065c2e65b6dbc63}{var2}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_play_a276faca960b7836501ec5e2f0da038a3}\label{classstate__machine_1_1_play_a276faca960b7836501ec5e2f0da038a3}} 
-{\bfseries count}
+\mbox{\hyperlink{classstate__machine_1_1_play_a276faca960b7836501ec5e2f0da038a3}{count}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_play_a82da4b0d9cc752a92a6bb4c793df9aaf}\label{classstate__machine_1_1_play_a82da4b0d9cc752a92a6bb4c793df9aaf}} 
-{\bfseries play\+\_\+pose}
+\mbox{\hyperlink{classstate__machine_1_1_play_a82da4b0d9cc752a92a6bb4c793df9aaf}{play\+\_\+pose}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_play_a1fae7e215371b18cf947e8cd1babb346}\label{classstate__machine_1_1_play_a1fae7e215371b18cf947e8cd1babb346}} 
-{\bfseries rooms}
+\mbox{\hyperlink{classstate__machine_1_1_play_a1fae7e215371b18cf947e8cd1babb346}{rooms}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_play_a41a074c4bf967a31676ee879b4522e85}\label{classstate__machine_1_1_play_a41a074c4bf967a31676ee879b4522e85}} 
-{\bfseries param}
+\mbox{\hyperlink{classstate__machine_1_1_play_a41a074c4bf967a31676ee879b4522e85}{param}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_play_a60431dacf2811b3dc7e954473c281985}\label{classstate__machine_1_1_play_a60431dacf2811b3dc7e954473c281985}} 
-{\bfseries stop\+Flag}
+\mbox{\hyperlink{classstate__machine_1_1_play_a60431dacf2811b3dc7e954473c281985}{stop\+Flag}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_play_af5202f566cb22d7ff7d915cecb2ce5cb}\label{classstate__machine_1_1_play_af5202f566cb22d7ff7d915cecb2ce5cb}} 
-{\bfseries pub} = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, Num,queue\+\_\+size=10)
+\mbox{\hyperlink{classstate__machine_1_1_play_af5202f566cb22d7ff7d915cecb2ce5cb}{pub}} = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, Num,queue\+\_\+size=10)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_play_a1b8fda22ac06420d622dcb2d328ca5cd}\label{classstate__machine_1_1_play_a1b8fda22ac06420d622dcb2d328ca5cd}} 
-{\bfseries subscriber} = rospy.\+Subscriber(\char`\"{}cmd\+\_\+vel\char`\"{}, Twist, self.\+callback)
+\mbox{\hyperlink{classstate__machine_1_1_play_a1b8fda22ac06420d622dcb2d328ca5cd}{subscriber}} = rospy.\+Subscriber(\char`\"{}cmd\+\_\+vel\char`\"{}, Twist, self.\+callback)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_play_a2d23491183560adebc8b74b65ef94062}\label{classstate__machine_1_1_play_a2d23491183560adebc8b74b65ef94062}} 
-{\bfseries play\+Position} = rospy.\+get\+\_\+param(\textquotesingle{}/play\+Pose\textquotesingle{})
+\mbox{\hyperlink{classstate__machine_1_1_play_a2d23491183560adebc8b74b65ef94062}{play\+Position}} = rospy.\+get\+\_\+param(\textquotesingle{}/play\+Pose\textquotesingle{})
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_play_a5dd403c310eba8f21d2d6acd74e7b843}\label{classstate__machine_1_1_play_a5dd403c310eba8f21d2d6acd74e7b843}} 
-list {\bfseries lista} = \mbox{[}$\,$\mbox{]}
+list \mbox{\hyperlink{classstate__machine_1_1_play_a5dd403c310eba8f21d2d6acd74e7b843}{lista}} = \mbox{[}$\,$\mbox{]}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_play_a12eb6239336b4ee7c9d1f4399794aaba}\label{classstate__machine_1_1_play_a12eb6239336b4ee7c9d1f4399794aaba}} 
-{\bfseries n} = random.\+randint(0,5)
+\mbox{\hyperlink{classstate__machine_1_1_play_a12eb6239336b4ee7c9d1f4399794aaba}{n}} = random.\+randint(0,5)
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_play_a9ffb340aab6992abdb021d3a3aa59099}\label{classstate__machine_1_1_play_a9ffb340aab6992abdb021d3a3aa59099}} 
-{\bfseries go\+To}
+\mbox{\hyperlink{classstate__machine_1_1_play_a9ffb340aab6992abdb021d3a3aa59099}{go\+To}}
 \item 
-\mbox{\Hypertarget{classstate__machine_1_1_play_a32b35a6f3a55b1991402bb2c060048cd}\label{classstate__machine_1_1_play_a32b35a6f3a55b1991402bb2c060048cd}} 
-{\bfseries room\+\_\+out}
+\mbox{\hyperlink{classstate__machine_1_1_play_a32b35a6f3a55b1991402bb2c060048cd}{room\+\_\+out}}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The robot goes to a predefined location and waits to receive a go\+To command which is extracted randomly from the parameter server. 
+
+If the room contained in the command has already been discovered by the robot it moves there. Otherwise it switches to the find state sending as parameter the color of the ball present in the just mentioned room. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classstate__machine_1_1_play_a5993a23d8be7f7b2647f71ede0334957}\label{classstate__machine_1_1_play_a5993a23d8be7f7b2647f71ede0334957}} 
+\index{state\_machine.Play@{state\_machine.Play}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!state\_machine.Play@{state\_machine.Play}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def state\+\_\+machine.\+Play.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classstate__machine_1_1_play_af3108766d3633975079b6c2f26456f9a}\label{classstate__machine_1_1_play_af3108766d3633975079b6c2f26456f9a}} 
+\index{state\_machine.Play@{state\_machine.Play}!callback@{callback}}
+\index{callback@{callback}!state\_machine.Play@{state\_machine.Play}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}}
+{\footnotesize\ttfamily def state\+\_\+machine.\+Play.\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+
+
+A flag is set to 1 if the robot is not moving, to 0 otherwise. 
+
+~\newline
+ \mbox{\Hypertarget{classstate__machine_1_1_play_a04168d6842960585b4bbcf58f950547b}\label{classstate__machine_1_1_play_a04168d6842960585b4bbcf58f950547b}} 
+\index{state\_machine.Play@{state\_machine.Play}!execute@{execute}}
+\index{execute@{execute}!state\_machine.Play@{state\_machine.Play}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily def state\+\_\+machine.\+Play.\+execute (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{userdata }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classstate__machine_1_1_play_a276faca960b7836501ec5e2f0da038a3}\label{classstate__machine_1_1_play_a276faca960b7836501ec5e2f0da038a3}} 
+\index{state\_machine.Play@{state\_machine.Play}!count@{count}}
+\index{count@{count}!state\_machine.Play@{state\_machine.Play}}
+\doxysubsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Play.\+count\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_play_a9ffb340aab6992abdb021d3a3aa59099}\label{classstate__machine_1_1_play_a9ffb340aab6992abdb021d3a3aa59099}} 
+\index{state\_machine.Play@{state\_machine.Play}!goTo@{goTo}}
+\index{goTo@{goTo}!state\_machine.Play@{state\_machine.Play}}
+\doxysubsubsection{\texorpdfstring{goTo}{goTo}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Play.\+go\+To\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_play_a5dd403c310eba8f21d2d6acd74e7b843}\label{classstate__machine_1_1_play_a5dd403c310eba8f21d2d6acd74e7b843}} 
+\index{state\_machine.Play@{state\_machine.Play}!lista@{lista}}
+\index{lista@{lista}!state\_machine.Play@{state\_machine.Play}}
+\doxysubsubsection{\texorpdfstring{lista}{lista}}
+{\footnotesize\ttfamily list state\+\_\+machine.\+Play.\+lista = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_play_a12eb6239336b4ee7c9d1f4399794aaba}\label{classstate__machine_1_1_play_a12eb6239336b4ee7c9d1f4399794aaba}} 
+\index{state\_machine.Play@{state\_machine.Play}!n@{n}}
+\index{n@{n}!state\_machine.Play@{state\_machine.Play}}
+\doxysubsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Play.\+n = random.\+randint(0,5)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_play_a41a074c4bf967a31676ee879b4522e85}\label{classstate__machine_1_1_play_a41a074c4bf967a31676ee879b4522e85}} 
+\index{state\_machine.Play@{state\_machine.Play}!param@{param}}
+\index{param@{param}!state\_machine.Play@{state\_machine.Play}}
+\doxysubsubsection{\texorpdfstring{param}{param}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Play.\+param\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_play_a82da4b0d9cc752a92a6bb4c793df9aaf}\label{classstate__machine_1_1_play_a82da4b0d9cc752a92a6bb4c793df9aaf}} 
+\index{state\_machine.Play@{state\_machine.Play}!play\_pose@{play\_pose}}
+\index{play\_pose@{play\_pose}!state\_machine.Play@{state\_machine.Play}}
+\doxysubsubsection{\texorpdfstring{play\_pose}{play\_pose}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Play.\+play\+\_\+pose\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_play_a2d23491183560adebc8b74b65ef94062}\label{classstate__machine_1_1_play_a2d23491183560adebc8b74b65ef94062}} 
+\index{state\_machine.Play@{state\_machine.Play}!playPosition@{playPosition}}
+\index{playPosition@{playPosition}!state\_machine.Play@{state\_machine.Play}}
+\doxysubsubsection{\texorpdfstring{playPosition}{playPosition}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Play.\+play\+Position = rospy.\+get\+\_\+param(\textquotesingle{}/play\+Pose\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_play_af5202f566cb22d7ff7d915cecb2ce5cb}\label{classstate__machine_1_1_play_af5202f566cb22d7ff7d915cecb2ce5cb}} 
+\index{state\_machine.Play@{state\_machine.Play}!pub@{pub}}
+\index{pub@{pub}!state\_machine.Play@{state\_machine.Play}}
+\doxysubsubsection{\texorpdfstring{pub}{pub}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Play.\+pub = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, Num,queue\+\_\+size=10)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_play_a32b35a6f3a55b1991402bb2c060048cd}\label{classstate__machine_1_1_play_a32b35a6f3a55b1991402bb2c060048cd}} 
+\index{state\_machine.Play@{state\_machine.Play}!room\_out@{room\_out}}
+\index{room\_out@{room\_out}!state\_machine.Play@{state\_machine.Play}}
+\doxysubsubsection{\texorpdfstring{room\_out}{room\_out}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Play.\+room\+\_\+out\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_play_a1fae7e215371b18cf947e8cd1babb346}\label{classstate__machine_1_1_play_a1fae7e215371b18cf947e8cd1babb346}} 
+\index{state\_machine.Play@{state\_machine.Play}!rooms@{rooms}}
+\index{rooms@{rooms}!state\_machine.Play@{state\_machine.Play}}
+\doxysubsubsection{\texorpdfstring{rooms}{rooms}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Play.\+rooms\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_play_a60431dacf2811b3dc7e954473c281985}\label{classstate__machine_1_1_play_a60431dacf2811b3dc7e954473c281985}} 
+\index{state\_machine.Play@{state\_machine.Play}!stopFlag@{stopFlag}}
+\index{stopFlag@{stopFlag}!state\_machine.Play@{state\_machine.Play}}
+\doxysubsubsection{\texorpdfstring{stopFlag}{stopFlag}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Play.\+stop\+Flag\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_play_a1b8fda22ac06420d622dcb2d328ca5cd}\label{classstate__machine_1_1_play_a1b8fda22ac06420d622dcb2d328ca5cd}} 
+\index{state\_machine.Play@{state\_machine.Play}!subscriber@{subscriber}}
+\index{subscriber@{subscriber}!state\_machine.Play@{state\_machine.Play}}
+\doxysubsubsection{\texorpdfstring{subscriber}{subscriber}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Play.\+subscriber = rospy.\+Subscriber(\char`\"{}cmd\+\_\+vel\char`\"{}, Twist, self.\+callback)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_play_ad7c0631dbb9d98be3065c2e65b6dbc63}\label{classstate__machine_1_1_play_ad7c0631dbb9d98be3065c2e65b6dbc63}} 
+\index{state\_machine.Play@{state\_machine.Play}!var2@{var2}}
+\index{var2@{var2}!state\_machine.Play@{state\_machine.Play}}
+\doxysubsubsection{\texorpdfstring{var2}{var2}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Play.\+var2}
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/exp\+\_\+assignment3-\/main/scripts/state\+\_\+machine.\+py\end{DoxyCompactItemize}
+src/exp\+\_\+assignment3-\/main/scripts/\mbox{\hyperlink{state__machine_8py}{state\+\_\+machine.\+py}}\end{DoxyCompactItemize}
