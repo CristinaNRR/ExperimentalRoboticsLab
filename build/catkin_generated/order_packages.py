@@ -2,4 +2,4 @@
 source_root_dir = '/home/cristina/new_ws/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/cristina/new_ws/devel;/opt/ros/kinetic'.split(';') if '/home/cristina/new_ws/devel;/opt/ros/kinetic' != '' else []
+underlay_workspaces = '/home/cristina/my_ros/devel;/opt/ros/kinetic'.split(';') if '/home/cristina/my_ros/devel;/opt/ros/kinetic' != '' else []

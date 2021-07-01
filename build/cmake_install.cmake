@@ -130,6 +130,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/cristina/new_ws/build/SLAM_packages-main/slam_gmapping/gmapping/cmake_install.cmake")
   include("/home/cristina/new_ws/build/exp_assignment3-main/cmake_install.cmake")
   include("/home/cristina/new_ws/build/planning-main/cmake_install.cmake")
+  include("/home/cristina/new_ws/build/m-explore/explore/cmake_install.cmake")
 
 endif()
 

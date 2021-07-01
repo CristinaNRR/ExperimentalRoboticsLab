@@ -76,7 +76,7 @@ Inside the workspace we can find the following packages:
 
 Looking at the terminal we can follow all the steps performed by the state machine including its change of states.
 
-## System limitations and possible tecnical improvements
+## System features and possible tecnical improvements
 
 To test and correct the robot behaviour I added print functions in the code. This is also useful in order to follow the robot behavior during the program execution.
 During the whole execution I decided to publish new target positions to the moveBase action client everytime the robot stops moving. This is the easiest solution I found to be sure that the state machine is 'syncronized' with the motion of the robot. 

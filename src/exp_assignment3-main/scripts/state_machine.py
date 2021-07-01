@@ -14,7 +14,10 @@ import random
 from exp_assignment3.msg import Num
 import random
 import datetime
+import subprocess
+import signal
 
+from actionlib import GoalID
 import cv2
 import sys
 import time
@@ -87,7 +90,7 @@ class Normal(smach.State):
 	        rospy.loginfo('moving to the random position: %s', randomlist)		
 		pub.publish(randomlist)
 		time.sleep(4)
-		#se il robot si muove non mando i comandi
+		#stop sending commands when the robot is moving
  		while(self.stopFlag==0):
 			pass
 
@@ -95,13 +98,13 @@ class Normal(smach.State):
 		self.play_count = self.play_count+1
 		self.sleep_count = self.sleep_count+1
 		#after some actions have been executed go to the sleep state
-		if self.sleep_count==6 :
+		if self.sleep_count>=6 :
 			self.sleep_count=0
 			subscriber1.unregister()
 			subscriber2.unregister()
 			return user_action('SLEEP')
 	
-		if self.play_count==3 :
+		if self.play_count>=3 :
 			self.play_count=0
 			subscriber1.unregister()
 			subscriber2.unregister()
@@ -528,6 +531,7 @@ class Find(smach.State):
 	self.param=[]
 	self.stopFlag=0
 	self.play_state=False
+	self.child=None
 
     def execute(self,userdata):
 
@@ -537,26 +541,25 @@ class Find(smach.State):
 	self.vel_pub = rospy.Publisher('cmd_vel', Twist, queue_size=10)
         # subscribed to the camera topic
         subscriber= rospy.Subscriber("camera1/image_raw/compressed",
-                                           CompressedImage, self.callback2,  queue_size=1)
+                                          CompressedImage, self.callback2,  queue_size=1)
 
 	self.requested_room=userdata.room_in
 	count=0
+	self.child = subprocess.Popen(["roslaunch","explore_lite","explore.launch"])
+	self.t_final=time.time() + 150
 
 
 
-	while(self.play_state==False and count<3):
-        	#send the robot random positions
-		randomlist = []
-		for i in range(0,2):
-			n = random.randint(-6,8)
-			randomlist.append(n)
-	        rospy.loginfo('going to the random position: %s', randomlist)		
-		pub.publish(randomlist)
-		time.sleep(4)
-		count=count+1
- 		while(self.stopFlag==0):
-			pass
+	while(self.play_state==False and time.time()<self.t_final):
 
+		time.sleep(1)
+      		pass
+
+
+
+
+	time.sleep(2)
+	self.child.send_signal(signal.SIGINT)
 	subscriber.unregister()
 	self.play_state=False
 	return user_action('PLAY')
@@ -595,8 +598,10 @@ class Find(smach.State):
 		if (self.param[2] == 'T'):
 			return
  	        rospy.loginfo('green ball detected')
+		self.t_final=time.time() + 50
 		self.ball_detected = self.param[3]
-		#call the sub_track function
+		#stop the explore-lite package and call the sub_track function
+
 		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
 	#if i detect the black
@@ -618,6 +623,7 @@ class Find(smach.State):
 
 	        rospy.loginfo('black ball detected')
 		self.ball_detected = self.param[3]
+		self.t_final=time.time() + 50
 		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
 	#if i detect the red
@@ -638,6 +644,12 @@ class Find(smach.State):
 			return
 	        rospy.loginfo('red ball detected')
 		self.ball_detected = self.param[3]
+		self.t_final=time.time() + 50
+#		self.child.send_signal(signal.SIGINT)
+ #               pub = rospy.Publisher('/move_base/cancel', GoalID, queue_size=10)
+  #              canc = GoalID ()
+   #             pub.publish(canc)
+
 		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
 	#if i detect the yellow
@@ -658,6 +670,7 @@ class Find(smach.State):
 			return
 
 	        rospy.loginfo('yellow ball detected')
+		self.t_final=time.time() + 50
 		self.ball_detected = self.param[3]
 		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
@@ -679,6 +692,7 @@ class Find(smach.State):
 			return
 
 	        rospy.loginfo('blue ball detected')
+		self.t_final=time.time() + 50
 		self.ball_detected = self.param[3]
 		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
@@ -700,6 +714,7 @@ class Find(smach.State):
 			return
 
 	        rospy.loginfo('magenta ball detected')
+		self.t_final=time.time() + 50
 		self.ball_detected = self.param[3]
 		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
@@ -740,7 +755,11 @@ class Find(smach.State):
 				if(self.requested_room==ball_detected):
 					self.play_state=True
 					time.sleep(1)
+				#launch the explore-lite package
+
+
 				return
+
 			if(ball_detected=='yellow_ball'):
 				self.param= rospy.get_param('/Kitchen')
 				self.param[2] = 'T'
@@ -749,7 +768,10 @@ class Find(smach.State):
 					self.play_state=True
 			
 					time.sleep(1)
+				#launch the explore-lite package
+
 				return
+
 			if(ball_detected=='magenta_ball'):
 				self.param= rospy.get_param('/Bathroom')
 				self.param[2] = 'T'
@@ -758,7 +780,11 @@ class Find(smach.State):
 					self.play_state=True
 			
 					time.sleep(1)
+				#launch the explore-lite package
+
+	
 				return
+
 			if(ball_detected=='black_ball'):
 				self.param= rospy.get_param('/Bedroom')
 				self.param[2] = 'T'
@@ -768,6 +794,7 @@ class Find(smach.State):
 
 					time.sleep(1)
 				return
+
 			if(ball_detected=='green_ball'):
 				self.param= rospy.get_param('/LivingRoom')
 				self.param[2] = 'T'
@@ -776,7 +803,10 @@ class Find(smach.State):
 					self.play_state=True
 			
 					time.sleep(1)
+				#launch the explore-lite package
+
 				return
+
 			if(ball_detected=='red_ball'):
 				self.param= rospy.get_param('/Closet')
 				self.param[2] = 'T'
@@ -785,12 +815,14 @@ class Find(smach.State):
 					self.play_state=True
 			
 					time.sleep(1)
+				#launch the explore-lite package
+
 				return
 				
 
             else:
                 vel = Twist()
-                vel.linear.x = 0.3
+                vel.linear.x = 0.2
                 self.vel_pub.publish(vel)
 
 
