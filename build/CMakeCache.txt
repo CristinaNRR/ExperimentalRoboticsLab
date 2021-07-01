@@ -314,10 +314,10 @@ exp_assignment3_BINARY_DIR:STATIC=/home/cristina/new_ws/build/exp_assignment3-ma
 exp_assignment3_SOURCE_DIR:STATIC=/home/cristina/new_ws/src/exp_assignment3-main
 
 //Value Computed by CMake
-explore_lite_BINARY_DIR:STATIC=/home/cristina/new_ws/build/m-explore/explore
+explore_lite_BINARY_DIR:STATIC=/home/cristina/new_ws/build/explore/explore
 
 //Value Computed by CMake
-explore_lite_SOURCE_DIR:STATIC=/home/cristina/new_ws/src/m-explore/explore
+explore_lite_SOURCE_DIR:STATIC=/home/cristina/new_ws/src/explore/explore
 
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/kinetic/share/gencpp/cmake

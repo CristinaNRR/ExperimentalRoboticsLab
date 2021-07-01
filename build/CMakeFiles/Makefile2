@@ -128,7 +128,7 @@ clean: CMakeFiles/clean_test_results.dir/clean
 
 # All Build rule for target.
 CMakeFiles/run_tests.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/_run_tests_gmapping.dir/all
-CMakeFiles/run_tests.dir/all: m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/all
+CMakeFiles/run_tests.dir/all: explore/explore/CMakeFiles/_run_tests_explore_lite.dir/all
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target run_tests"
@@ -4576,1680 +4576,1680 @@ planning-main/preinstall:
 .PHONY : planning-main/preinstall
 
 #=============================================================================
-# Directory level rules for directory m-explore/explore
+# Directory level rules for directory explore/explore
 
 # Convenience name for "all" pass in the directory.
-m-explore/explore/all: m-explore/explore/CMakeFiles/explore.dir/all
+explore/explore/all: explore/explore/CMakeFiles/explore.dir/all
 
-.PHONY : m-explore/explore/all
+.PHONY : explore/explore/all
 
 # Convenience name for "clean" pass in the directory.
-m-explore/explore/clean: m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/pcl_ros_gencfg.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/explore.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/clean
-m-explore/explore/clean: m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/costmap_2d_gencfg.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/pcl_ros_gencfg.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/_run_tests_explore_lite.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/explore.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/run_tests_explore_lite.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/clean
+explore/explore/clean: explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/clean
 
-.PHONY : m-explore/explore/clean
+.PHONY : explore/explore/clean
 
 # Convenience name for "preinstall" pass in the directory.
-m-explore/explore/preinstall:
+explore/explore/preinstall:
 
-.PHONY : m-explore/explore/preinstall
+.PHONY : explore/explore/preinstall
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir
+# Target rules for target explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build
+explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target pcl_msgs_generate_messages_lisp"
-.PHONY : m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
+.PHONY : explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
+.PHONY : explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-pcl_msgs_generate_messages_lisp: m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
+pcl_msgs_generate_messages_lisp: explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : pcl_msgs_generate_messages_lisp
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/clean
+explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/clean
+.PHONY : explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/clean
+clean: explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir
+# Target rules for target explore/explore/CMakeFiles/costmap_2d_gencfg.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/build
+explore/explore/CMakeFiles/costmap_2d_gencfg.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/costmap_2d_gencfg.dir/build.make explore/explore/CMakeFiles/costmap_2d_gencfg.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/costmap_2d_gencfg.dir/build.make explore/explore/CMakeFiles/costmap_2d_gencfg.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target costmap_2d_gencfg"
-.PHONY : m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/all
+.PHONY : explore/explore/CMakeFiles/costmap_2d_gencfg.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/costmap_2d_gencfg.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/costmap_2d_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/rule
+.PHONY : explore/explore/CMakeFiles/costmap_2d_gencfg.dir/rule
 
 # Convenience name for target.
-costmap_2d_gencfg: m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/rule
+costmap_2d_gencfg: explore/explore/CMakeFiles/costmap_2d_gencfg.dir/rule
 
 .PHONY : costmap_2d_gencfg
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/clean
+explore/explore/CMakeFiles/costmap_2d_gencfg.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/costmap_2d_gencfg.dir/build.make explore/explore/CMakeFiles/costmap_2d_gencfg.dir/clean
+.PHONY : explore/explore/CMakeFiles/costmap_2d_gencfg.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/clean
+clean: explore/explore/CMakeFiles/costmap_2d_gencfg.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir
+# Target rules for target explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build
+explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target pcl_msgs_generate_messages_eus"
-.PHONY : m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/all
+.PHONY : explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule
+.PHONY : explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-pcl_msgs_generate_messages_eus: m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule
+pcl_msgs_generate_messages_eus: explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule
 
 .PHONY : pcl_msgs_generate_messages_eus
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/clean
+explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/clean
+.PHONY : explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/clean
+clean: explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir
+# Target rules for target explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/build.make m-explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/build.make m-explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/build
+explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/build.make explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/build.make explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target nodelet_topic_tools_gencfg"
-.PHONY : m-explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/all
+.PHONY : explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule
+.PHONY : explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule
 
 # Convenience name for target.
-nodelet_topic_tools_gencfg: m-explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule
+nodelet_topic_tools_gencfg: explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule
 
 .PHONY : nodelet_topic_tools_gencfg
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/build.make m-explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/clean
+explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/build.make explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/clean
+.PHONY : explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/clean
+clean: explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/pcl_ros_gencfg.dir
+# Target rules for target explore/explore/CMakeFiles/pcl_ros_gencfg.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/pcl_ros_gencfg.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/pcl_ros_gencfg.dir/build.make m-explore/explore/CMakeFiles/pcl_ros_gencfg.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/pcl_ros_gencfg.dir/build.make m-explore/explore/CMakeFiles/pcl_ros_gencfg.dir/build
+explore/explore/CMakeFiles/pcl_ros_gencfg.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/pcl_ros_gencfg.dir/build.make explore/explore/CMakeFiles/pcl_ros_gencfg.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/pcl_ros_gencfg.dir/build.make explore/explore/CMakeFiles/pcl_ros_gencfg.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target pcl_ros_gencfg"
-.PHONY : m-explore/explore/CMakeFiles/pcl_ros_gencfg.dir/all
+.PHONY : explore/explore/CMakeFiles/pcl_ros_gencfg.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/pcl_ros_gencfg.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/pcl_ros_gencfg.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/pcl_ros_gencfg.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/pcl_ros_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/pcl_ros_gencfg.dir/rule
+.PHONY : explore/explore/CMakeFiles/pcl_ros_gencfg.dir/rule
 
 # Convenience name for target.
-pcl_ros_gencfg: m-explore/explore/CMakeFiles/pcl_ros_gencfg.dir/rule
+pcl_ros_gencfg: explore/explore/CMakeFiles/pcl_ros_gencfg.dir/rule
 
 .PHONY : pcl_ros_gencfg
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/pcl_ros_gencfg.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/pcl_ros_gencfg.dir/build.make m-explore/explore/CMakeFiles/pcl_ros_gencfg.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/pcl_ros_gencfg.dir/clean
+explore/explore/CMakeFiles/pcl_ros_gencfg.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/pcl_ros_gencfg.dir/build.make explore/explore/CMakeFiles/pcl_ros_gencfg.dir/clean
+.PHONY : explore/explore/CMakeFiles/pcl_ros_gencfg.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/pcl_ros_gencfg.dir/clean
+clean: explore/explore/CMakeFiles/pcl_ros_gencfg.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir
+# Target rules for target explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
+explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target dynamic_reconfigure_generate_messages_lisp"
-.PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
+.PHONY : explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+.PHONY : explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-dynamic_reconfigure_generate_messages_lisp: m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+dynamic_reconfigure_generate_messages_lisp: explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
 
 .PHONY : dynamic_reconfigure_generate_messages_lisp
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
+explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
+.PHONY : explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
+clean: explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir
+# Target rules for target explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_lisp"
-.PHONY : m-explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/all
+.PHONY : explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+.PHONY : explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-std_srvs_generate_messages_lisp: m-explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+std_srvs_generate_messages_lisp: explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
 
 .PHONY : std_srvs_generate_messages_lisp
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
+explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
+.PHONY : explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
+clean: explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir
+# Target rules for target explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/build
+explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/build.make explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/build.make explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target map_msgs_generate_messages_py"
-.PHONY : m-explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/all
+.PHONY : explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+.PHONY : explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-map_msgs_generate_messages_py: m-explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+map_msgs_generate_messages_py: explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/rule
 
 .PHONY : map_msgs_generate_messages_py
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/clean
+explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/build.make explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/clean
+.PHONY : explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/clean
+clean: explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir
+# Target rules for target explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/build
+explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target map_msgs_generate_messages_lisp"
-.PHONY : m-explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/all
+.PHONY : explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
+.PHONY : explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-map_msgs_generate_messages_lisp: m-explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
+map_msgs_generate_messages_lisp: explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : map_msgs_generate_messages_lisp
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/clean
+explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/clean
+.PHONY : explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/clean
+clean: explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir
+# Target rules for target explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build
+explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target pcl_msgs_generate_messages_nodejs"
-.PHONY : m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
+.PHONY : explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule
+.PHONY : explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-pcl_msgs_generate_messages_nodejs: m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule
+pcl_msgs_generate_messages_nodejs: explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : pcl_msgs_generate_messages_nodejs
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/clean
+explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/clean
+.PHONY : explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/clean
+clean: explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir
+# Target rules for target explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_nodejs"
-.PHONY : m-explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
+.PHONY : explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+.PHONY : explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-std_srvs_generate_messages_nodejs: m-explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+std_srvs_generate_messages_nodejs: explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
 
 .PHONY : std_srvs_generate_messages_nodejs
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
+explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
+.PHONY : explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
+clean: explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir
+# Target rules for target explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/build
+explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target map_msgs_generate_messages_eus"
-.PHONY : m-explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/all
+.PHONY : explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
+.PHONY : explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-map_msgs_generate_messages_eus: m-explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
+map_msgs_generate_messages_eus: explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
 
 .PHONY : map_msgs_generate_messages_eus
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/clean
+explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/clean
+.PHONY : explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/clean
+clean: explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir
+# Target rules for target explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
+explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target topic_tools_generate_messages_cpp"
-.PHONY : m-explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/all
+.PHONY : explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+.PHONY : explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-topic_tools_generate_messages_cpp: m-explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+topic_tools_generate_messages_cpp: explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
 
 .PHONY : topic_tools_generate_messages_cpp
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
+explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
+.PHONY : explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
+clean: explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir
+# Target rules for target explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/build
+explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target topic_tools_generate_messages_eus"
-.PHONY : m-explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/all
+.PHONY : explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
+.PHONY : explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-topic_tools_generate_messages_eus: m-explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
+topic_tools_generate_messages_eus: explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
 
 .PHONY : topic_tools_generate_messages_eus
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/clean
+explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/clean
+.PHONY : explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/clean
+clean: explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir
+# Target rules for target explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
+explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target dynamic_reconfigure_gencfg"
-.PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
+.PHONY : explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
+.PHONY : explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
 
 # Convenience name for target.
-dynamic_reconfigure_gencfg: m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
+dynamic_reconfigure_gencfg: explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
 
 .PHONY : dynamic_reconfigure_gencfg
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
+explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
+.PHONY : explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
+clean: explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir
+# Target rules for target explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build
+explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target costmap_2d_generate_messages_lisp"
-.PHONY : m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/all
+.PHONY : explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
+.PHONY : explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-costmap_2d_generate_messages_lisp: m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
+costmap_2d_generate_messages_lisp: explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
 
 .PHONY : costmap_2d_generate_messages_lisp
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/clean
+explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/clean
+.PHONY : explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/clean
+clean: explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir
+# Target rules for target explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build
+explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target pcl_msgs_generate_messages_cpp"
-.PHONY : m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/all
+.PHONY : explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
+.PHONY : explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-pcl_msgs_generate_messages_cpp: m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
+pcl_msgs_generate_messages_cpp: explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : pcl_msgs_generate_messages_cpp
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean
+explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean
+.PHONY : explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean
+clean: explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir
+# Target rules for target explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/build
+explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target costmap_2d_generate_messages_eus"
-.PHONY : m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/all
+.PHONY : explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
+.PHONY : explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-costmap_2d_generate_messages_eus: m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
+costmap_2d_generate_messages_eus: explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
 
 .PHONY : costmap_2d_generate_messages_eus
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/clean
+explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/clean
+.PHONY : explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/clean
+clean: explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir
+# Target rules for target explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/build.make m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/build.make m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/build
+explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/build.make explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/build.make explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target run_tests_explore_lite_roslaunch-check_launch"
-.PHONY : m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/all
+.PHONY : explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/rule
+.PHONY : explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/rule
 
 # Convenience name for target.
-run_tests_explore_lite_roslaunch-check_launch: m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/rule
+run_tests_explore_lite_roslaunch-check_launch: explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/rule
 
 .PHONY : run_tests_explore_lite_roslaunch-check_launch
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/build.make m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/clean
+explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/build.make explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/clean
+.PHONY : explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/clean
+clean: explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir
+# Target rules for target explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
+explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target dynamic_reconfigure_generate_messages_cpp"
-.PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
+.PHONY : explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+.PHONY : explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-dynamic_reconfigure_generate_messages_cpp: m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+dynamic_reconfigure_generate_messages_cpp: explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
 
 .PHONY : dynamic_reconfigure_generate_messages_cpp
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
+explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
+.PHONY : explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
+clean: explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir
+# Target rules for target explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/build
+explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/build.make explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/build.make explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_py"
-.PHONY : m-explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/all
+.PHONY : explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+.PHONY : explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-std_srvs_generate_messages_py: m-explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+std_srvs_generate_messages_py: explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/rule
 
 .PHONY : std_srvs_generate_messages_py
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/clean
+explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/build.make explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/clean
+.PHONY : explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/clean
+clean: explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir
+# Target rules for target explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
+explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target visualization_msgs_generate_messages_lisp"
-.PHONY : m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
+.PHONY : explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+.PHONY : explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-visualization_msgs_generate_messages_lisp: m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+visualization_msgs_generate_messages_lisp: explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : visualization_msgs_generate_messages_lisp
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/clean
+explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/clean
+.PHONY : explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/clean
+clean: explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir
+# Target rules for target explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
+explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target dynamic_reconfigure_generate_messages_eus"
-.PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/all
+.PHONY : explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+.PHONY : explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-dynamic_reconfigure_generate_messages_eus: m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+dynamic_reconfigure_generate_messages_eus: explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
 
 .PHONY : dynamic_reconfigure_generate_messages_eus
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/clean
+explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/clean
+.PHONY : explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/clean
+clean: explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir
+# Target rules for target explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build
+explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target map_msgs_generate_messages_nodejs"
-.PHONY : m-explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/all
+.PHONY : explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
+.PHONY : explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-map_msgs_generate_messages_nodejs: m-explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
+map_msgs_generate_messages_nodejs: explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : map_msgs_generate_messages_nodejs
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/clean
+explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/clean
+.PHONY : explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/clean
+clean: explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir
+# Target rules for target explore/explore/CMakeFiles/_run_tests_explore_lite.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/all: m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/all
-	$(MAKE) -f m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/build.make m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/build.make m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/build
+explore/explore/CMakeFiles/_run_tests_explore_lite.dir/all: explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/all
+	$(MAKE) -f explore/explore/CMakeFiles/_run_tests_explore_lite.dir/build.make explore/explore/CMakeFiles/_run_tests_explore_lite.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/_run_tests_explore_lite.dir/build.make explore/explore/CMakeFiles/_run_tests_explore_lite.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target _run_tests_explore_lite"
-.PHONY : m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/all
+.PHONY : explore/explore/CMakeFiles/_run_tests_explore_lite.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/_run_tests_explore_lite.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/_run_tests_explore_lite.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/rule
+.PHONY : explore/explore/CMakeFiles/_run_tests_explore_lite.dir/rule
 
 # Convenience name for target.
-_run_tests_explore_lite: m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/rule
+_run_tests_explore_lite: explore/explore/CMakeFiles/_run_tests_explore_lite.dir/rule
 
 .PHONY : _run_tests_explore_lite
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/build.make m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/clean
+explore/explore/CMakeFiles/_run_tests_explore_lite.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/_run_tests_explore_lite.dir/build.make explore/explore/CMakeFiles/_run_tests_explore_lite.dir/clean
+.PHONY : explore/explore/CMakeFiles/_run_tests_explore_lite.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/clean
+clean: explore/explore/CMakeFiles/_run_tests_explore_lite.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir
+# Target rules for target explore/explore/CMakeFiles/clean_test_results_explore_lite.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/build.make m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/build.make m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/build
+explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/build.make explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/build.make explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target clean_test_results_explore_lite"
-.PHONY : m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/all
+.PHONY : explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/rule
+.PHONY : explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/rule
 
 # Convenience name for target.
-clean_test_results_explore_lite: m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/rule
+clean_test_results_explore_lite: explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/rule
 
 .PHONY : clean_test_results_explore_lite
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/build.make m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/clean
+explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/build.make explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/clean
+.PHONY : explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/clean
+clean: explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir
+# Target rules for target explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/build
+explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target pcl_msgs_generate_messages_py"
-.PHONY : m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
+.PHONY : explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
+.PHONY : explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-pcl_msgs_generate_messages_py: m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
+pcl_msgs_generate_messages_py: explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
 
 .PHONY : pcl_msgs_generate_messages_py
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean
+explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean
+.PHONY : explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean
+clean: explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/explore.dir
+# Target rules for target explore/explore/CMakeFiles/explore.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_generate_messages_py.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_generate_messages_eus.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_generate_messages_cpp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf2_msgs_generate_messages_eus.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/nodelet_generate_messages_cpp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/nodelet_generate_messages_lisp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/nodelet_generate_messages_nodejs.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/nodelet_generate_messages_py.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_generate_messages_lisp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/nav_msgs_generate_messages_py.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/std_msgs_generate_messages_py.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/bond_generate_messages_cpp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/bond_generate_messages_lisp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/nodelet_generate_messages_eus.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/bond_generate_messages_nodejs.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/bond_generate_messages_py.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/bond_generate_messages_eus.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/roscpp_generate_messages_eus.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf_generate_messages_eus.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf_generate_messages_cpp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf_generate_messages_lisp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/roscpp_generate_messages_py.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf_generate_messages_nodejs.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf_generate_messages_py.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_eus.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_py.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/pcl_ros_gencfg.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
-m-explore/explore/CMakeFiles/explore.dir/all: m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/all
-	$(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/build
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_generate_messages_py.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_generate_messages_eus.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_generate_messages_cpp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf2_msgs_generate_messages_eus.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/nodelet_generate_messages_cpp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/nodelet_generate_messages_lisp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/nodelet_generate_messages_nodejs.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/nodelet_generate_messages_py.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_generate_messages_lisp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/nav_msgs_generate_messages_py.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/std_msgs_generate_messages_py.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/bond_generate_messages_cpp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/bond_generate_messages_lisp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/nodelet_generate_messages_eus.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/bond_generate_messages_nodejs.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/bond_generate_messages_py.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/bond_generate_messages_eus.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/roscpp_generate_messages_eus.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf_generate_messages_eus.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf_generate_messages_cpp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf_generate_messages_lisp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/roscpp_generate_messages_py.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf_generate_messages_nodejs.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/tf_generate_messages_py.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: SLAM_packages-main/slam_gmapping/gmapping/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+explore/explore/CMakeFiles/explore.dir/all: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_eus.dir/all
+explore/explore/CMakeFiles/explore.dir/all: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/all
+explore/explore/CMakeFiles/explore.dir/all: exp_assignment3-main/CMakeFiles/move_base_msgs_generate_messages_py.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/costmap_2d_gencfg.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/pcl_msgs_generate_messages_eus.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/nodelet_topic_tools_gencfg.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/pcl_ros_gencfg.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/std_srvs_generate_messages_lisp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/map_msgs_generate_messages_py.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/map_msgs_generate_messages_lisp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/map_msgs_generate_messages_eus.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/topic_tools_generate_messages_cpp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/topic_tools_generate_messages_eus.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/std_srvs_generate_messages_py.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/map_msgs_generate_messages_nodejs.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
+explore/explore/CMakeFiles/explore.dir/all: explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/all
+	$(MAKE) -f explore/explore/CMakeFiles/explore.dir/build.make explore/explore/CMakeFiles/explore.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/explore.dir/build.make explore/explore/CMakeFiles/explore.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num=43,44,45,46 "Built target explore"
-.PHONY : m-explore/explore/CMakeFiles/explore.dir/all
+.PHONY : explore/explore/CMakeFiles/explore.dir/all
 
 # Include target in all.
-all: m-explore/explore/CMakeFiles/explore.dir/all
+all: explore/explore/CMakeFiles/explore.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/explore.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/explore.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/explore.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/explore.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/explore.dir/rule
+.PHONY : explore/explore/CMakeFiles/explore.dir/rule
 
 # Convenience name for target.
-explore: m-explore/explore/CMakeFiles/explore.dir/rule
+explore: explore/explore/CMakeFiles/explore.dir/rule
 
 .PHONY : explore
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/explore.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/explore.dir/clean
+explore/explore/CMakeFiles/explore.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/explore.dir/build.make explore/explore/CMakeFiles/explore.dir/clean
+.PHONY : explore/explore/CMakeFiles/explore.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/explore.dir/clean
+clean: explore/explore/CMakeFiles/explore.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir
+# Target rules for target explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build
+explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target costmap_2d_generate_messages_nodejs"
-.PHONY : m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/all
+.PHONY : explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule
+.PHONY : explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-costmap_2d_generate_messages_nodejs: m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule
+costmap_2d_generate_messages_nodejs: explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule
 
 .PHONY : costmap_2d_generate_messages_nodejs
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/clean
+explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/clean
+.PHONY : explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/clean
+clean: explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir
+# Target rules for target explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_cpp"
-.PHONY : m-explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
+.PHONY : explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+.PHONY : explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-std_srvs_generate_messages_cpp: m-explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+std_srvs_generate_messages_cpp: explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
 
 .PHONY : std_srvs_generate_messages_cpp
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
+explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
+.PHONY : explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
+clean: explore/explore/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir
+# Target rules for target explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_eus"
-.PHONY : m-explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/all
+.PHONY : explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+.PHONY : explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-std_srvs_generate_messages_eus: m-explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+std_srvs_generate_messages_eus: explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
 
 .PHONY : std_srvs_generate_messages_eus
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
+explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
+.PHONY : explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
+clean: explore/explore/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir
+# Target rules for target explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
+explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target topic_tools_generate_messages_lisp"
-.PHONY : m-explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/all
+.PHONY : explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
+.PHONY : explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-topic_tools_generate_messages_lisp: m-explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
+topic_tools_generate_messages_lisp: explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
 
 .PHONY : topic_tools_generate_messages_lisp
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/clean
+explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/clean
+.PHONY : explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/clean
+clean: explore/explore/CMakeFiles/topic_tools_generate_messages_lisp.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir
+# Target rules for target explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/build
+explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/build.make explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/build.make explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target topic_tools_generate_messages_py"
-.PHONY : m-explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/all
+.PHONY : explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/rule
+.PHONY : explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/rule
 
 # Convenience name for target.
-topic_tools_generate_messages_py: m-explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/rule
+topic_tools_generate_messages_py: explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/rule
 
 .PHONY : topic_tools_generate_messages_py
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/clean
+explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/build.make explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/clean
+.PHONY : explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/clean
+clean: explore/explore/CMakeFiles/topic_tools_generate_messages_py.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir
+# Target rules for target explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
+explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target visualization_msgs_generate_messages_cpp"
-.PHONY : m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/all
+.PHONY : explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+.PHONY : explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-visualization_msgs_generate_messages_cpp: m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+visualization_msgs_generate_messages_cpp: explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : visualization_msgs_generate_messages_cpp
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/clean
+explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/clean
+.PHONY : explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/clean
+clean: explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir
+# Target rules for target explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/build
+explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/build.make explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/build.make explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target costmap_2d_generate_messages_py"
-.PHONY : m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/all
+.PHONY : explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
+.PHONY : explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
 
 # Convenience name for target.
-costmap_2d_generate_messages_py: m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
+costmap_2d_generate_messages_py: explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
 
 .PHONY : costmap_2d_generate_messages_py
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/clean
+explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/build.make explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/clean
+.PHONY : explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/clean
+clean: explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir
+# Target rules for target explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build
+explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target costmap_2d_generate_messages_cpp"
-.PHONY : m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/all
+.PHONY : explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
+.PHONY : explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-costmap_2d_generate_messages_cpp: m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
+costmap_2d_generate_messages_cpp: explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
 
 .PHONY : costmap_2d_generate_messages_cpp
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/clean
+explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/clean
+.PHONY : explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/clean
+clean: explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir
+# Target rules for target explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build
+explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target topic_tools_generate_messages_nodejs"
-.PHONY : m-explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/all
+.PHONY : explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
+.PHONY : explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-topic_tools_generate_messages_nodejs: m-explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
+topic_tools_generate_messages_nodejs: explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
 
 .PHONY : topic_tools_generate_messages_nodejs
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/clean
+explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/clean
+.PHONY : explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/clean
+clean: explore/explore/CMakeFiles/topic_tools_generate_messages_nodejs.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir
+# Target rules for target explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/all: m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/all
-	$(MAKE) -f m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/build.make m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/build.make m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/build
+explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/all: explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/all
+	$(MAKE) -f explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/build.make explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/build.make explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target run_tests_explore_lite_roslaunch-check"
-.PHONY : m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/all
+.PHONY : explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/rule
+.PHONY : explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/rule
 
 # Convenience name for target.
-run_tests_explore_lite_roslaunch-check: m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/rule
+run_tests_explore_lite_roslaunch-check: explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/rule
 
 .PHONY : run_tests_explore_lite_roslaunch-check
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/build.make m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/clean
+explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/build.make explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/clean
+.PHONY : explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/clean
+clean: explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir
+# Target rules for target explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/build
+explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target map_msgs_generate_messages_cpp"
-.PHONY : m-explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/all
+.PHONY : explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
+.PHONY : explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-map_msgs_generate_messages_cpp: m-explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
+map_msgs_generate_messages_cpp: explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : map_msgs_generate_messages_cpp
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/clean
+explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/clean
+.PHONY : explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/clean
+clean: explore/explore/CMakeFiles/map_msgs_generate_messages_cpp.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir
+# Target rules for target explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
+explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target dynamic_reconfigure_generate_messages_nodejs"
-.PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/all
+.PHONY : explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+.PHONY : explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-dynamic_reconfigure_generate_messages_nodejs: m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+dynamic_reconfigure_generate_messages_nodejs: explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
 
 .PHONY : dynamic_reconfigure_generate_messages_nodejs
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/clean
+explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/clean
+.PHONY : explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/clean
+clean: explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir
+# Target rules for target explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
+explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target visualization_msgs_generate_messages_eus"
-.PHONY : m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/all
+.PHONY : explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
+.PHONY : explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-visualization_msgs_generate_messages_eus: m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
+visualization_msgs_generate_messages_eus: explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
 
 .PHONY : visualization_msgs_generate_messages_eus
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean
+explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean
+.PHONY : explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean
+clean: explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir
+# Target rules for target explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
+explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target visualization_msgs_generate_messages_nodejs"
-.PHONY : m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
+.PHONY : explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+.PHONY : explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-visualization_msgs_generate_messages_nodejs: m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+visualization_msgs_generate_messages_nodejs: explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : visualization_msgs_generate_messages_nodejs
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean
+explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean
+.PHONY : explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean
+clean: explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir
+# Target rules for target explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
+explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target dynamic_reconfigure_generate_messages_py"
-.PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
+.PHONY : explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+.PHONY : explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
 
 # Convenience name for target.
-dynamic_reconfigure_generate_messages_py: m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+dynamic_reconfigure_generate_messages_py: explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
 
 .PHONY : dynamic_reconfigure_generate_messages_py
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean
+explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean
+.PHONY : explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean
+clean: explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir
+# Target rules for target explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
+explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target visualization_msgs_generate_messages_py"
-.PHONY : m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/all
+.PHONY : explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+.PHONY : explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-visualization_msgs_generate_messages_py: m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+visualization_msgs_generate_messages_py: explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
 
 .PHONY : visualization_msgs_generate_messages_py
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean
+explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean
+.PHONY : explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean
+clean: explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/run_tests_explore_lite.dir
+# Target rules for target explore/explore/CMakeFiles/run_tests_explore_lite.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/all: m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/all
-	$(MAKE) -f m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/build.make m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/build.make m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/build
+explore/explore/CMakeFiles/run_tests_explore_lite.dir/all: explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/all
+	$(MAKE) -f explore/explore/CMakeFiles/run_tests_explore_lite.dir/build.make explore/explore/CMakeFiles/run_tests_explore_lite.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/run_tests_explore_lite.dir/build.make explore/explore/CMakeFiles/run_tests_explore_lite.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target run_tests_explore_lite"
-.PHONY : m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/all
+.PHONY : explore/explore/CMakeFiles/run_tests_explore_lite.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/run_tests_explore_lite.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/run_tests_explore_lite.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/rule
+.PHONY : explore/explore/CMakeFiles/run_tests_explore_lite.dir/rule
 
 # Convenience name for target.
-run_tests_explore_lite: m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/rule
+run_tests_explore_lite: explore/explore/CMakeFiles/run_tests_explore_lite.dir/rule
 
 .PHONY : run_tests_explore_lite
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/build.make m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/clean
+explore/explore/CMakeFiles/run_tests_explore_lite.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/run_tests_explore_lite.dir/build.make explore/explore/CMakeFiles/run_tests_explore_lite.dir/clean
+.PHONY : explore/explore/CMakeFiles/run_tests_explore_lite.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/clean
+clean: explore/explore/CMakeFiles/run_tests_explore_lite.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir
+# Target rules for target explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/all: m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/all
-	$(MAKE) -f m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/build.make m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/build.make m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/build
+explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/all: explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/all
+	$(MAKE) -f explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/build.make explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/build.make explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target _run_tests_explore_lite_roslaunch-check"
-.PHONY : m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/all
+.PHONY : explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/rule
+.PHONY : explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/rule
 
 # Convenience name for target.
-_run_tests_explore_lite_roslaunch-check: m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/rule
+_run_tests_explore_lite_roslaunch-check: explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/rule
 
 .PHONY : _run_tests_explore_lite_roslaunch-check
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/build.make m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/clean
+explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/build.make explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/clean
+.PHONY : explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/clean
+clean: explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir
+# Target rules for target explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/all: CMakeFiles/tests.dir/all
-m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/all: m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/all
-	$(MAKE) -f m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/build.make m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/depend
-	$(MAKE) -f m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/build.make m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/build
+explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/all: CMakeFiles/tests.dir/all
+explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/all: explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/all
+	$(MAKE) -f explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/build.make explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/depend
+	$(MAKE) -f explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/build.make explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristina/new_ws/build/CMakeFiles --progress-num= "Built target _run_tests_explore_lite_roslaunch-check_launch"
-.PHONY : m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/all
+.PHONY : explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/all
 
 # Build rule for subdir invocation for target.
-m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/rule: cmake_check_build_system
+explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristina/new_ws/build/CMakeFiles 0
-.PHONY : m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/rule
+.PHONY : explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/rule
 
 # Convenience name for target.
-_run_tests_explore_lite_roslaunch-check_launch: m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/rule
+_run_tests_explore_lite_roslaunch-check_launch: explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/rule
 
 .PHONY : _run_tests_explore_lite_roslaunch-check_launch
 
 # clean rule for target.
-m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/clean:
-	$(MAKE) -f m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/build.make m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/clean
-.PHONY : m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/clean
+explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/clean:
+	$(MAKE) -f explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/build.make explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/clean
+.PHONY : explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/clean
 
 # clean rule for target.
-clean: m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/clean
+clean: explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/clean
 
 .PHONY : clean
 
