@@ -22,8 +22,6 @@ are converted and sent to the moveBase action server.
 */
 void Callback (const exp_assignment3::Num::ConstPtr& msg) { 
 
-  ROS_INFO("sono nella callback");
-
   //tell the action client that we want to spin a thread by default
   MoveBaseClient ac("move_base", true);
 
@@ -32,15 +30,15 @@ void Callback (const exp_assignment3::Num::ConstPtr& msg) {
     ROS_INFO("Waiting for the move_base action server to come up");
   }
 
- //send the target received to the actionlib server
+
   double x = 1.0 * msg->num[0];
   double y = 1.0 * msg->num[1];
-
 
 
   double pos_x = {x};
   double pos_y = {y};
 
+ //send the target received to the actionlib server
   move_base_msgs::MoveBaseGoal goal;
 
   goal.target_pose.header.frame_id = "/map";
@@ -60,10 +58,8 @@ void Callback (const exp_assignment3::Num::ConstPtr& msg) {
 
 int main(int argc, char** argv){
   ros::init(argc, argv, "simple_navigation_goals");
-  ROS_INFO("sono nel main");
 
   ros::NodeHandle nh;
-
 
   ros::Subscriber sub = nh.subscribe("targetPosition",4,Callback);
 

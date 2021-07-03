@@ -69,12 +69,12 @@ class Normal(smach.State):
     def execute(self,userdata):
 
         rospy.loginfo('Executing state NORMAL ')
-	#send to the actionlib client the target positions to reach
+
       	pub = rospy.Publisher('targetPosition', Num,queue_size=10)
 	subscriber2=rospy.Subscriber("cmd_vel", Twist, self.callback2)
         self.vel_pub = rospy.Publisher("cmd_vel",
                                        Twist, queue_size=1)
-        # subscribed to the camera topic
+        # subscribe to the camera topic
         subscriber1= rospy.Subscriber("camera1/image_raw/compressed",
                                            CompressedImage, self.callback,  queue_size=1)
 
@@ -90,10 +90,10 @@ class Normal(smach.State):
 	        rospy.loginfo('moving to the random position: %s', randomlist)		
 		pub.publish(randomlist)
 		time.sleep(4)
+
 		#stop sending commands when the robot is moving
  		while(self.stopFlag==0):
 			pass
-
 
 		self.play_count = self.play_count+1
 		self.sleep_count = self.sleep_count+1
@@ -103,7 +103,7 @@ class Normal(smach.State):
 			subscriber1.unregister()
 			subscriber2.unregister()
 			return user_action('SLEEP')
-	
+		#after some actions have been executed go to the play state
 		if self.play_count>=3 :
 			self.play_count=0
 			subscriber1.unregister()
@@ -321,7 +321,7 @@ class Normal(smach.State):
 				 
 
 
-##The robot reached a predefined location obtained accessing the parameter server. 
+##The robot reaches a predefined location obtained accessing the parameter server. 
 #Once reached it stays there for some time and then move to the normal behaviour.
 class Sleep(smach.State):
 
@@ -331,7 +331,6 @@ class Sleep(smach.State):
                              outcomes=['normal'])
 
 
-        self.home = [-1,1]
 	self.stopFlag=0
 
     def execute(self,userdata):
@@ -344,7 +343,7 @@ class Sleep(smach.State):
 	lista.append(home[0])
 	lista.append(home[1])
 	pub.publish(lista)
-	rospy.loginfo('going to the home position')		
+	rospy.loginfo('Going to the home position')		
 	time.sleep(3)
 	while(self.stopFlag==0):
 		pass	
@@ -402,12 +401,11 @@ class Play(smach.State):
 		pub.publish(lista)
 		rospy.loginfo('going to the play pose')		
 		time.sleep(4)
-		#waint until the robot stop moving 
+		#wait until the robot stop moving 
 		while(self.stopFlag==0):
 			pass
 		self.rooms= rospy.get_param('/rooms')
 		n = random.randint(0,5)
-		print(n)
 		self.goTo= self.rooms[n]
 		rospy.loginfo('goTo command: %s', self.goTo)
 		if(self.goTo=='Closet'):
@@ -420,7 +418,6 @@ class Play(smach.State):
 				pub.publish(lista)
 			#move to the find state
 			else: 	
-				self.count=0
 				subscriber.unregister()
 				userdata.room_out=self.param[3]
 				return user_action('FIND')	
@@ -434,7 +431,6 @@ class Play(smach.State):
 				rospy.loginfo('going to the predefined room position: %s', lista)		
 				pub.publish(lista)
 			else: 	
-				self.count=0
 				subscriber.unregister()
 				userdata.room_out=self.param[3]
 				return user_action('FIND')
@@ -448,7 +444,6 @@ class Play(smach.State):
 				rospy.loginfo('going to the predefined room position: %s', lista)		
 				pub.publish(lista)
 			else: 
-				self.count=0
 				subscriber.unregister()	
 				userdata.room_out=self.param[3]
 				return user_action('FIND')
@@ -462,7 +457,6 @@ class Play(smach.State):
 				rospy.loginfo('going to the predefined room position: %s', lista)		
 				pub.publish(lista)
 			else: 	
-				self.count=0
 				subscriber.unregister()
 				userdata.room_out=self.param[3]
 				return user_action('FIND')
@@ -476,7 +470,6 @@ class Play(smach.State):
 				rospy.loginfo('going to the predefined room position: %s', lista)		
 				pub.publish(lista)
 			else:
-				self.count=0 
 				subscriber.unregister()	
 				userdata.room_out= self.param[3]
 				return user_action('FIND')
@@ -490,13 +483,12 @@ class Play(smach.State):
 				rospy.loginfo('going to the predefined room position: %s', lista)		
 				pub.publish(lista)
 			else: 	
-				self.count=0
 				subscriber.unregister()
 				userdata.room_out= self.param[3]
 				return user_action('FIND')
 
 		time.sleep(2)
-		#waint until the robot stop moving 
+		#wait until the robot stop moving 
 		while(self.stopFlag==0):
 			pass
 		time.sleep(5)
@@ -515,7 +507,7 @@ class Play(smach.State):
 		self.stopFlag=0
 
 
-##The robot starts moving randomly in the environment. Once it detects a new ball
+##The robot starts moving in the environment relying on the explore-lite package. Once it detects a new ball
 #it checks if it corresponds to the ball received by the play state. If so it goes back
 #to the play behaviour. Otherwise it keeps moving around the house.
 class Find(smach.State):
@@ -536,7 +528,7 @@ class Find(smach.State):
     def execute(self,userdata):
 
 	rospy.loginfo('Executing state FIND (room received=%s)' %userdata.room_in)
-	rospy.Subscriber("cmd_vel", Twist, self.callback)
+
 	pub = rospy.Publisher('targetPosition', Num,queue_size=10)
 	self.vel_pub = rospy.Publisher('cmd_vel', Twist, queue_size=10)
         # subscribed to the camera topic
@@ -544,15 +536,14 @@ class Find(smach.State):
                                           CompressedImage, self.callback2,  queue_size=1)
 
 	self.requested_room=userdata.room_in
-	count=0
+	#launch the explore-lite package everytime the robot enters the play state
 	self.child = subprocess.Popen(["roslaunch","explore_lite","explore.launch"])
-	self.t_final=time.time() + 150
+	self.t_final=time.time() + 200
 
 
 
 	while(self.play_state==False and time.time()<self.t_final):
 
-		time.sleep(1)
       		pass
 
 
@@ -576,8 +567,7 @@ class Find(smach.State):
 
 
         np_arr = np.fromstring(ros_data.data, np.uint8)
-        image_np = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)  # OpenCV >= 3.0:
-
+        image_np = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)  
 
         blurred = cv2.GaussianBlur(image_np, (11, 11), 0)
         hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
@@ -600,8 +590,6 @@ class Find(smach.State):
  	        rospy.loginfo('green ball detected')
 		self.t_final=time.time() + 50
 		self.ball_detected = self.param[3]
-		#stop the explore-lite package and call the sub_track function
-
 		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
 	#if i detect the black
@@ -644,12 +632,7 @@ class Find(smach.State):
 			return
 	        rospy.loginfo('red ball detected')
 		self.ball_detected = self.param[3]
-		self.t_final=time.time() + 50
-#		self.child.send_signal(signal.SIGINT)
- #               pub = rospy.Publisher('/move_base/cancel', GoalID, queue_size=10)
-  #              canc = GoalID ()
-   #             pub.publish(canc)
-
+		self.t_final=time.time() + 150
 		self.sub_track(cnts, image_np, self.ball_detected)
 		return	
 	#if i detect the yellow
@@ -721,7 +704,8 @@ class Find(smach.State):
 
     ##This function is executed everytime the robot detects a colored object which was not previously detected.
     #The robot tries to go closer to the detected object. Once done, the reference position of the room is
-    #marked as reached modifying data in the parameter server.
+    #marked as reached modifying data in the parameter server. Then the robot checks if the detected ball corresponds
+    #to the ball received from the play state.
     def sub_track(self,cnts, image_np, ball_detected):
 
 
@@ -755,7 +739,6 @@ class Find(smach.State):
 				if(self.requested_room==ball_detected):
 					self.play_state=True
 					time.sleep(1)
-				#launch the explore-lite package
 
 
 				return
@@ -768,7 +751,6 @@ class Find(smach.State):
 					self.play_state=True
 			
 					time.sleep(1)
-				#launch the explore-lite package
 
 				return
 
@@ -780,9 +762,7 @@ class Find(smach.State):
 					self.play_state=True
 			
 					time.sleep(1)
-				#launch the explore-lite package
 
-	
 				return
 
 			if(ball_detected=='black_ball'):
@@ -803,7 +783,6 @@ class Find(smach.State):
 					self.play_state=True
 			
 					time.sleep(1)
-				#launch the explore-lite package
 
 				return
 
@@ -815,28 +794,17 @@ class Find(smach.State):
 					self.play_state=True
 			
 					time.sleep(1)
-				#launch the explore-lite package
 
 				return
 				
 
             else:
                 vel = Twist()
-                vel.linear.x = 0.2
+                vel.linear.x = 0.3
                 self.vel_pub.publish(vel)
 
 
 	
-
-    ## A flag is set to 1 if the robot is not moving, to 0 otherwise	
-    def callback(self, msg):
-
-	if(msg.linear.x==0 and msg.angular.z==0):
-
-		self.stopFlag=1
-	
-	else:
-		self.stopFlag=0
 					
 			
 
