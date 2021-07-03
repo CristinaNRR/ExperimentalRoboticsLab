@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['publishloop_118',['publishLoop',['../class_slam_g_mapping.html#a00a01ecfacccbfcfccc3e138de6bd00f',1,'SlamGMapping']]],
-  ['publishtransform_119',['publishTransform',['../class_slam_g_mapping.html#a2447af8faad253af05c7dc9f492b8489',1,'SlamGMapping']]]
+  ['getbaseframeid_632',['getBaseFrameID',['../classexplore_1_1_costmap2_d_client.html#a8e54bc45010f0ea9765faff083636ebf',1,'explore::Costmap2DClient']]],
+  ['getcostmap_633',['getCostmap',['../classexplore_1_1_costmap2_d_client.html#a6c2cb3946a589eb2708092b762a0ca19',1,'explore::Costmap2DClient::getCostmap()'],['../classexplore_1_1_costmap2_d_client.html#a3fab3a225fb105cd8e19a0609b34211e',1,'explore::Costmap2DClient::getCostmap() const']]],
+  ['getglobalframeid_634',['getGlobalFrameID',['../classexplore_1_1_costmap2_d_client.html#a02a8befe4fb9ac9057b89f14379a735c',1,'explore::Costmap2DClient']]],
+  ['getrobotpose_635',['getRobotPose',['../classexplore_1_1_costmap2_d_client.html#ae5a535c3ee0df9bb24cc2f962dcacad9',1,'explore::Costmap2DClient']]]
 ];

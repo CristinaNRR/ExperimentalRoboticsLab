@@ -28,6 +28,7 @@ The explore-lite package is used together with MoveBase and Gmapping to automati
       $	self.child.send_signal(signal.SIGINT)
   ```
 This was necessary because the motion of the robot had to rely on that package only during the Find state.
+
 Inside the folder script of the same package I implemented the state machine 'state_machine.py', that leads the whole process. This node communicates with the action client publishing target positions expressed as a list of integers(as shown inside the msg folder).  
 
 The state machine makes use of some data: inside the workspace the file 'param.yaml' can be found, which contains default data that will be stored in the parameter server once the program is executed.
@@ -58,11 +59,13 @@ Inside the state machine are implemented the four abovementioned states:
 
 In each state I used lots of 'loginfo' functions in order to be able to follow the state machine behaviour and check that everyting is working properly.
 
-Below the state machine and architecture diagram.
+Below the state machine and architecture diagrams.
 
 <img src="https://github.com/CristinaNRR/final_exp/blob/master/Images/state_machine_diagram.png" alt=" " width="600" height="400"/>
+_Figure 1 : state machine diagram_
 
 <img src="https://github.com/CristinaNRR/final_exp/blob/master/Images/Architecture_diagram.png" alt=" " width="600" height="400"/>
+_Figure 2 : software architecture_
 
 ## Packages and file list
 Inside the workspace we can find the following packages:
@@ -105,7 +108,7 @@ One improvement might be to obtain the positions at runtime once the robot gets 
 
 Regarding the last point, I decided to store myself the reference positions of the rooms because, as said before, I noticed that in some rare  case when the robot detects a new ball it is not always able to actually gets close to it since it may get stuck in some walls between its position and the ball. This of course may happen since in the ball tracking the robot is not relying on the moveBase package to guide its motion. 
 
-##Author and contacts
+## Author and contacts
 Cristina Naso Rappis
 mail: cri.tennis97@gmail.com
 

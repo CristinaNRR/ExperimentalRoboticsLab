@@ -1,2 +1,0 @@
-SLAM_packages-main/slam_gmapping/gmapping:SLAM_packages-main/slam_gmapping/slam_gmapping:exp_assignment3-main:explore/explore:planning-main
--DCATKIN_DEVEL_PREFIX=/home/cristina/new_ws/devel -DCMAKE_INSTALL_PREFIX=/home/cristina/new_ws/install -G Unix Makefiles

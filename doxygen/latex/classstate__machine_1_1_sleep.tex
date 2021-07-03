@@ -2,7 +2,7 @@
 \label{classstate__machine_1_1_sleep}\index{state\_machine.Sleep@{state\_machine.Sleep}}
 
 
-The robot reached a predefined location obtained accessing the parameter server.  
+The robot reaches a predefined location obtained accessing the parameter server.  
 
 
 
@@ -35,22 +35,21 @@ def \mbox{\hyperlink{classstate__machine_1_1_sleep_a89527836f1edcefb6467fa9c041f
 def \mbox{\hyperlink{classstate__machine_1_1_sleep_ae741424b99fbde54de3bc71c2bff8d03}{callback}} (self, msg)
 \begin{DoxyCompactList}\small\item\em A flag is set to 1 if the robot is not moving, to 0 otherwise ~\newline
  \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\hyperlink{classstate__machine_1_1_sleep_a6bd959627ed45867516c94e3eafc05bb}{home}}
-\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classstate__machine_1_1_sleep_a00b879885a7e1f565d91faba0403513d}{stop\+Flag}}
 \item 
-\mbox{\hyperlink{classstate__machine_1_1_sleep_a05c781f257bf69254f485a225442d09f}{pub}} = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, Num,queue\+\_\+size=10)
+\mbox{\hyperlink{classstate__machine_1_1_sleep_a05c781f257bf69254f485a225442d09f}{pub}} = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, \mbox{\hyperlink{classexp__assignment3_1_1msg_1_1___num_1_1_num}{Num}},queue\+\_\+size=10)
+\item 
+\mbox{\hyperlink{classstate__machine_1_1_sleep_a6bd959627ed45867516c94e3eafc05bb}{home}} = rospy.\+get\+\_\+param(\textquotesingle{}/home\+Pose\textquotesingle{})
+\item 
+list \mbox{\hyperlink{classstate__machine_1_1_sleep_aec191ea286c33d86b339cb95a854ab42}{lista}} = \mbox{[}$\,$\mbox{]}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-The robot reached a predefined location obtained accessing the parameter server. 
+The robot reaches a predefined location obtained accessing the parameter server. 
 
 Once reached it stays there for some time and then move to the normal behaviour. 
 
@@ -88,13 +87,19 @@ A flag is set to 1 if the robot is not moving, to 0 otherwise ~\newline
 \index{state\_machine.Sleep@{state\_machine.Sleep}!home@{home}}
 \index{home@{home}!state\_machine.Sleep@{state\_machine.Sleep}}
 \doxysubsubsection{\texorpdfstring{home}{home}}
-{\footnotesize\ttfamily state\+\_\+machine.\+Sleep.\+home}
+{\footnotesize\ttfamily state\+\_\+machine.\+Sleep.\+home = rospy.\+get\+\_\+param(\textquotesingle{}/home\+Pose\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_sleep_aec191ea286c33d86b339cb95a854ab42}\label{classstate__machine_1_1_sleep_aec191ea286c33d86b339cb95a854ab42}} 
+\index{state\_machine.Sleep@{state\_machine.Sleep}!lista@{lista}}
+\index{lista@{lista}!state\_machine.Sleep@{state\_machine.Sleep}}
+\doxysubsubsection{\texorpdfstring{lista}{lista}}
+{\footnotesize\ttfamily list state\+\_\+machine.\+Sleep.\+lista = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
 
 \mbox{\Hypertarget{classstate__machine_1_1_sleep_a05c781f257bf69254f485a225442d09f}\label{classstate__machine_1_1_sleep_a05c781f257bf69254f485a225442d09f}} 
 \index{state\_machine.Sleep@{state\_machine.Sleep}!pub@{pub}}
 \index{pub@{pub}!state\_machine.Sleep@{state\_machine.Sleep}}
 \doxysubsubsection{\texorpdfstring{pub}{pub}}
-{\footnotesize\ttfamily state\+\_\+machine.\+Sleep.\+pub = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, Num,queue\+\_\+size=10)\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Sleep.\+pub = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, \mbox{\hyperlink{classexp__assignment3_1_1msg_1_1___num_1_1_num}{Num}},queue\+\_\+size=10)\hspace{0.3cm}{\ttfamily [static]}}
 
 \mbox{\Hypertarget{classstate__machine_1_1_sleep_a00b879885a7e1f565d91faba0403513d}\label{classstate__machine_1_1_sleep_a00b879885a7e1f565d91faba0403513d}} 
 \index{state\_machine.Sleep@{state\_machine.Sleep}!stopFlag@{stopFlag}}

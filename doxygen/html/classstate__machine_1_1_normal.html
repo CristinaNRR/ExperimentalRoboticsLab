@@ -108,7 +108,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab8bc608e9dab104a02f5ef47b4420aa3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate__machine_1_1_normal.html#ab8bc608e9dab104a02f5ef47b4420aa3">callback</a> (self, ros_data)</td></tr>
 <tr class="memdesc:ab8bc608e9dab104a02f5ef47b4420aa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The program enters here everytime e new image is available from the camera.  <a href="classstate__machine_1_1_normal.html#ab8bc608e9dab104a02f5ef47b4420aa3">More...</a><br /></td></tr>
 <tr class="separator:ab8bc608e9dab104a02f5ef47b4420aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada7f09af92db43445852f10100ad3549"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate__machine_1_1_normal.html#ada7f09af92db43445852f10100ad3549">sub_track</a> (self, <a class="el" href="classstate__machine_1_1_normal.html#ad08998a7ddb318b756fe766fe30e869f">cnts</a>, <a class="el" href="classstate__machine_1_1_normal.html#ad247694107d80d709bef6b4a2de17c75">image_np</a>, <a class="el" href="classstate__machine_1_1_normal.html#aa400514c36784367a6d300a8bbed0692">ball_detected</a>)</td></tr>
+<tr class="memitem:ada7f09af92db43445852f10100ad3549"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate__machine_1_1_normal.html#ada7f09af92db43445852f10100ad3549">sub_track</a> (self, <a class="el" href="classstate__machine_1_1_normal.html#ad08998a7ddb318b756fe766fe30e869f">cnts</a>, image_np, <a class="el" href="classstate__machine_1_1_normal.html#aa400514c36784367a6d300a8bbed0692">ball_detected</a>)</td></tr>
 <tr class="memdesc:ada7f09af92db43445852f10100ad3549"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is executed everytime the robot detects a color object which was not previously detected.  <a href="classstate__machine_1_1_normal.html#ada7f09af92db43445852f10100ad3549">More...</a><br /></td></tr>
 <tr class="separator:ada7f09af92db43445852f10100ad3549"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -128,9 +128,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:aa400514c36784367a6d300a8bbed0692"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6d144a3dda6248e1d2f30f9abe9d609"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate__machine_1_1_normal.html#ab6d144a3dda6248e1d2f30f9abe9d609">outcomes</a></td></tr>
 <tr class="separator:ab6d144a3dda6248e1d2f30f9abe9d609"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacbaeaef5799eece6ea4897f5a1d2880"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate__machine_1_1_normal.html#aacbaeaef5799eece6ea4897f5a1d2880">pub</a> = rospy.Publisher('targetPosition', Num,<a class="el" href="classstate__machine_1_1_normal.html#ae4b7ade70a0e23f0dd8738aaca0b4e4d">queue_size</a>=10)</td></tr>
-<tr class="separator:aacbaeaef5799eece6ea4897f5a1d2880"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5baf6feb3b07de770ba22e847d27acd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate__machine_1_1_normal.html#ad5baf6feb3b07de770ba22e847d27acd">subscriber2</a> = rospy.Subscriber(&quot;cmd_vel&quot;, Twist, self.callback2)</td></tr>
+<tr class="memitem:ad5baf6feb3b07de770ba22e847d27acd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate__machine_1_1_normal.html#ad5baf6feb3b07de770ba22e847d27acd">subscriber2</a></td></tr>
 <tr class="separator:ad5baf6feb3b07de770ba22e847d27acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcf3ba4b7e7a92c40a87e3776ffdc89d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate__machine_1_1_normal.html#abcf3ba4b7e7a92c40a87e3776ffdc89d">vel_pub</a></td></tr>
 <tr class="separator:abcf3ba4b7e7a92c40a87e3776ffdc89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,19 +144,11 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a3f175f794f5efb79f582df7edfaa597e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08777072b6b0a29dd3ebcdf90f3e3cd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate__machine_1_1_normal.html#a08777072b6b0a29dd3ebcdf90f3e3cd3">n</a> = random.randint(-6,8)</td></tr>
 <tr class="separator:a08777072b6b0a29dd3ebcdf90f3e3cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1a186203c0bec90a251b7651ddd2e0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate__machine_1_1_normal.html#ae1a186203c0bec90a251b7651ddd2e0b">np_arr</a> = np.fromstring(ros_data.data, np.uint8)</td></tr>
-<tr class="separator:ae1a186203c0bec90a251b7651ddd2e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad247694107d80d709bef6b4a2de17c75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate__machine_1_1_normal.html#ad247694107d80d709bef6b4a2de17c75">image_np</a> = cv2.imdecode(<a class="el" href="classstate__machine_1_1_normal.html#ae1a186203c0bec90a251b7651ddd2e0b">np_arr</a>, cv2.IMREAD_COLOR)</td></tr>
-<tr class="separator:ad247694107d80d709bef6b4a2de17c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa46f8b43329f6691ce361598682c402e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate__machine_1_1_normal.html#aa46f8b43329f6691ce361598682c402e">blurred</a> = cv2.GaussianBlur(<a class="el" href="classstate__machine_1_1_normal.html#ad247694107d80d709bef6b4a2de17c75">image_np</a>, (11, 11), 0)</td></tr>
-<tr class="separator:aa46f8b43329f6691ce361598682c402e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa237960ce995e33de24c65fbe825f6df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate__machine_1_1_normal.html#aa237960ce995e33de24c65fbe825f6df">hsv</a> = cv2.cvtColor(<a class="el" href="classstate__machine_1_1_normal.html#aa46f8b43329f6691ce361598682c402e">blurred</a>, cv2.COLOR_BGR2HSV)</td></tr>
-<tr class="separator:aa237960ce995e33de24c65fbe825f6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a598a24262c2fb90758c1c254cb5dcab7"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate__machine_1_1_normal.html#a598a24262c2fb90758c1c254cb5dcab7">greenLower</a> = (50, 50, 50)</td></tr>
 <tr class="separator:a598a24262c2fb90758c1c254cb5dcab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a341a7e1560da0a2bd1048b96bb22428d"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate__machine_1_1_normal.html#a341a7e1560da0a2bd1048b96bb22428d">greenUpper</a> = (70, 255, 255)</td></tr>
 <tr class="separator:a341a7e1560da0a2bd1048b96bb22428d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a191be8bfa0b94fb98e2213022d8960e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate__machine_1_1_normal.html#a191be8bfa0b94fb98e2213022d8960e7">mask</a> = cv2.inRange(<a class="el" href="classstate__machine_1_1_normal.html#aa237960ce995e33de24c65fbe825f6df">hsv</a>, <a class="el" href="classstate__machine_1_1_normal.html#a598a24262c2fb90758c1c254cb5dcab7">greenLower</a>, <a class="el" href="classstate__machine_1_1_normal.html#a341a7e1560da0a2bd1048b96bb22428d">greenUpper</a>)</td></tr>
+<tr class="memitem:a191be8bfa0b94fb98e2213022d8960e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate__machine_1_1_normal.html#a191be8bfa0b94fb98e2213022d8960e7">mask</a> = cv2.inRange(hsv, <a class="el" href="classstate__machine_1_1_normal.html#a598a24262c2fb90758c1c254cb5dcab7">greenLower</a>, <a class="el" href="classstate__machine_1_1_normal.html#a341a7e1560da0a2bd1048b96bb22428d">greenUpper</a>)</td></tr>
 <tr class="separator:a191be8bfa0b94fb98e2213022d8960e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad08998a7ddb318b756fe766fe30e869f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate__machine_1_1_normal.html#ad08998a7ddb318b756fe766fe30e869f">cnts</a></td></tr>
 <tr class="separator:ad08998a7ddb318b756fe766fe30e869f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,7 +177,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>In the normal state the robot reaches random positions. </p>
-<p>When it detects a new colored object it enters the track function. After some times move to the <a class="el" href="classstate__machine_1_1_sleep.html" title="The robot reached a predefined location obtained accessing the parameter server.">Sleep</a> or <a class="el" href="classstate__machine_1_1_play.html" title="The robot goes to a predefined location and waits to receive a goTo command which is extracted random...">Play</a> behaviour </p>
+<p>When it detects a new colored object it enters the track function. After some times move to the <a class="el" href="classstate__machine_1_1_sleep.html" title="The robot reaches a predefined location obtained accessing the parameter server.">Sleep</a> or <a class="el" href="classstate__machine_1_1_play.html" title="The robot goes to a predefined location and waits to receive a goTo command which is extracted random...">Play</a> behaviour </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acdbc35a37d0350d7805a628048bc3bed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acdbc35a37d0350d7805a628048bc3bed">&#9670;&nbsp;</a></span>__init__()</h2>
@@ -452,28 +442,6 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa46f8b43329f6691ce361598682c402e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa46f8b43329f6691ce361598682c402e">&#9670;&nbsp;</a></span>blurred</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">state_machine.Normal.blurred = cv2.GaussianBlur(<a class="el" href="classstate__machine_1_1_normal.html#ad247694107d80d709bef6b4a2de17c75">image_np</a>, (11, 11), 0)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a1fb6ebd62ada207ba7f9e5ef60f18773"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1fb6ebd62ada207ba7f9e5ef60f18773">&#9670;&nbsp;</a></span>center</h2>
 
@@ -586,50 +554,6 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa237960ce995e33de24c65fbe825f6df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa237960ce995e33de24c65fbe825f6df">&#9670;&nbsp;</a></span>hsv</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">state_machine.Normal.hsv = cv2.cvtColor(<a class="el" href="classstate__machine_1_1_normal.html#aa46f8b43329f6691ce361598682c402e">blurred</a>, cv2.COLOR_BGR2HSV)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad247694107d80d709bef6b4a2de17c75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad247694107d80d709bef6b4a2de17c75">&#9670;&nbsp;</a></span>image_np</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">state_machine.Normal.image_np = cv2.imdecode(<a class="el" href="classstate__machine_1_1_normal.html#ae1a186203c0bec90a251b7651ddd2e0b">np_arr</a>, cv2.IMREAD_COLOR)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ac22347975db18b3bdccb3fd2fa7040d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac22347975db18b3bdccb3fd2fa7040d5">&#9670;&nbsp;</a></span>magentaLower</h2>
 
@@ -684,7 +608,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">state_machine.Normal.mask = cv2.inRange(<a class="el" href="classstate__machine_1_1_normal.html#aa237960ce995e33de24c65fbe825f6df">hsv</a>, <a class="el" href="classstate__machine_1_1_normal.html#a598a24262c2fb90758c1c254cb5dcab7">greenLower</a>, <a class="el" href="classstate__machine_1_1_normal.html#a341a7e1560da0a2bd1048b96bb22428d">greenUpper</a>)</td>
+          <td class="memname">state_machine.Normal.mask = cv2.inRange(hsv, <a class="el" href="classstate__machine_1_1_normal.html#a598a24262c2fb90758c1c254cb5dcab7">greenLower</a>, <a class="el" href="classstate__machine_1_1_normal.html#a341a7e1560da0a2bd1048b96bb22428d">greenUpper</a>)</td>
         </tr>
       </table>
   </td>
@@ -707,28 +631,6 @@ Static Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">state_machine.Normal.n = random.randint(-6,8)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae1a186203c0bec90a251b7651ddd2e0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1a186203c0bec90a251b7651ddd2e0b">&#9670;&nbsp;</a></span>np_arr</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">state_machine.Normal.np_arr = np.fromstring(ros_data.data, np.uint8)</td>
         </tr>
       </table>
   </td>
@@ -795,28 +697,6 @@ Static Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">state_machine.Normal.play_count</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aacbaeaef5799eece6ea4897f5a1d2880"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacbaeaef5799eece6ea4897f5a1d2880">&#9670;&nbsp;</a></span>pub</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">state_machine.Normal.pub = rospy.Publisher('targetPosition', Num,<a class="el" href="classstate__machine_1_1_normal.html#ae4b7ade70a0e23f0dd8738aaca0b4e4d">queue_size</a>=10)</td>
         </tr>
       </table>
   </td>
@@ -994,7 +874,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">state_machine.Normal.subscriber2 = rospy.Subscriber(&quot;cmd_vel&quot;, Twist, self.callback2)</td>
+          <td class="memname">state_machine.Normal.subscriber2</td>
         </tr>
       </table>
   </td>

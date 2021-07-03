@@ -37,7 +37,7 @@ def \mbox{\hyperlink{classstate__machine_1_1_normal_acf2362fb5723327887a7c724cd8
  \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classstate__machine_1_1_normal_ab8bc608e9dab104a02f5ef47b4420aa3}{callback}} (self, ros\+\_\+data)
 \begin{DoxyCompactList}\small\item\em The program enters here everytime e new image is available from the camera. \end{DoxyCompactList}\item 
-def \mbox{\hyperlink{classstate__machine_1_1_normal_ada7f09af92db43445852f10100ad3549}{sub\+\_\+track}} (self, \mbox{\hyperlink{classstate__machine_1_1_normal_ad08998a7ddb318b756fe766fe30e869f}{cnts}}, \mbox{\hyperlink{classstate__machine_1_1_normal_ad247694107d80d709bef6b4a2de17c75}{image\+\_\+np}}, \mbox{\hyperlink{classstate__machine_1_1_normal_aa400514c36784367a6d300a8bbed0692}{ball\+\_\+detected}})
+def \mbox{\hyperlink{classstate__machine_1_1_normal_ada7f09af92db43445852f10100ad3549}{sub\+\_\+track}} (self, \mbox{\hyperlink{classstate__machine_1_1_normal_ad08998a7ddb318b756fe766fe30e869f}{cnts}}, image\+\_\+np, \mbox{\hyperlink{classstate__machine_1_1_normal_aa400514c36784367a6d300a8bbed0692}{ball\+\_\+detected}})
 \begin{DoxyCompactList}\small\item\em This function is executed everytime the robot detects a color object which was not previously detected. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
@@ -56,9 +56,7 @@ def \mbox{\hyperlink{classstate__machine_1_1_normal_ada7f09af92db43445852f10100a
 \item 
 \mbox{\hyperlink{classstate__machine_1_1_normal_ab6d144a3dda6248e1d2f30f9abe9d609}{outcomes}}
 \item 
-\mbox{\hyperlink{classstate__machine_1_1_normal_aacbaeaef5799eece6ea4897f5a1d2880}{pub}} = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, Num,\mbox{\hyperlink{classstate__machine_1_1_normal_ae4b7ade70a0e23f0dd8738aaca0b4e4d}{queue\+\_\+size}}=10)
-\item 
-\mbox{\hyperlink{classstate__machine_1_1_normal_ad5baf6feb3b07de770ba22e847d27acd}{subscriber2}} = rospy.\+Subscriber(\char`\"{}cmd\+\_\+vel\char`\"{}, Twist, self.\+callback2)
+\mbox{\hyperlink{classstate__machine_1_1_normal_ad5baf6feb3b07de770ba22e847d27acd}{subscriber2}}
 \item 
 \mbox{\hyperlink{classstate__machine_1_1_normal_abcf3ba4b7e7a92c40a87e3776ffdc89d}{vel\+\_\+pub}}
 \item 
@@ -74,19 +72,11 @@ list \mbox{\hyperlink{classstate__machine_1_1_normal_a3f175f794f5efb79f582df7edf
 \item 
 \mbox{\hyperlink{classstate__machine_1_1_normal_a08777072b6b0a29dd3ebcdf90f3e3cd3}{n}} = random.\+randint(-\/6,8)
 \item 
-\mbox{\hyperlink{classstate__machine_1_1_normal_ae1a186203c0bec90a251b7651ddd2e0b}{np\+\_\+arr}} = np.\+fromstring(ros\+\_\+data.\+data, np.\+uint8)
-\item 
-\mbox{\hyperlink{classstate__machine_1_1_normal_ad247694107d80d709bef6b4a2de17c75}{image\+\_\+np}} = cv2.\+imdecode(\mbox{\hyperlink{classstate__machine_1_1_normal_ae1a186203c0bec90a251b7651ddd2e0b}{np\+\_\+arr}}, cv2.\+IMREAD\+\_\+\+COLOR)
-\item 
-\mbox{\hyperlink{classstate__machine_1_1_normal_aa46f8b43329f6691ce361598682c402e}{blurred}} = cv2.\+Gaussian\+Blur(\mbox{\hyperlink{classstate__machine_1_1_normal_ad247694107d80d709bef6b4a2de17c75}{image\+\_\+np}}, (11, 11), 0)
-\item 
-\mbox{\hyperlink{classstate__machine_1_1_normal_aa237960ce995e33de24c65fbe825f6df}{hsv}} = cv2.\+cvt\+Color(\mbox{\hyperlink{classstate__machine_1_1_normal_aa46f8b43329f6691ce361598682c402e}{blurred}}, cv2.\+COLOR\+\_\+\+BGR2\+HSV)
-\item 
 tuple \mbox{\hyperlink{classstate__machine_1_1_normal_a598a24262c2fb90758c1c254cb5dcab7}{green\+Lower}} = (50, 50, 50)
 \item 
 tuple \mbox{\hyperlink{classstate__machine_1_1_normal_a341a7e1560da0a2bd1048b96bb22428d}{green\+Upper}} = (70, 255, 255)
 \item 
-\mbox{\hyperlink{classstate__machine_1_1_normal_a191be8bfa0b94fb98e2213022d8960e7}{mask}} = cv2.\+in\+Range(\mbox{\hyperlink{classstate__machine_1_1_normal_aa237960ce995e33de24c65fbe825f6df}{hsv}}, \mbox{\hyperlink{classstate__machine_1_1_normal_a598a24262c2fb90758c1c254cb5dcab7}{green\+Lower}}, \mbox{\hyperlink{classstate__machine_1_1_normal_a341a7e1560da0a2bd1048b96bb22428d}{green\+Upper}})
+\mbox{\hyperlink{classstate__machine_1_1_normal_a191be8bfa0b94fb98e2213022d8960e7}{mask}} = cv2.\+in\+Range(hsv, \mbox{\hyperlink{classstate__machine_1_1_normal_a598a24262c2fb90758c1c254cb5dcab7}{green\+Lower}}, \mbox{\hyperlink{classstate__machine_1_1_normal_a341a7e1560da0a2bd1048b96bb22428d}{green\+Upper}})
 \item 
 \mbox{\hyperlink{classstate__machine_1_1_normal_ad08998a7ddb318b756fe766fe30e869f}{cnts}}
 \item 
@@ -199,12 +189,6 @@ The robot tries to go closer to the detected object. Once done, the reference po
 \doxysubsubsection{\texorpdfstring{blueUpper}{blueUpper}}
 {\footnotesize\ttfamily tuple state\+\_\+machine.\+Normal.\+blue\+Upper = (130, 255, 255)\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_aa46f8b43329f6691ce361598682c402e}\label{classstate__machine_1_1_normal_aa46f8b43329f6691ce361598682c402e}} 
-\index{state\_machine.Normal@{state\_machine.Normal}!blurred@{blurred}}
-\index{blurred@{blurred}!state\_machine.Normal@{state\_machine.Normal}}
-\doxysubsubsection{\texorpdfstring{blurred}{blurred}}
-{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+blurred = cv2.\+Gaussian\+Blur(\mbox{\hyperlink{classstate__machine_1_1_normal_ad247694107d80d709bef6b4a2de17c75}{image\+\_\+np}}, (11, 11), 0)\hspace{0.3cm}{\ttfamily [static]}}
-
 \mbox{\Hypertarget{classstate__machine_1_1_normal_a1fb6ebd62ada207ba7f9e5ef60f18773}\label{classstate__machine_1_1_normal_a1fb6ebd62ada207ba7f9e5ef60f18773}} 
 \index{state\_machine.Normal@{state\_machine.Normal}!center@{center}}
 \index{center@{center}!state\_machine.Normal@{state\_machine.Normal}}
@@ -241,18 +225,6 @@ The robot tries to go closer to the detected object. Once done, the reference po
 \doxysubsubsection{\texorpdfstring{greenUpper}{greenUpper}}
 {\footnotesize\ttfamily tuple state\+\_\+machine.\+Normal.\+green\+Upper = (70, 255, 255)\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classstate__machine_1_1_normal_aa237960ce995e33de24c65fbe825f6df}\label{classstate__machine_1_1_normal_aa237960ce995e33de24c65fbe825f6df}} 
-\index{state\_machine.Normal@{state\_machine.Normal}!hsv@{hsv}}
-\index{hsv@{hsv}!state\_machine.Normal@{state\_machine.Normal}}
-\doxysubsubsection{\texorpdfstring{hsv}{hsv}}
-{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+hsv = cv2.\+cvt\+Color(\mbox{\hyperlink{classstate__machine_1_1_normal_aa46f8b43329f6691ce361598682c402e}{blurred}}, cv2.\+COLOR\+\_\+\+BGR2\+HSV)\hspace{0.3cm}{\ttfamily [static]}}
-
-\mbox{\Hypertarget{classstate__machine_1_1_normal_ad247694107d80d709bef6b4a2de17c75}\label{classstate__machine_1_1_normal_ad247694107d80d709bef6b4a2de17c75}} 
-\index{state\_machine.Normal@{state\_machine.Normal}!image\_np@{image\_np}}
-\index{image\_np@{image\_np}!state\_machine.Normal@{state\_machine.Normal}}
-\doxysubsubsection{\texorpdfstring{image\_np}{image\_np}}
-{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+image\+\_\+np = cv2.\+imdecode(\mbox{\hyperlink{classstate__machine_1_1_normal_ae1a186203c0bec90a251b7651ddd2e0b}{np\+\_\+arr}}, cv2.\+IMREAD\+\_\+\+COLOR)\hspace{0.3cm}{\ttfamily [static]}}
-
 \mbox{\Hypertarget{classstate__machine_1_1_normal_ac22347975db18b3bdccb3fd2fa7040d5}\label{classstate__machine_1_1_normal_ac22347975db18b3bdccb3fd2fa7040d5}} 
 \index{state\_machine.Normal@{state\_machine.Normal}!magentaLower@{magentaLower}}
 \index{magentaLower@{magentaLower}!state\_machine.Normal@{state\_machine.Normal}}
@@ -269,19 +241,13 @@ The robot tries to go closer to the detected object. Once done, the reference po
 \index{state\_machine.Normal@{state\_machine.Normal}!mask@{mask}}
 \index{mask@{mask}!state\_machine.Normal@{state\_machine.Normal}}
 \doxysubsubsection{\texorpdfstring{mask}{mask}}
-{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+mask = cv2.\+in\+Range(\mbox{\hyperlink{classstate__machine_1_1_normal_aa237960ce995e33de24c65fbe825f6df}{hsv}}, \mbox{\hyperlink{classstate__machine_1_1_normal_a598a24262c2fb90758c1c254cb5dcab7}{green\+Lower}}, \mbox{\hyperlink{classstate__machine_1_1_normal_a341a7e1560da0a2bd1048b96bb22428d}{green\+Upper}})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+mask = cv2.\+in\+Range(hsv, \mbox{\hyperlink{classstate__machine_1_1_normal_a598a24262c2fb90758c1c254cb5dcab7}{green\+Lower}}, \mbox{\hyperlink{classstate__machine_1_1_normal_a341a7e1560da0a2bd1048b96bb22428d}{green\+Upper}})\hspace{0.3cm}{\ttfamily [static]}}
 
 \mbox{\Hypertarget{classstate__machine_1_1_normal_a08777072b6b0a29dd3ebcdf90f3e3cd3}\label{classstate__machine_1_1_normal_a08777072b6b0a29dd3ebcdf90f3e3cd3}} 
 \index{state\_machine.Normal@{state\_machine.Normal}!n@{n}}
 \index{n@{n}!state\_machine.Normal@{state\_machine.Normal}}
 \doxysubsubsection{\texorpdfstring{n}{n}}
 {\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+n = random.\+randint(-\/6,8)\hspace{0.3cm}{\ttfamily [static]}}
-
-\mbox{\Hypertarget{classstate__machine_1_1_normal_ae1a186203c0bec90a251b7651ddd2e0b}\label{classstate__machine_1_1_normal_ae1a186203c0bec90a251b7651ddd2e0b}} 
-\index{state\_machine.Normal@{state\_machine.Normal}!np\_arr@{np\_arr}}
-\index{np\_arr@{np\_arr}!state\_machine.Normal@{state\_machine.Normal}}
-\doxysubsubsection{\texorpdfstring{np\_arr}{np\_arr}}
-{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+np\+\_\+arr = np.\+fromstring(ros\+\_\+data.\+data, np.\+uint8)\hspace{0.3cm}{\ttfamily [static]}}
 
 \mbox{\Hypertarget{classstate__machine_1_1_normal_ab6d144a3dda6248e1d2f30f9abe9d609}\label{classstate__machine_1_1_normal_ab6d144a3dda6248e1d2f30f9abe9d609}} 
 \index{state\_machine.Normal@{state\_machine.Normal}!outcomes@{outcomes}}
@@ -300,12 +266,6 @@ The robot tries to go closer to the detected object. Once done, the reference po
 \index{play\_count@{play\_count}!state\_machine.Normal@{state\_machine.Normal}}
 \doxysubsubsection{\texorpdfstring{play\_count}{play\_count}}
 {\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+play\+\_\+count\hspace{0.3cm}{\ttfamily [static]}}
-
-\mbox{\Hypertarget{classstate__machine_1_1_normal_aacbaeaef5799eece6ea4897f5a1d2880}\label{classstate__machine_1_1_normal_aacbaeaef5799eece6ea4897f5a1d2880}} 
-\index{state\_machine.Normal@{state\_machine.Normal}!pub@{pub}}
-\index{pub@{pub}!state\_machine.Normal@{state\_machine.Normal}}
-\doxysubsubsection{\texorpdfstring{pub}{pub}}
-{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+pub = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, Num,\mbox{\hyperlink{classstate__machine_1_1_normal_ae4b7ade70a0e23f0dd8738aaca0b4e4d}{queue\+\_\+size}}=10)\hspace{0.3cm}{\ttfamily [static]}}
 
 \mbox{\Hypertarget{classstate__machine_1_1_normal_ae4b7ade70a0e23f0dd8738aaca0b4e4d}\label{classstate__machine_1_1_normal_ae4b7ade70a0e23f0dd8738aaca0b4e4d}} 
 \index{state\_machine.Normal@{state\_machine.Normal}!queue\_size@{queue\_size}}
@@ -359,7 +319,7 @@ The robot tries to go closer to the detected object. Once done, the reference po
 \index{state\_machine.Normal@{state\_machine.Normal}!subscriber2@{subscriber2}}
 \index{subscriber2@{subscriber2}!state\_machine.Normal@{state\_machine.Normal}}
 \doxysubsubsection{\texorpdfstring{subscriber2}{subscriber2}}
-{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+subscriber2 = rospy.\+Subscriber(\char`\"{}cmd\+\_\+vel\char`\"{}, Twist, self.\+callback2)\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Normal.\+subscriber2\hspace{0.3cm}{\ttfamily [static]}}
 
 \mbox{\Hypertarget{classstate__machine_1_1_normal_a6f6f347ff2c917d80cdb28f42e7cfd47}\label{classstate__machine_1_1_normal_a6f6f347ff2c917d80cdb28f42e7cfd47}} 
 \index{state\_machine.Normal@{state\_machine.Normal}!Twist@{Twist}}

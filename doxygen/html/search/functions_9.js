@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['take_5faction_125',['take_action',['../namespaceexploring.html#a34e72cb17009d01682e45da452bfeefd',1,'exploring']]]
+  ['lasercallback_639',['laserCallback',['../class_slam_g_mapping.html#a49172a6ae33df4daf397959789dc1c34',1,'SlamGMapping']]]
 ];

@@ -2,7 +2,7 @@
 \label{classstate__machine_1_1_find}\index{state\_machine.Find@{state\_machine.Find}}
 
 
-The robot starts moving randomly in the environment.  
+The robot starts moving in the environment relying on the explore-\/lite package.  
 
 
 
@@ -35,23 +35,11 @@ def \mbox{\hyperlink{classstate__machine_1_1_find_aa79a6408d288a202d766d86a34d26
 def \mbox{\hyperlink{classstate__machine_1_1_find_a8d0cabef2b2a52d974cd32fabb9d3b92}{callback2}} (self, ros\+\_\+data)
 \begin{DoxyCompactList}\small\item\em The program enters here everytime e new image is available from the camera. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classstate__machine_1_1_find_a23a53054f145be77ca51188ecc22f5d6}{sub\+\_\+track}} (self, \mbox{\hyperlink{classstate__machine_1_1_find_ac07e4324d4b304740943523d4dead028}{cnts}}, image\+\_\+np, \mbox{\hyperlink{classstate__machine_1_1_find_af437dcbbad0c31f83c7c134261d5bc98}{ball\+\_\+detected}})
-\begin{DoxyCompactList}\small\item\em This function is executed everytime the robot detects a colored object which was not previously detected. \end{DoxyCompactList}\item 
-def \mbox{\hyperlink{classstate__machine_1_1_find_ab73a685b11418314ef5ff90eb209f146}{callback}} (self, msg)
-\begin{DoxyCompactList}\small\item\em A flag is set to 1 if the robot is not moving, to 0 otherwise ~\newline
- \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\hyperlink{classstate__machine_1_1_find_a7e39204157d4f942427c5d6d14d3c53e}{var2}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This function is executed everytime the robot detects a colored object which was not previously detected. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classstate__machine_1_1_find_a03b9653ba644781fbeae01fea8227931}{counter}}
-\item 
-\mbox{\hyperlink{classstate__machine_1_1_find_af358a6d79133cf476bf08a8ad3642f54}{play\+\_\+pose}}
-\item 
-\mbox{\hyperlink{classstate__machine_1_1_find_ab8412e1cb66e671caf6977f03828a2bd}{rooms}}
 \item 
 \mbox{\hyperlink{classstate__machine_1_1_find_a147a928dffe82913a947d06b1da343e4}{param}}
 \item 
@@ -59,7 +47,9 @@ def \mbox{\hyperlink{classstate__machine_1_1_find_ab73a685b11418314ef5ff90eb209f
 \item 
 \mbox{\hyperlink{classstate__machine_1_1_find_a4c1e9b99c291eea6d2d77e0220cc695c}{play\+\_\+state}}
 \item 
-\mbox{\hyperlink{classstate__machine_1_1_find_a2688c1572ae4b50265d1acb68a3ad4ff}{pub}} = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, Num,\mbox{\hyperlink{classstate__machine_1_1_find_a264fa9455d4286aa26b670ac87d712ab}{queue\+\_\+size}}=10)
+\mbox{\hyperlink{classstate__machine_1_1_find_a996c2a2fe2c3ff25e2aad4b87073e7c9}{child}}
+\item 
+\mbox{\hyperlink{classstate__machine_1_1_find_a2688c1572ae4b50265d1acb68a3ad4ff}{pub}} = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, \mbox{\hyperlink{classexp__assignment3_1_1msg_1_1___num_1_1_num}{Num}},\mbox{\hyperlink{classstate__machine_1_1_find_a264fa9455d4286aa26b670ac87d712ab}{queue\+\_\+size}}=10)
 \item 
 \mbox{\hyperlink{classstate__machine_1_1_find_a72180d3ff6b58a93eb9efb2e65f08f66}{vel\+\_\+pub}}
 \item 
@@ -67,13 +57,11 @@ def \mbox{\hyperlink{classstate__machine_1_1_find_ab73a685b11418314ef5ff90eb209f
 \item 
 \mbox{\hyperlink{classstate__machine_1_1_find_a264fa9455d4286aa26b670ac87d712ab}{queue\+\_\+size}}
 \item 
-\mbox{\hyperlink{classstate__machine_1_1_find_a5a9dc667feda492e362147ca048b23cf}{subscriber1}}
+\mbox{\hyperlink{classstate__machine_1_1_find_ab9bfce719b158c4f931736443eac806d}{subscriber}}
 \item 
 \mbox{\hyperlink{classstate__machine_1_1_find_ac31d8f1d8f7bee55c09c21d42ca37562}{requested\+\_\+room}}
 \item 
-list \mbox{\hyperlink{classstate__machine_1_1_find_a32d0065999c3bfe648fc780556cb6d1c}{randomlist}} = \mbox{[}$\,$\mbox{]}
-\item 
-\mbox{\hyperlink{classstate__machine_1_1_find_abce5793259e7c3888b073630925af70b}{n}} = random.\+randint(-\/6,8)
+\mbox{\hyperlink{classstate__machine_1_1_find_ad284228602a30b744143e35e03e938ce}{t\+\_\+final}}
 \item 
 tuple \mbox{\hyperlink{classstate__machine_1_1_find_a527cf2af476eb16566cf0e9b73807ea1}{green\+Lower}} = (50, 50, 50)
 \item 
@@ -110,7 +98,7 @@ tuple \mbox{\hyperlink{classstate__machine_1_1_find_aa1da061384e2a13e9ce75663526
 
 
 \doxysubsection{Detailed Description}
-The robot starts moving randomly in the environment. 
+The robot starts moving in the environment relying on the explore-\/lite package. 
 
 Once it detects a new ball it checks if it corresponds to the ball received by the play state. If so it goes back to the play behaviour. Otherwise it keeps moving around the house. 
 
@@ -124,17 +112,6 @@ Once it detects a new ball it checks if it corresponds to the ball received by t
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classstate__machine_1_1_find_ab73a685b11418314ef5ff90eb209f146}\label{classstate__machine_1_1_find_ab73a685b11418314ef5ff90eb209f146}} 
-\index{state\_machine.Find@{state\_machine.Find}!callback@{callback}}
-\index{callback@{callback}!state\_machine.Find@{state\_machine.Find}}
-\doxysubsubsection{\texorpdfstring{callback()}{callback()}}
-{\footnotesize\ttfamily def state\+\_\+machine.\+Find.\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})}
-
-
-
-A flag is set to 1 if the robot is not moving, to 0 otherwise ~\newline
- 
-
 \mbox{\Hypertarget{classstate__machine_1_1_find_a8d0cabef2b2a52d974cd32fabb9d3b92}\label{classstate__machine_1_1_find_a8d0cabef2b2a52d974cd32fabb9d3b92}} 
 \index{state\_machine.Find@{state\_machine.Find}!callback2@{callback2}}
 \index{callback2@{callback2}!state\_machine.Find@{state\_machine.Find}}
@@ -161,7 +138,7 @@ An algorithm is implemented to detect six different colored ball. \mbox{\Hyperta
 
 This function is executed everytime the robot detects a colored object which was not previously detected. 
 
-The robot tries to go closer to the detected object. Once done, the reference position of the room is marked as reached modifying data in the parameter server. 
+The robot tries to go closer to the detected object. Once done, the reference position of the room is marked as reached modifying data in the parameter server. Then the robot checks if the detected ball corresponds to the ball received from the play state. 
 
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{classstate__machine_1_1_find_af437dcbbad0c31f83c7c134261d5bc98}\label{classstate__machine_1_1_find_af437dcbbad0c31f83c7c134261d5bc98}} 
@@ -199,6 +176,12 @@ The robot tries to go closer to the detected object. Once done, the reference po
 \index{center@{center}!state\_machine.Find@{state\_machine.Find}}
 \doxysubsubsection{\texorpdfstring{center}{center}}
 {\footnotesize\ttfamily state\+\_\+machine.\+Find.\+center = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstate__machine_1_1_find_a996c2a2fe2c3ff25e2aad4b87073e7c9}\label{classstate__machine_1_1_find_a996c2a2fe2c3ff25e2aad4b87073e7c9}} 
+\index{state\_machine.Find@{state\_machine.Find}!child@{child}}
+\index{child@{child}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{child}{child}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+child\hspace{0.3cm}{\ttfamily [static]}}
 
 \mbox{\Hypertarget{classstate__machine_1_1_find_ac07e4324d4b304740943523d4dead028}\label{classstate__machine_1_1_find_ac07e4324d4b304740943523d4dead028}} 
 \index{state\_machine.Find@{state\_machine.Find}!cnts@{cnts}}
@@ -248,23 +231,11 @@ The robot tries to go closer to the detected object. Once done, the reference po
 \doxysubsubsection{\texorpdfstring{mask}{mask}}
 {\footnotesize\ttfamily state\+\_\+machine.\+Find.\+mask = cv2.\+in\+Range(hsv, \mbox{\hyperlink{classstate__machine_1_1_find_a527cf2af476eb16566cf0e9b73807ea1}{green\+Lower}}, \mbox{\hyperlink{classstate__machine_1_1_find_a37da222e5b351208a0da7939ad9d4e1d}{green\+Upper}})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classstate__machine_1_1_find_abce5793259e7c3888b073630925af70b}\label{classstate__machine_1_1_find_abce5793259e7c3888b073630925af70b}} 
-\index{state\_machine.Find@{state\_machine.Find}!n@{n}}
-\index{n@{n}!state\_machine.Find@{state\_machine.Find}}
-\doxysubsubsection{\texorpdfstring{n}{n}}
-{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+n = random.\+randint(-\/6,8)\hspace{0.3cm}{\ttfamily [static]}}
-
 \mbox{\Hypertarget{classstate__machine_1_1_find_a147a928dffe82913a947d06b1da343e4}\label{classstate__machine_1_1_find_a147a928dffe82913a947d06b1da343e4}} 
 \index{state\_machine.Find@{state\_machine.Find}!param@{param}}
 \index{param@{param}!state\_machine.Find@{state\_machine.Find}}
 \doxysubsubsection{\texorpdfstring{param}{param}}
 {\footnotesize\ttfamily state\+\_\+machine.\+Find.\+param\hspace{0.3cm}{\ttfamily [static]}}
-
-\mbox{\Hypertarget{classstate__machine_1_1_find_af358a6d79133cf476bf08a8ad3642f54}\label{classstate__machine_1_1_find_af358a6d79133cf476bf08a8ad3642f54}} 
-\index{state\_machine.Find@{state\_machine.Find}!play\_pose@{play\_pose}}
-\index{play\_pose@{play\_pose}!state\_machine.Find@{state\_machine.Find}}
-\doxysubsubsection{\texorpdfstring{play\_pose}{play\_pose}}
-{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+play\+\_\+pose\hspace{0.3cm}{\ttfamily [static]}}
 
 \mbox{\Hypertarget{classstate__machine_1_1_find_a4c1e9b99c291eea6d2d77e0220cc695c}\label{classstate__machine_1_1_find_a4c1e9b99c291eea6d2d77e0220cc695c}} 
 \index{state\_machine.Find@{state\_machine.Find}!play\_state@{play\_state}}
@@ -276,19 +247,13 @@ The robot tries to go closer to the detected object. Once done, the reference po
 \index{state\_machine.Find@{state\_machine.Find}!pub@{pub}}
 \index{pub@{pub}!state\_machine.Find@{state\_machine.Find}}
 \doxysubsubsection{\texorpdfstring{pub}{pub}}
-{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+pub = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, Num,\mbox{\hyperlink{classstate__machine_1_1_find_a264fa9455d4286aa26b670ac87d712ab}{queue\+\_\+size}}=10)\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+pub = rospy.\+Publisher(\textquotesingle{}target\+Position\textquotesingle{}, \mbox{\hyperlink{classexp__assignment3_1_1msg_1_1___num_1_1_num}{Num}},\mbox{\hyperlink{classstate__machine_1_1_find_a264fa9455d4286aa26b670ac87d712ab}{queue\+\_\+size}}=10)\hspace{0.3cm}{\ttfamily [static]}}
 
 \mbox{\Hypertarget{classstate__machine_1_1_find_a264fa9455d4286aa26b670ac87d712ab}\label{classstate__machine_1_1_find_a264fa9455d4286aa26b670ac87d712ab}} 
 \index{state\_machine.Find@{state\_machine.Find}!queue\_size@{queue\_size}}
 \index{queue\_size@{queue\_size}!state\_machine.Find@{state\_machine.Find}}
 \doxysubsubsection{\texorpdfstring{queue\_size}{queue\_size}}
 {\footnotesize\ttfamily state\+\_\+machine.\+Find.\+queue\+\_\+size\hspace{0.3cm}{\ttfamily [static]}}
-
-\mbox{\Hypertarget{classstate__machine_1_1_find_a32d0065999c3bfe648fc780556cb6d1c}\label{classstate__machine_1_1_find_a32d0065999c3bfe648fc780556cb6d1c}} 
-\index{state\_machine.Find@{state\_machine.Find}!randomlist@{randomlist}}
-\index{randomlist@{randomlist}!state\_machine.Find@{state\_machine.Find}}
-\doxysubsubsection{\texorpdfstring{randomlist}{randomlist}}
-{\footnotesize\ttfamily list state\+\_\+machine.\+Find.\+randomlist = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
 
 \mbox{\Hypertarget{classstate__machine_1_1_find_ac869d1476120eb9b7a8ac0b27cae49c8}\label{classstate__machine_1_1_find_ac869d1476120eb9b7a8ac0b27cae49c8}} 
 \index{state\_machine.Find@{state\_machine.Find}!redLower@{redLower}}
@@ -308,41 +273,35 @@ The robot tries to go closer to the detected object. Once done, the reference po
 \doxysubsubsection{\texorpdfstring{requested\_room}{requested\_room}}
 {\footnotesize\ttfamily state\+\_\+machine.\+Find.\+requested\+\_\+room\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classstate__machine_1_1_find_ab8412e1cb66e671caf6977f03828a2bd}\label{classstate__machine_1_1_find_ab8412e1cb66e671caf6977f03828a2bd}} 
-\index{state\_machine.Find@{state\_machine.Find}!rooms@{rooms}}
-\index{rooms@{rooms}!state\_machine.Find@{state\_machine.Find}}
-\doxysubsubsection{\texorpdfstring{rooms}{rooms}}
-{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+rooms\hspace{0.3cm}{\ttfamily [static]}}
-
 \mbox{\Hypertarget{classstate__machine_1_1_find_a56c334f3d8214ea21e7caf8849e9bb63}\label{classstate__machine_1_1_find_a56c334f3d8214ea21e7caf8849e9bb63}} 
 \index{state\_machine.Find@{state\_machine.Find}!stopFlag@{stopFlag}}
 \index{stopFlag@{stopFlag}!state\_machine.Find@{state\_machine.Find}}
 \doxysubsubsection{\texorpdfstring{stopFlag}{stopFlag}}
 {\footnotesize\ttfamily state\+\_\+machine.\+Find.\+stop\+Flag\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classstate__machine_1_1_find_a5a9dc667feda492e362147ca048b23cf}\label{classstate__machine_1_1_find_a5a9dc667feda492e362147ca048b23cf}} 
-\index{state\_machine.Find@{state\_machine.Find}!subscriber1@{subscriber1}}
-\index{subscriber1@{subscriber1}!state\_machine.Find@{state\_machine.Find}}
-\doxysubsubsection{\texorpdfstring{subscriber1}{subscriber1}}
-{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+subscriber1\hspace{0.3cm}{\ttfamily [static]}}
+\mbox{\Hypertarget{classstate__machine_1_1_find_ab9bfce719b158c4f931736443eac806d}\label{classstate__machine_1_1_find_ab9bfce719b158c4f931736443eac806d}} 
+\index{state\_machine.Find@{state\_machine.Find}!subscriber@{subscriber}}
+\index{subscriber@{subscriber}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{subscriber}{subscriber}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+subscriber\hspace{0.3cm}{\ttfamily [static]}}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=  rospy.Subscriber(\textcolor{stringliteral}{"{}camera1/image\_raw/compressed"{}},}
-\DoxyCodeLine{                                           CompressedImage, self.callback2,  queue\_size=1)}
+\DoxyCodeLine{                                          CompressedImage, self.callback2,  queue\_size=1)}
 
 \end{DoxyCode}
+\mbox{\Hypertarget{classstate__machine_1_1_find_ad284228602a30b744143e35e03e938ce}\label{classstate__machine_1_1_find_ad284228602a30b744143e35e03e938ce}} 
+\index{state\_machine.Find@{state\_machine.Find}!t\_final@{t\_final}}
+\index{t\_final@{t\_final}!state\_machine.Find@{state\_machine.Find}}
+\doxysubsubsection{\texorpdfstring{t\_final}{t\_final}}
+{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+t\+\_\+final\hspace{0.3cm}{\ttfamily [static]}}
+
 \mbox{\Hypertarget{classstate__machine_1_1_find_ad0300ceff8872223de0bc6ebf8484070}\label{classstate__machine_1_1_find_ad0300ceff8872223de0bc6ebf8484070}} 
 \index{state\_machine.Find@{state\_machine.Find}!Twist@{Twist}}
 \index{Twist@{Twist}!state\_machine.Find@{state\_machine.Find}}
 \doxysubsubsection{\texorpdfstring{Twist}{Twist}}
 {\footnotesize\ttfamily state\+\_\+machine.\+Find.\+Twist\hspace{0.3cm}{\ttfamily [static]}}
-
-\mbox{\Hypertarget{classstate__machine_1_1_find_a7e39204157d4f942427c5d6d14d3c53e}\label{classstate__machine_1_1_find_a7e39204157d4f942427c5d6d14d3c53e}} 
-\index{state\_machine.Find@{state\_machine.Find}!var2@{var2}}
-\index{var2@{var2}!state\_machine.Find@{state\_machine.Find}}
-\doxysubsubsection{\texorpdfstring{var2}{var2}}
-{\footnotesize\ttfamily state\+\_\+machine.\+Find.\+var2}
 
 \mbox{\Hypertarget{classstate__machine_1_1_find_a72180d3ff6b58a93eb9efb2e65f08f66}\label{classstate__machine_1_1_find_a72180d3ff6b58a93eb9efb2e65f08f66}} 
 \index{state\_machine.Find@{state\_machine.Find}!vel\_pub@{vel\_pub}}

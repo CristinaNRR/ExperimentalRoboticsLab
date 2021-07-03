@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exploring_97',['exploring',['../namespaceexploring.html',1,'']]]
+  ['_5fsetup_5futil_535',['_setup_util',['../namespace__setup__util.html',1,'']]]
 ];

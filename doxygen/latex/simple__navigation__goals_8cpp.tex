@@ -24,7 +24,7 @@ typedef actionlib\+::\+Simple\+Action\+Client$<$ move\+\_\+base\+\_\+msgs\+::\+M
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{simple__navigation__goals_8cpp_a7b85e6fd13e6563d54f34f2b362f3b39}{Callback}} (const exp\+\_\+assignment3\+::\+Num\+::\+Const\+Ptr \&msg)
+void \mbox{\hyperlink{simple__navigation__goals_8cpp_a7b85e6fd13e6563d54f34f2b362f3b39}{Callback}} (const \mbox{\hyperlink{structexp__assignment3_1_1_num___a480577d2a1425f4fd8d030e3c447bce4}{exp\+\_\+assignment3\+::\+Num\+::\+Const\+Ptr}} \&msg)
 \item 
 int \mbox{\hyperlink{simple__navigation__goals_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
 \end{DoxyCompactItemize}
@@ -44,7 +44,7 @@ A move\+Base action client is implemented and used to send the desired goal posi
 \index{simple\_navigation\_goals.cpp@{simple\_navigation\_goals.cpp}!Callback@{Callback}}
 \index{Callback@{Callback}!simple\_navigation\_goals.cpp@{simple\_navigation\_goals.cpp}}
 \doxysubsubsection{\texorpdfstring{Callback()}{Callback()}}
-{\footnotesize\ttfamily void Callback (\begin{DoxyParamCaption}\item[{const exp\+\_\+assignment3\+::\+Num\+::\+Const\+Ptr \&}]{msg }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Callback (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structexp__assignment3_1_1_num___a480577d2a1425f4fd8d030e3c447bce4}{exp\+\_\+assignment3\+::\+Num\+::\+Const\+Ptr}} \&}]{msg }\end{DoxyParamCaption})}
 
 The program enters here everytime a new goal position is received from the state machine. Once received, the positions(expressed with respect to the map frame) are converted and sent to the move\+Base action server. \mbox{\Hypertarget{simple__navigation__goals_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{simple__navigation__goals_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
 \index{simple\_navigation\_goals.cpp@{simple\_navigation\_goals.cpp}!main@{main}}

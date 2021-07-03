@@ -1,12 +1,15 @@
 var searchData=
 [
-  ['param_43',['param',['../classstate__machine_1_1_normal.html#ad676a7bddfcb08e695d05338b57989f9',1,'state_machine.Normal.param()'],['../classstate__machine_1_1_play.html#a41a074c4bf967a31676ee879b4522e85',1,'state_machine.Play.param()'],['../classstate__machine_1_1_find.html#a147a928dffe82913a947d06b1da343e4',1,'state_machine.Find.param()']]],
-  ['play_44',['Play',['../classstate__machine_1_1_play.html',1,'state_machine']]],
-  ['play_5fcount_45',['play_count',['../classstate__machine_1_1_normal.html#a301b395d50a7aa2268e92fd3a221e6b7',1,'state_machine::Normal']]],
-  ['play_5fpose_46',['play_pose',['../classstate__machine_1_1_play.html#a82da4b0d9cc752a92a6bb4c793df9aaf',1,'state_machine.Play.play_pose()'],['../classstate__machine_1_1_find.html#af358a6d79133cf476bf08a8ad3642f54',1,'state_machine.Find.play_pose()']]],
-  ['play_5fstate_47',['play_state',['../classstate__machine_1_1_find.html#a4c1e9b99c291eea6d2d77e0220cc695c',1,'state_machine::Find']]],
-  ['playposition_48',['playPosition',['../classstate__machine_1_1_play.html#a2d23491183560adebc8b74b65ef94062',1,'state_machine::Play']]],
-  ['pub_49',['pub',['../classstate__machine_1_1_normal.html#aacbaeaef5799eece6ea4897f5a1d2880',1,'state_machine.Normal.pub()'],['../classstate__machine_1_1_sleep.html#a05c781f257bf69254f485a225442d09f',1,'state_machine.Sleep.pub()'],['../classstate__machine_1_1_play.html#af5202f566cb22d7ff7d915cecb2ce5cb',1,'state_machine.Play.pub()'],['../classstate__machine_1_1_find.html#a2688c1572ae4b50265d1acb68a3ad4ff',1,'state_machine.Find.pub()'],['../namespaceexploring.html#a21ae94fb0a23eda8f6088d5df6d341e9',1,'exploring.pub()']]],
-  ['publishloop_50',['publishLoop',['../class_slam_g_mapping.html#a00a01ecfacccbfcfccc3e138de6bd00f',1,'SlamGMapping']]],
-  ['publishtransform_51',['publishTransform',['../class_slam_g_mapping.html#a2447af8faad253af05c7dc9f492b8489',1,'SlamGMapping']]]
+  ['n_237',['n',['../classstate__machine_1_1_normal.html#a08777072b6b0a29dd3ebcdf90f3e3cd3',1,'state_machine.Normal.n()'],['../classstate__machine_1_1_play.html#a12eb6239336b4ee7c9d1f4399794aaba',1,'state_machine.Play.n()']]],
+  ['nearestcell_238',['nearestCell',['../namespacefrontier__exploration.html#a1919c053e430083b7fb366501fff518c',1,'frontier_exploration']]],
+  ['nhood4_239',['nhood4',['../namespacefrontier__exploration.html#affc5c02b52db13456c62dc5f707efa6f',1,'frontier_exploration']]],
+  ['nhood8_240',['nhood8',['../namespacefrontier__exploration.html#aff5530dc70914d4cfde4f455ecaa0cd6',1,'frontier_exploration']]],
+  ['nodelet_2ecpp_241',['nodelet.cpp',['../nodelet_8cpp.html',1,'']]],
+  ['normal_242',['Normal',['../classstate__machine_1_1_normal.html',1,'state_machine']]],
+  ['num_243',['Num',['../classexp__assignment3_1_1msg_1_1___num_1_1_num.html',1,'exp_assignment3.msg._Num.Num'],['../structexp__assignment3_1_1_num__.html#a56353f6c34adbeeb437db9de16c97c31',1,'exp_assignment3::Num_::num()'],['../classexp__assignment3_1_1msg_1_1___num_1_1_num.html#a09c28830161cb032c1dee59bd97011a5',1,'exp_assignment3.msg._Num.Num.num()'],['../namespaceexp__assignment3.html#a7d564528736534d709b2852c412e12bf',1,'exp_assignment3::Num()']]],
+  ['num_2eh_244',['Num.h',['../_num_8h.html',1,'']]],
+  ['num_2ejs_245',['Num.js',['../_num_8js.html',1,'']]],
+  ['num_5f_246',['Num_',['../structexp__assignment3_1_1_num__.html',1,'exp_assignment3::Num_&lt; ContainerAllocator &gt;'],['../structexp__assignment3_1_1_num__.html#a14027a89def5160748193a282ee2076d',1,'exp_assignment3::Num_::Num_()'],['../structexp__assignment3_1_1_num__.html#a13f51e3eeb3ed197c12904ebef6e21c9',1,'exp_assignment3::Num_::Num_(const ContainerAllocator &amp;_alloc)']]],
+  ['numconstptr_247',['NumConstPtr',['../namespaceexp__assignment3.html#a1c1b07cf38bf4185fad9794d668f246e',1,'exp_assignment3']]],
+  ['numptr_248',['NumPtr',['../namespaceexp__assignment3.html#a4935a6f1cfd850950b524beaeff30fb1',1,'exp_assignment3']]]
 ];

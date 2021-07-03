@@ -1,0 +1,113 @@
+\hypertarget{rtest_8cpp}{}\doxysection{src/\+SLAM\+\_\+packages-\/main/slam\+\_\+gmapping/gmapping/test/rtest.cpp File Reference}
+\label{rtest_8cpp}\index{src/SLAM\_packages-\/main/slam\_gmapping/gmapping/test/rtest.cpp@{src/SLAM\_packages-\/main/slam\_gmapping/gmapping/test/rtest.cpp}}
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include $<$ros/service.\+h$>$}\newline
+{\ttfamily \#include $<$ros/ros.\+h$>$}\newline
+{\ttfamily \#include $<$nav\+\_\+msgs/\+Get\+Map.\+h$>$}\newline
+{\ttfamily \#include $<$nav\+\_\+msgs/\+Occupancy\+Grid.\+h$>$}\newline
+{\ttfamily \#include $<$nav\+\_\+msgs/\+Map\+Meta\+Data.\+h$>$}\newline
+Include dependency graph for rtest.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtest_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_map_client_test}{Map\+Client\+Test}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{rtest_8cpp_a06044f3d09ece2976bdf90c959b894a7}{TEST\+\_\+F}} (\mbox{\hyperlink{class_map_client_test}{Map\+Client\+Test}}, call\+\_\+service)
+\item 
+\mbox{\hyperlink{rtest_8cpp_af2bbe99f957717c9309c5ff70359916e}{TEST\+\_\+F}} (\mbox{\hyperlink{class_map_client_test}{Map\+Client\+Test}}, subscribe\+\_\+topic)
+\item 
+\mbox{\hyperlink{rtest_8cpp_ad4dc6db000a2a83b734f182942974a00}{TEST\+\_\+F}} (\mbox{\hyperlink{class_map_client_test}{Map\+Client\+Test}}, subscribe\+\_\+topic\+\_\+metadata)
+\item 
+int \mbox{\hyperlink{rtest_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+ros\+::\+Node\+Handle $\ast$ \mbox{\hyperlink{rtest_8cpp_ab82eab1aefe1ec73db1e473ea14c5f5c}{g\+\_\+n}} =NULL
+\item 
+double \mbox{\hyperlink{rtest_8cpp_aa9afd7a30f14046b7acaf8947cad74ce}{g\+\_\+res}}
+\item 
+double \mbox{\hyperlink{rtest_8cpp_ad310b3b57b6d991101d4de9937fe2cfb}{g\+\_\+width}}
+\item 
+double \mbox{\hyperlink{rtest_8cpp_ad5e96022b40f78c6214e486f3c880135}{g\+\_\+height}}
+\item 
+double \mbox{\hyperlink{rtest_8cpp_af3872544e5b3534b3b19576bf567ba6f}{g\+\_\+min\+\_\+free\+\_\+ratio}}
+\item 
+double \mbox{\hyperlink{rtest_8cpp_ad8ec6f48a64ee3a2af93526f63d37af7}{g\+\_\+max\+\_\+free\+\_\+ratio}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rtest_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{rtest_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{rtest.cpp@{rtest.cpp}!main@{main}}
+\index{main@{main}!rtest.cpp@{rtest.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rtest_8cpp_a06044f3d09ece2976bdf90c959b894a7}\label{rtest_8cpp_a06044f3d09ece2976bdf90c959b894a7}} 
+\index{rtest.cpp@{rtest.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!rtest.cpp@{rtest.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_map_client_test}{Map\+Client\+Test}}}]{,  }\item[{call\+\_\+service}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rtest_8cpp_af2bbe99f957717c9309c5ff70359916e}\label{rtest_8cpp_af2bbe99f957717c9309c5ff70359916e}} 
+\index{rtest.cpp@{rtest.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!rtest.cpp@{rtest.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_map_client_test}{Map\+Client\+Test}}}]{,  }\item[{subscribe\+\_\+topic}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rtest_8cpp_ad4dc6db000a2a83b734f182942974a00}\label{rtest_8cpp_ad4dc6db000a2a83b734f182942974a00}} 
+\index{rtest.cpp@{rtest.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!rtest.cpp@{rtest.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_map_client_test}{Map\+Client\+Test}}}]{,  }\item[{subscribe\+\_\+topic\+\_\+metadata}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{rtest_8cpp_ad5e96022b40f78c6214e486f3c880135}\label{rtest_8cpp_ad5e96022b40f78c6214e486f3c880135}} 
+\index{rtest.cpp@{rtest.cpp}!g\_height@{g\_height}}
+\index{g\_height@{g\_height}!rtest.cpp@{rtest.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_height}{g\_height}}
+{\footnotesize\ttfamily double g\+\_\+height}
+
+\mbox{\Hypertarget{rtest_8cpp_ad8ec6f48a64ee3a2af93526f63d37af7}\label{rtest_8cpp_ad8ec6f48a64ee3a2af93526f63d37af7}} 
+\index{rtest.cpp@{rtest.cpp}!g\_max\_free\_ratio@{g\_max\_free\_ratio}}
+\index{g\_max\_free\_ratio@{g\_max\_free\_ratio}!rtest.cpp@{rtest.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_max\_free\_ratio}{g\_max\_free\_ratio}}
+{\footnotesize\ttfamily double g\+\_\+max\+\_\+free\+\_\+ratio}
+
+\mbox{\Hypertarget{rtest_8cpp_af3872544e5b3534b3b19576bf567ba6f}\label{rtest_8cpp_af3872544e5b3534b3b19576bf567ba6f}} 
+\index{rtest.cpp@{rtest.cpp}!g\_min\_free\_ratio@{g\_min\_free\_ratio}}
+\index{g\_min\_free\_ratio@{g\_min\_free\_ratio}!rtest.cpp@{rtest.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_min\_free\_ratio}{g\_min\_free\_ratio}}
+{\footnotesize\ttfamily double g\+\_\+min\+\_\+free\+\_\+ratio}
+
+\mbox{\Hypertarget{rtest_8cpp_ab82eab1aefe1ec73db1e473ea14c5f5c}\label{rtest_8cpp_ab82eab1aefe1ec73db1e473ea14c5f5c}} 
+\index{rtest.cpp@{rtest.cpp}!g\_n@{g\_n}}
+\index{g\_n@{g\_n}!rtest.cpp@{rtest.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_n}{g\_n}}
+{\footnotesize\ttfamily ros\+::\+Node\+Handle$\ast$ g\+\_\+n =NULL}
+
+\mbox{\Hypertarget{rtest_8cpp_aa9afd7a30f14046b7acaf8947cad74ce}\label{rtest_8cpp_aa9afd7a30f14046b7acaf8947cad74ce}} 
+\index{rtest.cpp@{rtest.cpp}!g\_res@{g\_res}}
+\index{g\_res@{g\_res}!rtest.cpp@{rtest.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_res}{g\_res}}
+{\footnotesize\ttfamily double g\+\_\+res}
+
+\mbox{\Hypertarget{rtest_8cpp_ad310b3b57b6d991101d4de9937fe2cfb}\label{rtest_8cpp_ad310b3b57b6d991101d4de9937fe2cfb}} 
+\index{rtest.cpp@{rtest.cpp}!g\_width@{g\_width}}
+\index{g\_width@{g\_width}!rtest.cpp@{rtest.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_width}{g\_width}}
+{\footnotesize\ttfamily double g\+\_\+width}
+
