@@ -57,7 +57,12 @@ Inside the state machine are implemented the four abovementioned states:
 * Find state: the robot starts moving around the house relying on the explore-lite package. When it detects a new ball it switches to the Track function that works as in the normal state. Then the robot checks if the ball in the just detected room coincide with the ball received by the Play state. If so, it goes back to the play behaviour; if not, keeps moving around the house. After some time, if the robot has not detected the received room, goes back to the play behaviour.
 
 In each state I used lots of 'loginfo' functions in order to be able to follow the state machine behaviour and check that everyting is working properly.
-Inside the package exp_assignment3 it can be found a state machine diagram showing the possible transitions among states.
+
+Below the state machine and architecture diagram.
+
+<img src="https://github.com/CristinaNRR/final_exp/blob/master/Images/state_machine_diagram.png" alt=" " width="600" height="400"/>
+
+<img src="https://github.com/CristinaNRR/final_exp/blob/master/Images/Architecture_diagram.png" alt=" " width="600" height="400"/>
 
 ## Packages and file list
 Inside the workspace we can find the following packages:
